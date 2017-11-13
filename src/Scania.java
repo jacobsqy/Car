@@ -41,7 +41,7 @@ public class Scania extends Car {
     @Override
     public void move() {
       if (tipAngle != 0) {
-        yPos += currentSpeed;
+        super.move();
       }
     }
 
