@@ -24,14 +24,18 @@ public class Scania extends Car {
      * Increases tipAngle but only if lower then 70.
      */
     private void raiseTipper(){
-        if(tipAngle < 70 ){tipAngle++;}
+        if(tipAngle < 70){tipAngle++;}
     }
 
     /**
      * Decreases int tipAngle, but only if it higher then 0.
      */
     private void lowerTipper(){
-        if(tipAngle > 0)tipAngle--;
+        if(tipAngle > 0 && isStill())tipAngle--;
+    }
+
+    public boolean isStill(){
+        return this.getCurrentSpeed() == 0;
     }
 
     @Override
