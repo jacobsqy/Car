@@ -10,7 +10,7 @@ public class Scania extends Car {
         super(2, Color.black, 550, "Scania Truck");
         turboOn = false;
         turboPower = 1.5;
-        stopEngine;
+        stopEngine();
     }
 
     public double speedFactor() {
@@ -24,4 +24,5 @@ public class Scania extends Car {
     public void setTurboOff() {
         turboOn = false;
     }
+
 }
