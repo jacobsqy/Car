@@ -34,6 +34,12 @@ public class Scania extends Car {
         if(tipAngle > 0)tipAngle--;
     }
 
+    @Override
+    public void move() {
+      if (tipAngle != 0) {
+        yPos += currentSpeed;
+      }
+    }
 
     public void setTurboOn() {
         turboOn = true;
