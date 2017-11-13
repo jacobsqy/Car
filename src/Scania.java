@@ -34,14 +34,18 @@ public class Scania extends Car {
         if(tipAngle > 0 && isStill())tipAngle--;
     }
 
-    public boolean isStill(){
+    private boolean isStill(){
         return this.getCurrentSpeed() == 0;
     }
 
+    /**
+     * This method adds currentSpeed() to the y position to make it go forward,
+     * but only if the tipper is down.
+     */
     @Override
     public void move() {
       if (tipAngle != 0) {
-        yPos += currentSpeed;
+         super.move();
       }
     }
 
