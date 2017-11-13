@@ -142,12 +142,4 @@ public abstract class Car implements Movable {
         return yPos;
     }
 
-  /*public void incrementSpeed(double amount){
-      currentSpeed = getCurrentSpeed() + speedFactor() * amount;
-  }
-
-  public void decrementSpeed(double amount){
-      currentSpeed = getCurrentSpeed() - speedFactor() * amount;
-  }*/
-
 }
