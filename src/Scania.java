@@ -1,6 +1,7 @@
 import java.awt.*;
 
 public class Scania extends Car {
+    private int tipAngle;
 
 
     public Scania (){
