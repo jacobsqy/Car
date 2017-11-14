@@ -4,11 +4,14 @@ public class CarTransport extends Car {
 
     private boolean turboOn;
     private double turboPower;
-    private int tipAngle;
+    private rampstate rampState;
+    private enum rampstate {
+        UP, DOWN
+    }
 
     public CarTransport(){
         super(2, Color.black, 550, "cartransport");
-        tipAngle = 0;
+        rampState = rampState.DOWN;
     }
 
 
@@ -20,7 +23,7 @@ public class CarTransport extends Car {
     }
     @Override
     public void move() {
-        if (tipAngle != 0) {
+        if (rampState == rampState.UP) {
             super.move();
         }
     }
