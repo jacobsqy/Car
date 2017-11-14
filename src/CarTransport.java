@@ -24,7 +24,8 @@ public class CarTransport extends Truck {
     }
 
     public void unload() {
-      if (rampState == rampstate.DOWN) ramp.pop();
+      if (rampState == rampstate.DOWN) Car car = ramp.pop();
+      car.setPos(getxPos(), getyPos());
     }
 
 
