@@ -1,4 +1,5 @@
 import java.awt.*;
+import java.util.Stack;
 
 public class CarTransport extends Truck {
 
@@ -24,8 +25,10 @@ public class CarTransport extends Truck {
     }
 
     public void unload() {
-      if (rampState == rampstate.DOWN) Car car = ramp.pop();
-      car.setPos(getxPos(), getyPos());
+      if (rampState == rampstate.DOWN) {
+        Car car = ramp.pop();
+        car.setPos(getxPos(), getyPos());
+      }
     }
 
 

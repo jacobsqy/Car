@@ -150,9 +150,8 @@ public abstract class Car implements Movable {
         return yPos;
     }
 
-    public setPos(double x, double y) {
+    public void setPos(double x, double y) {
       xPos = x;
       yPos = y;
     }
-
 }
