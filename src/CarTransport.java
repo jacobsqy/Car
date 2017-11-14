@@ -5,6 +5,7 @@ public class CarTransport extends Car {
     private boolean turboOn;
     private double turboPower;
     private Stack<Car> ramp = new Stack();
+    private double loadingRange;
     private rampstate rampState;
     private enum rampstate {
         UP, DOWN
@@ -21,7 +22,9 @@ public class CarTransport extends Car {
       ramp.push(car);
     }
 
-
+    private boolean withinLoadingRange(Car car) {
+      double dy = car.getyPos() - this.getyPos();
+    }
 
     @Override
     public double speedFactor() {
