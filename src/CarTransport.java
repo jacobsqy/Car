@@ -1,6 +1,6 @@
 import java.awt.*;
 
-public class CarTransport extends Car {
+public class CarTransport extends Truck {
 
     private boolean turboOn;
     private double turboPower;
@@ -35,12 +35,7 @@ public class CarTransport extends Car {
       return loadingRange > distance;
     }
 
-    @Override
-    public double speedFactor() {
-        double turbo = 1;
-        if(turboOn) turbo = turboPower;
-        return getEnginePower() * 0.001 * turbo;
-    }
+
     @Override
     public void move() {
         if (rampState == rampState.UP) {

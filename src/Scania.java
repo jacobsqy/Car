@@ -1,6 +1,6 @@
 import java.awt.*;
 
-public class Scania extends Car {
+public class Scania extends Truck {
     private int tipAngle;
     private boolean turboOn;
     private double turboPower;
@@ -12,12 +12,6 @@ public class Scania extends Car {
         turboPower = 1.5;
         tipAngle = 0;
         stopEngine();
-    }
-
-    public double speedFactor() {
-        double turbo = 1;
-        if(turboOn) turbo = turboPower;
-        return getEnginePower() * 0.001 * turbo;
     }
 
     /**
