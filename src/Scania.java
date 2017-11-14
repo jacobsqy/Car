@@ -34,9 +34,6 @@ public class Scania extends Car {
         if(tipAngle > 0 && isStill()) tipAngle--;
     }
 
-    private boolean isStill(){
-        return this.getCurrentSpeed() == 0;
-    }
 
 
 

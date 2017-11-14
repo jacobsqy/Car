@@ -113,6 +113,14 @@ public abstract class Car implements Movable {
         currentSpeed = 0;
   }
 
+  /**
+   * checks if the Car is still
+   * @return true if the speed is zero
+   */
+  private boolean isStill(){
+      return this.getCurrentSpeed() == 0;
+  }
+
   /*GETTERS AND SETTERS*/
     public boolean getTurbo() { return turbo; }
     public int getNrDoors(){
