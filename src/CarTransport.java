@@ -4,6 +4,7 @@ public class CarTransport extends Car {
 
     private boolean turboOn;
     private double turboPower;
+    private Stack<Car> ramp = new Stack();
     private rampstate rampState;
     private enum rampstate {
         UP, DOWN
@@ -13,6 +14,13 @@ public class CarTransport extends Car {
         super(2, Color.black, 550, "cartransport");
         rampState = rampState.DOWN;
     }
+
+
+
+    public void load(Car car) {
+      ramp.push(car);
+    }
+
 
 
     @Override
