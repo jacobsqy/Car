@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91ad20e5-ca89-4217-bb33-a390467f0690" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/TransportTruck.java" afterPath="$PROJECT_DIR$/src/CarTransport.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/TransportTruck.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Trucks.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Vehicle.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -18,11 +20,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Scania.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Scania.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="49" selection-end-column="5" />
+              <folding>
+                <element signature="method#Scania#0;class#Scania#0" expanded="false" />
+                <element signature="docComment;method#raiseTipper#0;class#Scania#0" expanded="false" />
+                <element signature="e#573#574#0" expanded="true" />
+                <element signature="e#617#618#0" expanded="true" />
+                <element signature="docComment;method#move#0;class#Scania#0" expanded="false" />
+                <element signature="method#move#0;class#Scania#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CarTransport.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/CarTransport.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="513">
+              <caret line="22" column="16" lean-forward="true" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Car.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Car.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="648">
-              <caret line="24" column="79" lean-forward="false" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="79" />
+            <state relative-caret-position="189">
+              <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
               <folding>
                 <element signature="docComment;method#turnLeft#0;class#Car#0" expanded="false" />
                 <element signature="docComment;method#turnRight#0;class#Car#0" expanded="false" />
@@ -36,80 +65,6 @@
                 <element signature="docComment;method#decrementSpeed#0;class#Car#0" expanded="false" />
                 <element signature="method#decrementSpeed#0;class#Car#0" expanded="false" />
                 <element signature="docComment;method#startEngine#0;class#Car#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Saab95.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Saab95.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="81">
-              <caret line="3" column="30" lean-forward="false" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Movable.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Movable.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="20" lean-forward="false" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CarTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/CarTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1620">
-              <caret line="62" column="19" lean-forward="false" selection-start-line="62" selection-start-column="19" selection-end-line="62" selection-end-column="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Volvo240.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Volvo240.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="2" column="30" lean-forward="false" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
-              <folding>
-                <element signature="e#333#334#0" expanded="true" />
-                <element signature="e#392#393#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Scania.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Scania.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="5" column="30" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="5" selection-end-column="30" />
-              <folding>
-                <element signature="method#Scania#0;class#Scania#0" expanded="false" />
-                <element signature="docComment;method#raiseTipper#0;class#Scania#0" expanded="false" />
-                <element signature="docComment;method#lowerTipper#0;class#Scania#0" expanded="false" />
-                <element signature="docComment;method#move#0;class#Scania#0" expanded="false" />
-                <element signature="method#move#0;class#Scania#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CarTransport.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/CarTransport.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="5" column="30" lean-forward="false" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
-              <folding>
-                <element signature="e#147#148#0" expanded="true" />
-                <element signature="e#205#206#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -145,6 +100,7 @@
         <option value="$PROJECT_DIR$/src/Scania.java" />
         <option value="$PROJECT_DIR$/src/TransportTruck.java" />
         <option value="$PROJECT_DIR$/src/CarTransport.java" />
+        <option value="$PROJECT_DIR$/src/Vehicle.java" />
       </list>
     </option>
   </component>
@@ -550,7 +506,28 @@
       <option name="project" value="LOCAL" />
       <updated>1510644243970</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added numbers to the construktor and speedFactor">
+      <created>1510644587112</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1510644587112</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Fixed error in SpeedFactor">
+      <created>1510644715766</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1510644715766</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Added the classes Vehicle and Truck">
+      <created>1510645005877</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1510645005877</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -628,7 +605,10 @@
     <MESSAGE value="Added javadoc for move() in Scania." />
     <MESSAGE value="Added javadoc for move() in Scania. And made istStill() private" />
     <MESSAGE value="Added TransportTruck Class with Construktor() and Speedfactor()" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added TransportTruck Class with Construktor() and Speedfactor()" />
+    <MESSAGE value="Added numbers to the construktor and speedFactor" />
+    <MESSAGE value="Fixed error in SpeedFactor" />
+    <MESSAGE value="Added the classes Vehicle and Truck" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added the classes Vehicle and Truck" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -706,7 +686,8 @@
           <folding>
             <element signature="method#Scania#0;class#Scania#0" expanded="false" />
             <element signature="docComment;method#raiseTipper#0;class#Scania#0" expanded="false" />
-            <element signature="docComment;method#lowerTipper#0;class#Scania#0" expanded="false" />
+            <element signature="e#573#574#0" expanded="true" />
+            <element signature="e#617#618#0" expanded="true" />
             <element signature="docComment;method#move#0;class#Scania#0" expanded="false" />
             <element signature="method#move#0;class#Scania#0" expanded="false" />
           </folding>
@@ -778,7 +759,8 @@
           <folding>
             <element signature="method#Scania#0;class#Scania#0" expanded="false" />
             <element signature="docComment;method#raiseTipper#0;class#Scania#0" expanded="false" />
-            <element signature="docComment;method#lowerTipper#0;class#Scania#0" expanded="false" />
+            <element signature="e#573#574#0" expanded="true" />
+            <element signature="e#617#618#0" expanded="true" />
             <element signature="docComment;method#move#0;class#Scania#0" expanded="false" />
             <element signature="method#move#0;class#Scania#0" expanded="false" />
           </folding>
@@ -952,10 +934,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Scania.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="49" selection-end-column="5" />
+          <folding>
+            <element signature="method#Scania#0;class#Scania#0" expanded="false" />
+            <element signature="docComment;method#raiseTipper#0;class#Scania#0" expanded="false" />
+            <element signature="e#573#574#0" expanded="true" />
+            <element signature="e#617#618#0" expanded="true" />
+            <element signature="docComment;method#move#0;class#Scania#0" expanded="false" />
+            <element signature="method#move#0;class#Scania#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Vehicle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="26" lean-forward="false" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Trucks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="19" lean-forward="false" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TransportTruck.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Car.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="24" column="79" lean-forward="false" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="79" />
+        <state relative-caret-position="189">
+          <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
           <folding>
             <element signature="docComment;method#turnLeft#0;class#Car#0" expanded="false" />
             <element signature="docComment;method#turnRight#0;class#Car#0" expanded="false" />
@@ -973,28 +994,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Scania.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" column="30" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="5" selection-end-column="30" />
-          <folding>
-            <element signature="method#Scania#0;class#Scania#0" expanded="false" />
-            <element signature="docComment;method#raiseTipper#0;class#Scania#0" expanded="false" />
-            <element signature="docComment;method#lowerTipper#0;class#Scania#0" expanded="false" />
-            <element signature="docComment;method#move#0;class#Scania#0" expanded="false" />
-            <element signature="method#move#0;class#Scania#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/CarTransport.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" column="30" lean-forward="false" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
-          <folding>
-            <element signature="e#147#148#0" expanded="true" />
-            <element signature="e#205#206#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="513">
+          <caret line="22" column="16" lean-forward="true" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
