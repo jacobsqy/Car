@@ -117,8 +117,8 @@ public abstract class Car implements Movable {
    * checks if the Car is still
    * @return true if the speed is zero
    */
-  private boolean isStill(){
-      return this.getCurrentSpeed() == 0;
+  public boolean isStill(){
+      return getCurrentSpeed() == 0;
   }
 
   /*GETTERS AND SETTERS*/
