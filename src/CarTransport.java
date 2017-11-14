@@ -14,6 +14,7 @@ public class CarTransport extends Car {
     public CarTransport(){
         super(2, Color.black, 550, "cartransport");
         rampState = rampState.DOWN;
+        loadingRange = 2.0;
     }
 
 
@@ -23,7 +24,10 @@ public class CarTransport extends Car {
     }
 
     private boolean withinLoadingRange(Car car) {
-      double dy = car.getyPos() - this.getyPos();
+      double dy = car.getyPos() - getyPos();
+      double dx = car.getxPos() - getxPos();
+      double distance = Math.sqrt(Math.pow(dy, 2) + Math.pow(dx, 2));
+      return loadingRange > distance;
     }
 
     @Override
