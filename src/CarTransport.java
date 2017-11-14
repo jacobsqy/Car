@@ -12,10 +12,8 @@ public class CarTransport extends Car {
 
     @Override
     public double speedFactor() {
-        public double speedFactor() {
-            double turbo = 1;
-            if(turboOn) turbo = turboPower;
-            return getEnginePower() * 0.001 * turbo;
-        }
+        double turbo = 1;
+        if(turboOn) turbo = turboPower;
+        return getEnginePower() * 0.001 * turbo;
     }
 }
