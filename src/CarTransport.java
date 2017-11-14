@@ -20,7 +20,7 @@ public class CarTransport extends Car {
 
 
     public void load(Car car) {
-      ramp.push(car);
+      if (withinLoadingRange(car)) ramp.push(car);
     }
 
     private boolean withinLoadingRange(Car car) {
