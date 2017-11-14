@@ -27,6 +27,7 @@ public class CarTransport extends Car {
       if (rampState == rampstate.DOWN) ramp.pop();
     }
 
+
     private boolean withinLoadingRange(Car car) {
       double dy = car.getyPos() - getyPos();
       double dx = car.getxPos() - getxPos();
@@ -45,5 +46,13 @@ public class CarTransport extends Car {
         if (rampState == rampState.UP) {
             super.move();
         }
+    }
+
+
+    public void raiseRamp() {
+      rampState = rampstate.UP;
+    }
+    public void lowerRamp() {
+      rampState = rampstate.DOWN;
     }
 }
