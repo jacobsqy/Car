@@ -38,10 +38,7 @@ public class Scania extends Car {
         return this.getCurrentSpeed() == 0;
     }
 
-    /**
-     * This method adds currentSpeed() to the y position to make it go forward,
-     * but only if tipAngle != 0.
-     */
+
 
     public void setTurboOn() {
         turboOn = true;
