@@ -2,7 +2,6 @@ import java.awt.*;
 public abstract class Car extends Vehicle implements Movable {
   private int nrDoors;
   private double enginePower;
-  private double currentSpeed;
   private Color color;
   private String modelName;
   private boolean loaded;
@@ -128,14 +127,7 @@ public abstract class Car extends Vehicle implements Movable {
         color = clr;
   }
 
-    public double getxPos() {
-        return xPos;
-    }
-
-    public double getyPos() {
-        return yPos;
-    }
-
+  
     public void setPos(double x, double y) {
       xPos = x;
       yPos = y;

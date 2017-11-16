@@ -1,6 +1,7 @@
 public abstract class Vehicle {
   private double xPos;
   private double yPos;
+  private double currentSpeed;
   private enum Dir {
     FORWARD,
     RIGHT,
@@ -11,10 +12,26 @@ public abstract class Vehicle {
   private int currentDirIndex = 0;
   private Dir dir;
 
-  private void move(double x, double y) {
-    switch {
-      case
+  public void move() {
+    switch (dir) {
+      case FORWARD:
+        yPos += currentSpeed;
+        break;
+      case RIGHT:
+        xPos += currentSpeed;
+        break;
+      case BACK:
+        yPos -= currentSpeed;
+        break;
+      case LEFT:
+        xPos -= currentSpeed;
+        break;
     }
+  }
+
+  public void move(double x, double y) {
+    yPos = y;
+    xPos = x;
   }
 
   /**
@@ -38,4 +55,11 @@ public abstract class Vehicle {
     dir = dirs[currentDirIndex];
   }
 
+  public double getxPos() {
+      return xPos;
+  }
+
+  public double getyPos() {
+      return yPos;
+  }
 }
