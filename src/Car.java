@@ -6,6 +6,7 @@ public abstract class Car implements Movable {
   private Color color;
   private String modelName;
   private boolean turbo;
+  private boolean loaded;
 
   //MOVABLE VARS
   private double xPos;
@@ -153,5 +154,17 @@ public abstract class Car implements Movable {
     public void setPos(double x, double y) {
       xPos = x;
       yPos = y;
+    }
+
+    public boolean getLoaded() {
+      return loaded;
+    }
+
+    public void setLoaded() {
+      loaded = true;
+    }
+
+    public void resetLoaded() {
+      loaded = false;
     }
 }
