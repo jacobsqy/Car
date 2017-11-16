@@ -1,8 +1,12 @@
+import java.awt.*;
+
 public abstract class Vehicle implements Movable {
   private double xPos;
   private double yPos;
   private double currentSpeed;
   private double enginePower;
+  private Color color;
+  private String modelName;
   private enum Dir {
     FORWARD,
     RIGHT,
@@ -13,8 +17,10 @@ public abstract class Vehicle implements Movable {
   private int currentDirIndex = 0;
   private Dir dir;
 
-  public Vehicle(double enginePower) {
+  public Vehicle(double enginePower, Color color, String modelname) {
     this.enginePower = enginePower;
+    this.color = color;
+    this.modelName = modelname;
   }
 
   public void move() {
@@ -159,4 +165,12 @@ public abstract class Vehicle implements Movable {
     public double getEnginePower(){
       return enginePower;
     }
+
+  public Color getColor(){
+    return color;
+  }
+
+  public void setColor(Color clr){
+    color = clr;
+  }
 }
