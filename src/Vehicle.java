@@ -7,15 +7,16 @@ public abstract class Vehicle implements Movable {
   private double enginePower;
   private Color color;
   private String modelName;
+  
+  private Dir[] dirs = {Dir.FORWARD, Dir.RIGHT, Dir.BACK, Dir.LEFT};
+  private int currentDirIndex = 0;
+  private Dir dir;
   private enum Dir {
     FORWARD,
     RIGHT,
     BACK,
     LEFT
   }
-  private Dir[] dirs = {Dir.FORWARD, Dir.RIGHT, Dir.BACK, Dir.LEFT};
-  private int currentDirIndex = 0;
-  private Dir dir;
 
   public Vehicle(double enginePower, Color color, String modelname) {
     this.enginePower = enginePower;
