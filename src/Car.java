@@ -1,5 +1,5 @@
 import java.awt.*;
-public abstract class Car extends Vehicle implements Movable {
+public abstract class Car extends Vehicle {
   private int nrDoors;
   private Color color;
   private String modelName;

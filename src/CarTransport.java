@@ -1,7 +1,7 @@
 import java.awt.*;
 import java.util.Stack;
 
-public class CarTransport extends Car {
+public class CarTransport extends Truck {
 
     private boolean turboOn;
     private double turboPower;
@@ -21,7 +21,7 @@ public class CarTransport extends Car {
 
 
 
-    public void load(Car car) {
+    private void load(Car car) {
       if (withinLoadingRange(car) &&
         rampState == rampstate.DOWN &&
         car.getClass().getName() != "CarTransport") {
@@ -30,7 +30,7 @@ public class CarTransport extends Car {
         }
     }
 
-    public void unload() {
+    private void unload() {
       if (rampState == rampstate.DOWN) {
         Car car = ramp.pop();
         car.setPos(getxPos(), getyPos());
@@ -55,10 +55,10 @@ public class CarTransport extends Car {
     }
 
 
-    public void raiseRamp() {
+    private void raiseRamp() {
       rampState = rampstate.UP;
     }
-    public void lowerRamp() {
+    private void lowerRamp() {
       rampState = rampstate.DOWN;
     }
 
