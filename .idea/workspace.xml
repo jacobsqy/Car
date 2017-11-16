@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91ad20e5-ca89-4217-bb33-a390467f0690" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/TransportVehicle.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CarTransport.java" afterPath="$PROJECT_DIR$/src/CarTransport.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Ferry.java" afterPath="$PROJECT_DIR$/src/Ferry.java" />
@@ -37,8 +38,8 @@
       <file leaf-file-name="Truck.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Truck.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="14" column="5" lean-forward="false" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+            <state relative-caret-position="189">
+              <caret line="7" column="79" lean-forward="true" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="79" />
               <folding>
                 <element signature="e#337#338#0" expanded="true" />
                 <element signature="e#367#368#0" expanded="true" />
@@ -50,8 +51,8 @@
       <file leaf-file-name="Vehicle.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Vehicle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4212">
-              <caret line="169" column="14" lean-forward="true" selection-start-line="169" selection-start-column="14" selection-end-line="169" selection-end-column="14" />
+            <state relative-caret-position="0">
+              <caret line="0" column="18" lean-forward="true" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
               <folding>
                 <element signature="e#3879#3880#0" expanded="true" />
                 <element signature="e#3911#3912#0" expanded="true" />
@@ -77,13 +78,11 @@
       <file leaf-file-name="CarTransport.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CarTransport.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="29" selection-end-column="5" />
+            <state relative-caret-position="162">
+              <caret line="6" column="30" lean-forward="false" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="class#rampstate#0;class#CarTransport#0" expanded="false" />
                 <element signature="method#CarTransport#0;class#CarTransport#0" expanded="false" />
-                <element signature="method#unload#0;class#CarTransport#0" expanded="false" />
                 <element signature="method#withinLoadingRange#0;class#CarTransport#0" expanded="false" />
                 <element signature="method#move#0;class#CarTransport#0" expanded="false" />
                 <element signature="method#speedFactor#0;class#CarTransport#0" expanded="false" />
@@ -92,13 +91,30 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Ferry.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Ferry.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Ferry.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="20" column="5" lean-forward="false" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+            <state relative-caret-position="378">
+              <caret line="19" column="9" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
               <folding>
                 <element signature="method#speedFactor#0;class#Ferry#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TransportVehicle.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/TransportVehicle.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="297">
+              <caret line="13" column="32" lean-forward="false" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="class#rampstate#0;class#TransportVehicle#0" expanded="false" />
+                <element signature="e#328#329#0" expanded="true" />
+                <element signature="e#379#380#0" expanded="true" />
+                <element signature="method#load#0;class#TransportVehicle#0" expanded="false" />
+                <element signature="method#unload#0;class#TransportVehicle#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -135,8 +151,9 @@
         <option value="$PROJECT_DIR$/src/Vehicle.java" />
         <option value="$PROJECT_DIR$/src/Truck.java" />
         <option value="$PROJECT_DIR$/src/Car.java" />
-        <option value="$PROJECT_DIR$/src/CarTransport.java" />
         <option value="$PROJECT_DIR$/src/Ferry.java" />
+        <option value="$PROJECT_DIR$/src/CarTransport.java" />
+        <option value="$PROJECT_DIR$/src/TransportVehicle.java" />
       </list>
     </option>
   </component>
@@ -612,7 +629,14 @@
       <option name="project" value="LOCAL" />
       <updated>1510841491384</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Fixed shit">
+      <created>1510843574909</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1510843574909</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -696,7 +720,8 @@
     <MESSAGE value="Change javadocs" />
     <MESSAGE value="Added Ferry Class." />
     <MESSAGE value="Added Truck Class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Truck Class" />
+    <MESSAGE value="Fixed shit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed shit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -709,13 +734,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tests/Saab95Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/CarTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1620">
@@ -760,9 +778,7 @@
           <caret line="27" column="40" lean-forward="true" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="class#rampstate#0;class#CarTransport#0" expanded="false" />
             <element signature="method#CarTransport#0;class#CarTransport#0" expanded="false" />
-            <element signature="method#unload#0;class#CarTransport#0" expanded="false" />
             <element signature="method#withinLoadingRange#0;class#CarTransport#0" expanded="false" />
             <element signature="method#move#0;class#CarTransport#0" expanded="false" />
             <element signature="method#speedFactor#0;class#CarTransport#0" expanded="false" />
@@ -826,9 +842,7 @@
           <caret line="22" column="16" lean-forward="true" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="class#rampstate#0;class#CarTransport#0" expanded="false" />
             <element signature="method#CarTransport#0;class#CarTransport#0" expanded="false" />
-            <element signature="method#unload#0;class#CarTransport#0" expanded="false" />
             <element signature="method#withinLoadingRange#0;class#CarTransport#0" expanded="false" />
             <element signature="method#move#0;class#CarTransport#0" expanded="false" />
             <element signature="method#speedFactor#0;class#CarTransport#0" expanded="false" />
@@ -1123,10 +1137,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Truck.java">
+    <entry file="file://$PROJECT_DIR$/src/Ferry.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
-          <caret line="14" column="5" lean-forward="false" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+          <caret line="19" column="9" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+          <folding>
+            <element signature="method#speedFactor#0;class#Ferry#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CarTransport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" column="30" lean-forward="false" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#CarTransport#0;class#CarTransport#0" expanded="false" />
+            <element signature="method#withinLoadingRange#0;class#CarTransport#0" expanded="false" />
+            <element signature="method#move#0;class#CarTransport#0" expanded="false" />
+            <element signature="method#speedFactor#0;class#CarTransport#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Truck.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="79" lean-forward="true" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="79" />
           <folding>
             <element signature="e#337#338#0" expanded="true" />
             <element signature="e#367#368#0" expanded="true" />
@@ -1136,8 +1174,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Vehicle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4212">
-          <caret line="169" column="14" lean-forward="true" selection-start-line="169" selection-start-column="14" selection-end-line="169" selection-end-column="14" />
+        <state relative-caret-position="0">
+          <caret line="0" column="18" lean-forward="true" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
           <folding>
             <element signature="e#3879#3880#0" expanded="true" />
             <element signature="e#3911#3912#0" expanded="true" />
@@ -1145,28 +1183,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CarTransport.java">
+    <entry file="file://$PROJECT_DIR$/src/TransportVehicle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="29" selection-end-column="5" />
+        <state relative-caret-position="297">
+          <caret line="13" column="32" lean-forward="false" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="class#rampstate#0;class#CarTransport#0" expanded="false" />
-            <element signature="method#CarTransport#0;class#CarTransport#0" expanded="false" />
-            <element signature="method#unload#0;class#CarTransport#0" expanded="false" />
-            <element signature="method#withinLoadingRange#0;class#CarTransport#0" expanded="false" />
-            <element signature="method#move#0;class#CarTransport#0" expanded="false" />
-            <element signature="method#speedFactor#0;class#CarTransport#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ferry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="20" column="5" lean-forward="false" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-          <folding>
-            <element signature="method#speedFactor#0;class#Ferry#0" expanded="false" />
+            <element signature="class#rampstate#0;class#TransportVehicle#0" expanded="false" />
+            <element signature="e#328#329#0" expanded="true" />
+            <element signature="e#379#380#0" expanded="true" />
+            <element signature="method#load#0;class#TransportVehicle#0" expanded="false" />
+            <element signature="method#unload#0;class#TransportVehicle#0" expanded="false" />
           </folding>
         </state>
       </provider>

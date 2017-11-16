@@ -12,10 +12,10 @@ public class Ferry extends Vehicle implements Movable {
 
         return getEnginePower() * 0.0001;
     }
-    private void load(Car car) {
-        if (withinLoadingRange(car) &&
+    private void load(Truck truck) {
+        if (withinLoadingRange(truck) &&
                 rampState == CarTransport.rampstate.DOWN && ramp.size() < 5){
-            ramp.push(car);
+            ramp.push(truck);
             car.setLoaded(this);
         }
     }

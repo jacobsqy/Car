@@ -5,36 +5,12 @@ public class CarTransport extends Truck {
 
     private boolean turboOn;
     private double turboPower;
-    private Stack<Car> ramp;
-    private double loadingRange;
-    private rampstate rampState;
-    private enum rampstate {
-        UP, DOWN
-    }
 
     public CarTransport(){
         super(2, Color.black, 550, "cartransport");
         ramp = new Stack<Car>();
         rampState = rampState.DOWN;
         loadingRange = 2.0;
-    }
-
-
-
-    private void load(Car car) {
-      if (withinLoadingRange(car) &&
-        rampState == rampstate.DOWN && ramp.size() < 5){
-          ramp.push(car);
-          car.setLoaded(this);
-        }
-    }
-
-    private void unload() {
-      if (rampState == rampstate.DOWN) {
-        Car car = ramp.pop();
-        car.setPos(getxPos(), getyPos());
-        car.resetLoaded();
-      }
     }
 
 
