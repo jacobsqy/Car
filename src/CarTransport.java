@@ -22,7 +22,9 @@ public class CarTransport extends Car {
 
 
     public void load(Car car) {
-      if (withinLoadingRange(car) && rampState == rampstate.DOWN) ramp.push(car);
+      if (withinLoadingRange(car) &&
+        rampState == rampstate.DOWN &&
+        car.getClass().getName() != "CarTransport") ramp.push(car);
     }
 
     public void unload() {
