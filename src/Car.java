@@ -29,20 +29,6 @@ public abstract class Car extends Vehicle implements Movable {
     }
   }
 
-    /**
-     * Decrease the x position to make the car turn.
-     */
-
-  public void turnLeft() {
-     xPos -= currentSpeed;
-  }
-
-    /**
-     * Increase the x position to make the car turn.
-      */
-  public void turnRight(){
-        xPos += currentSpeed;
-  }
 
 
 
