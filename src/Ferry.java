@@ -9,6 +9,14 @@ public class Ferry extends Vehicle implements Movable {
 
     @Override
     public double speedFactor() {
-        return 0;
+
+        return getEnginePower() * 0.0001;
+    }
+    private void load(Car car) {
+        if (withinLoadingRange(car) &&
+                rampState == CarTransport.rampstate.DOWN && ramp.size() < 5){
+            ramp.push(car);
+            car.setLoaded(this);
+        }
     }
 }

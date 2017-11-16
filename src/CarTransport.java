@@ -23,8 +23,7 @@ public class CarTransport extends Truck {
 
     private void load(Car car) {
       if (withinLoadingRange(car) &&
-        rampState == rampstate.DOWN &&
-        car.getClass().getName() != "CarTransport") {
+        rampState == rampstate.DOWN && ramp.size() < 5){
           ramp.push(car);
           car.setLoaded(this);
         }
