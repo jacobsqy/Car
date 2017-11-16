@@ -13,15 +13,6 @@ public class CarTransport extends Truck {
         loadingRange = 2.0;
     }
 
-
-    private boolean withinLoadingRange(Car car) {
-      double dy = car.getyPos() - getyPos();
-      double dx = car.getxPos() - getxPos();
-      double distance = Math.sqrt(Math.pow(dy, 2) + Math.pow(dx, 2));
-      return loadingRange > distance;
-    }
-
-
     @Override
     public void move() {
         if (rampState == rampState.UP) {
