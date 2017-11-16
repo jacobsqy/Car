@@ -77,8 +77,8 @@
       <file leaf-file-name="CarTransport.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CarTransport.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="13" column="5" lean-forward="false" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+            <state relative-caret-position="297">
+              <caret line="20" column="5" lean-forward="false" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#CarTransport#0;class#CarTransport#0" expanded="false" />
@@ -104,10 +104,12 @@
       <file leaf-file-name="TransportVehicle.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/TransportVehicle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="648">
-              <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+            <state relative-caret-position="459">
+              <caret line="31" column="5" lean-forward="false" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#TransportVehicle#0;class#TransportVehicle#0" expanded="false" />
+                <element signature="method#withinLoadingRange#0;class#TransportVehicle#0" expanded="false" />
                 <element signature="method#load#0;class#TransportVehicle#0" expanded="false" />
                 <element signature="method#unload#0;class#TransportVehicle#0" expanded="false" />
               </folding>
@@ -146,9 +148,9 @@
         <option value="$PROJECT_DIR$/src/Vehicle.java" />
         <option value="$PROJECT_DIR$/src/Truck.java" />
         <option value="$PROJECT_DIR$/src/Car.java" />
+        <option value="$PROJECT_DIR$/src/Ferry.java" />
         <option value="$PROJECT_DIR$/src/CarTransport.java" />
         <option value="$PROJECT_DIR$/src/TransportVehicle.java" />
-        <option value="$PROJECT_DIR$/src/Ferry.java" />
       </list>
     </option>
   </component>
@@ -638,7 +640,14 @@
       <option name="project" value="LOCAL" />
       <updated>1510844409405</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="moved WithinLoadingRange()">
+      <created>1510844799768</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1510844799768</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -724,7 +733,8 @@
     <MESSAGE value="Added Truck Class" />
     <MESSAGE value="Fixed shit" />
     <MESSAGE value="Added Transport Vehicle class and Worked on construktor on Tranport vehicle" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Transport Vehicle class and Worked on construktor on Tranport vehicle" />
+    <MESSAGE value="moved WithinLoadingRange()" />
+    <option name="LAST_COMMIT_MESSAGE" value="moved WithinLoadingRange()" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1160,19 +1170,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CarTransport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="13" column="5" lean-forward="false" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#CarTransport#0;class#CarTransport#0" expanded="false" />
-            <element signature="method#move#0;class#CarTransport#0" expanded="false" />
-            <element signature="method#speedFactor#0;class#CarTransport#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Ferry.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -1183,12 +1180,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TransportVehicle.java">
+    <entry file="file://$PROJECT_DIR$/src/CarTransport.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        <state relative-caret-position="297">
+          <caret line="20" column="5" lean-forward="false" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#CarTransport#0;class#CarTransport#0" expanded="false" />
+            <element signature="method#move#0;class#CarTransport#0" expanded="false" />
+            <element signature="method#speedFactor#0;class#CarTransport#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TransportVehicle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="31" column="5" lean-forward="false" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#TransportVehicle#0;class#TransportVehicle#0" expanded="false" />
+            <element signature="method#withinLoadingRange#0;class#TransportVehicle#0" expanded="false" />
             <element signature="method#load#0;class#TransportVehicle#0" expanded="false" />
             <element signature="method#unload#0;class#TransportVehicle#0" expanded="false" />
           </folding>

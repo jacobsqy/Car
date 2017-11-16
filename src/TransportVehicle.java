@@ -16,6 +16,7 @@ public abstract class TransportVehicle extends Vehicle {
         loadingRange = 2.0;
         rampState = rampstate.UP;
     }
+
     private boolean withinLoadingRange(Car car) {
         double dy = car.getyPos() - getyPos();
         double dx = car.getxPos() - getxPos();
@@ -23,6 +24,12 @@ public abstract class TransportVehicle extends Vehicle {
         return loadingRange > distance;
     }
 
+    private void raiseRamp() {
+        rampState = rampstate.UP;
+    }
+    private void lowerRamp() {
+        rampState = rampstate.DOWN;
+    }
 
 
     private void load(Car car) {
