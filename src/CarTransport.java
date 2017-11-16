@@ -26,7 +26,7 @@ public class CarTransport extends Car {
         rampState == rampstate.DOWN &&
         car.getClass().getName() != "CarTransport") {
           ramp.push(car);
-          car.setLoaded();
+          car.setLoaded(this);
         }
     }
 
