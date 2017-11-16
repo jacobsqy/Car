@@ -6,6 +6,7 @@ public class Scania extends Car {
     private double turboPower;
 
 
+
     public Scania (){
         super(2, Color.black, 550, "Scania Truck");
         turboOn = false;
@@ -45,10 +46,4 @@ public class Scania extends Car {
         return getEnginePower() * 0.001 * turbo;
     }
 
-    public void setTurboOn() {
-        turboOn = true;
-    }
-    public void setTurboOff() {
-        turboOn = false;
-    }
 }
