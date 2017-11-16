@@ -1,7 +1,7 @@
 import java.awt.*;
 import java.util.Stack;
 
-public class CarTransport extends Truck {
+public class CarTransport extends Car {
 
     private boolean turboOn;
     private double turboPower;
@@ -53,5 +53,12 @@ public class CarTransport extends Truck {
     }
     public void lowerRamp() {
       rampState = rampstate.DOWN;
+    }
+
+
+    public double speedFactor() {
+        double turbo = 1;
+        if(turboOn) turbo = turboPower;
+        return getEnginePower() * 0.001 * turbo;
     }
 }
