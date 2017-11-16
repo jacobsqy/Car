@@ -8,6 +8,7 @@ public abstract class Vehicle implements Movable {
   private Color color;
   private String modelName;
   private Vehicle carrier;
+    private boolean loaded;
 
   private Dir[] dirs = {Dir.FORWARD, Dir.RIGHT, Dir.BACK, Dir.LEFT};
   private int currentDirIndex = 0;
