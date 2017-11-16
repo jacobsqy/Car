@@ -14,7 +14,7 @@ public class CarTransport extends Car {
 
     public CarTransport(){
         super(2, Color.black, 550, "cartransport");
-        ramp = new Stack();
+        ramp = new Stack<Car>();
         rampState = rampState.DOWN;
         loadingRange = 2.0;
     }
