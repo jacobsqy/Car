@@ -11,15 +11,7 @@ public abstract class Car extends Vehicle {
 
   /*GETTERS AND SETTERS*/
 
-    public boolean getLoaded() {
-      return loaded;
-    }
 
-
-    public void resetLoaded() {
-      loaded = false;
-      carrier = null;
-    }
     public int getNrDoors(){
         return nrDoors;
     }

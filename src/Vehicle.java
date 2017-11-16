@@ -7,8 +7,8 @@ public abstract class Vehicle implements Movable {
   private double enginePower;
   private Color color;
   private String modelName;
-  private Vehicle carrier;
-    private boolean loaded;
+  private Vehicle carrier
+  private boolean loaded;
 
   private Dir[] dirs = {Dir.FORWARD, Dir.RIGHT, Dir.BACK, Dir.LEFT};
   private int currentDirIndex = 0;
@@ -192,5 +192,13 @@ public abstract class Vehicle implements Movable {
     public void setLoaded(Vehicle carrier) {
       loaded = true;
       this.carrier = carrier;
+    }
+
+    public boolean getLoaded() {
+      return loaded;
+    }
+    public void resetLoaded() {
+      loaded = false;
+      carrier = null;
     }
 }
