@@ -17,6 +17,9 @@ public abstract class Vehicle {
     this.enginePower = enginePower;
   }
 
+  /**
+   * Moves the Vehicle in the current direction with the speed currentSpeed
+   */
   public void move() {
     switch (dir) {
       case FORWARD:
@@ -34,13 +37,18 @@ public abstract class Vehicle {
     }
   }
 
+  /**
+   * Moves the Vehicle to the given position
+   * @param x the x coordinate to move to
+   * @param y the y coordinate to move to
+   */
   public void move(double x, double y) {
     yPos = y;
     xPos = x;
   }
 
   /**
-   * Decrease the x position to make the car turn.
+   * Changes the direction to the left
    */
 
   public void turnLeft() {
@@ -53,7 +61,7 @@ public abstract class Vehicle {
   }
 
   /**
-   * Increase the x position to make the car turn.
+   * Changes direction to the right.
     */
   public void turnRight(){
     currentDirIndex = (currentDirIndex + 1) % 4;
