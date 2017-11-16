@@ -147,6 +147,11 @@ public abstract class Vehicle {
         return yPos;
     }
 
+    public void setPos(double x, double y) {
+      xPos = x;
+      yPos = y;
+    }
+
     public double getCurrentSpeed(){
       return currentSpeed;
     }
