@@ -1,8 +1,10 @@
+import java.awt.*;
+
 public class Ferry extends Vehicle implements Movable {
 
 
     public Ferry(){
-        super(2400,0);
+        super(2400, Color.black,"BootenAnna");
     }
 
     @Override
