@@ -9,7 +9,7 @@ public abstract class TransportVehicle extends Vehicle {
     private rampstate rampState;
 
     private int cargoSize;
-    private enum rampstate {
+    public enum rampstate {
         UP, DOWN
     }
 
@@ -21,7 +21,7 @@ public abstract class TransportVehicle extends Vehicle {
         this.cargoSize = cargoSize;
     }
 
-    private boolean withinLoadingRange(Vehicle vehicle) {
+    public boolean withinLoadingRange(Vehicle vehicle) {
         double dy = vehicle.getyPos() - getyPos();
         double dx = vehicle.getxPos() - getxPos();
         double distance = Math.sqrt(Math.pow(dy, 2) + Math.pow(dx, 2));

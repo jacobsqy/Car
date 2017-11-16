@@ -7,7 +7,7 @@ public abstract class Vehicle implements Movable {
   private double enginePower;
   private Color color;
   private String modelName;
-  private Vehicle carrier
+  private Vehicle carrier;
   private boolean loaded;
 
   private Dir[] dirs = {Dir.FORWARD, Dir.RIGHT, Dir.BACK, Dir.LEFT};
@@ -24,6 +24,7 @@ public abstract class Vehicle implements Movable {
     this.enginePower = enginePower;
     this.color = color;
     this.modelName = modelname;
+    loaded = false;
   }
 
   /**
