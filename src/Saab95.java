@@ -11,7 +11,7 @@ public class Saab95 extends Car {
     }
 
     /**
-     * This method calculate the acceleration
+     * Calculate the acceleration
      * @return the acceleration
      */
     public double speedFactor() {

@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="91ad20e5-ca89-4217-bb33-a390467f0690" name="Default" comment="Change javadocs">
+    <list default="true" id="91ad20e5-ca89-4217-bb33-a390467f0690" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Car.java" afterPath="$PROJECT_DIR$/src/Car.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Volvo240.java" afterPath="$PROJECT_DIR$/src/Volvo240.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Saab95.java" afterPath="$PROJECT_DIR$/src/Saab95.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,7 +36,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Volvo240.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Volvo240.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Volvo240.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
@@ -64,10 +63,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Car.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Car.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Car.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-348">
+            <state relative-caret-position="60">
               <caret line="24" column="8" lean-forward="false" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
               <folding>
                 <element signature="method#gas#0;class#Car#0" expanded="false" />
@@ -99,8 +98,8 @@
       <file leaf-file-name="Saab95.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Saab95.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="30" lean-forward="false" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+            <state relative-caret-position="221">
+              <caret line="13" column="8" lean-forward="false" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -129,7 +128,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/tests/CarTest.java" />
-        <option value="$PROJECT_DIR$/src/Saab95.java" />
         <option value="$PROJECT_DIR$/tests/Saab95Test.java" />
         <option value="$PROJECT_DIR$/src/TransportTruck.java" />
         <option value="$PROJECT_DIR$/src/Vehicle.java" />
@@ -137,6 +135,7 @@
         <option value="$PROJECT_DIR$/src/Scania.java" />
         <option value="$PROJECT_DIR$/src/Volvo240.java" />
         <option value="$PROJECT_DIR$/src/Car.java" />
+        <option value="$PROJECT_DIR$/src/Saab95.java" />
       </list>
     </option>
   </component>
@@ -691,7 +690,14 @@
       <option name="project" value="LOCAL" />
       <updated>1510645005877</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Change javadocs">
+      <created>1510835511396</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1510835511396</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -725,11 +731,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1772983" sideWeight="0.49583334" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1772983" sideWeight="0.49583334" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1124,14 +1131,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Saab95.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="30" lean-forward="false" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Scania.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -1144,14 +1143,6 @@
             <element signature="e#1048#1049#0" expanded="true" />
             <element signature="e#1078#1079#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Volvo240.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="8" lean-forward="false" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1170,9 +1161,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Saab95.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="8" lean-forward="false" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Car.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-348">
+        <state relative-caret-position="60">
           <caret line="24" column="8" lean-forward="false" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
           <folding>
             <element signature="method#gas#0;class#Car#0" expanded="false" />
@@ -1187,6 +1186,14 @@
             <element signature="e#3284#3285#0" expanded="true" />
             <element signature="e#3308#3309#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Volvo240.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="8" lean-forward="false" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>
