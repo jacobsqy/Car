@@ -1,6 +1,6 @@
 import java.awt.*;
 
-public class Scania extends Car {
+public class Scania extends Truck {
     private int tipAngle;
     private boolean turboOn;
     private double turboPower;
@@ -8,7 +8,7 @@ public class Scania extends Car {
 
 
     public Scania (){
-        super(2, Color.black, 550, "Scania Truck");
+        super(Color.black, 550, "Scania Truck");
         turboOn = false;
         turboPower = 1.5;
         tipAngle = 0;

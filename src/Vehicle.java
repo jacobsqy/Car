@@ -1,4 +1,4 @@
-public abstract class Vehicle {
+public abstract class Vehicle implements Movable {
   private double xPos;
   private double yPos;
   private double currentSpeed;
