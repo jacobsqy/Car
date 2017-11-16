@@ -20,15 +20,6 @@ public class CarTransport extends Truck {
         }
     }
 
-
-    private void raiseRamp() {
-      rampState = rampstate.UP;
-    }
-    private void lowerRamp() {
-      rampState = rampstate.DOWN;
-    }
-
-
     public double speedFactor() {
         double turbo = 1;
         if(turboOn) turbo = turboPower;
