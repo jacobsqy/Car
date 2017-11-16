@@ -45,9 +45,9 @@ public abstract class TransportVehicle extends Vehicle {
     }
     private void unload() {
         if (rampState == CarTransport.rampstate.DOWN) {
-            Car car = ramp.pop();
-            moveUnloaded(car);
-            car.resetLoaded();
+            Vehicle vehicle = ramp.pop();
+            moveUnloaded(vehicle);
+            vehicle.resetLoaded();
         }
     }
     public int getCargoSize() {
@@ -61,7 +61,7 @@ public abstract class TransportVehicle extends Vehicle {
         return rampState;
     }
 
-    private void moveUnloaded(Car car) {
+    private void moveUnloaded(Vehicle vehicle) {
     double newXPos;
     double newYPos;
     switch (getDir()) {
@@ -78,7 +78,7 @@ public abstract class TransportVehicle extends Vehicle {
         newXPos = getxPos() + 1;
         break;
     }
-    car.setPos(getxPos(), getyPos());
+    vehicle.setPos(getxPos(), getyPos());
   }
 
 }
