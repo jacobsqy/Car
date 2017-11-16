@@ -1,6 +1,6 @@
 import java.awt.*;
 
-public class Ferry extends Vehicle implements Movable {
+public class Ferry extends TransportVehicle {
 
 
     public Ferry(){
@@ -12,9 +12,10 @@ public class Ferry extends Vehicle implements Movable {
 
         return getEnginePower() * 0.0001;
     }
+
     private void load(Truck truck) {
         if (withinLoadingRange(truck) &&
-                rampState == CarTransport.rampstate.DOWN && ramp.size() < 5){
+                rampState == this.rampState.DOWN && ramp.size() < 5){
             ramp.push(truck);
             car.setLoaded(this);
         }
