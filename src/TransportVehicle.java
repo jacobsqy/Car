@@ -6,15 +6,17 @@ public abstract class TransportVehicle extends Vehicle {
     private Stack<Car> ramp;
     private double loadingRange;
     private rampstate rampState;
+    private int cargoSeize;
     private enum rampstate {
         UP, DOWN
     }
 
-    public TransportVehicle(double enginePower, Color color, String modelname){
+    public TransportVehicle(double enginePower, Color color, String modelname, int cargoSeize){
         super(enginePower, color, modelname);
         ramp = new Stack<>();
         loadingRange = 2.0;
         rampState = rampstate.UP;
+        this.cargoSeize = cargoSeize;
     }
 
     private boolean withinLoadingRange(Vehicle vehicle) {
