@@ -8,12 +8,11 @@ public class CarTransport extends Truck {
 
     public CarTransport(){
         super(2, Color.black, 550, "cartransport", 5);
-        ramp = new Stack<Car>();
     }
 
     @Override
     public void move() {
-        if (rampState == rampState.UP) {
+        if (getRampState() == getRampState().UP) {
             super.move();
         }
     }

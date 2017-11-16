@@ -8,7 +8,7 @@ public class Scania extends Truck {
 
 
     public Scania (){
-        super(2, Color.black, 550, "Scania Truck");
+        super(2, Color.black, 550, "Scania Truck", 0);
         turboOn = false;
         turboPower = 1.5;
         tipAngle = 0;
