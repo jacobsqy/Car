@@ -29,7 +29,7 @@ public class Scania extends Car {
     }
 
     /**
-     * This method adds currentSpeed() to the y position to make it go forward,
+     * Adds currentSpeed() to the y position to make it go forward,
      * but only if tipAngle != 0.
      */
     @Override
