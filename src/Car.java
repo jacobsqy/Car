@@ -25,7 +25,12 @@ public abstract class Car implements Movable {
      * Adds currentSpeed() to the y position to make it go forward.
      */
   public void move() {
-        yPos += currentSpeed;
+    if (loaded) {
+      yPos = carrier.getyPos();
+      xPos = carrier.getxPos();
+    } else {
+      yPos += currentSpeed;
+    }
   }
 
     /**
@@ -158,8 +163,9 @@ public abstract class Car implements Movable {
       return loaded;
     }
 
-    public void setLoaded() {
+    public void setLoaded(Vehicle carrier) {
       loaded = true;
+      this.carrier = carrier;
     }
 
     public void resetLoaded() {
