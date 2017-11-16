@@ -22,14 +22,14 @@ public abstract class Car implements Movable {
     //MOVABLE METHODS
 
     /**
-     * This method adds currentSpeed() to the y position to make it go forward.
+     * Adds currentSpeed() to the y position to make it go forward.
      */
   public void move() {
         yPos += currentSpeed;
   }
 
     /**
-     * This method decrease the x position to make the car turn.
+     * Decrease the x position to make the car turn.
      */
 
   public void turnLeft() {
@@ -37,7 +37,7 @@ public abstract class Car implements Movable {
   }
 
     /**
-     * This method increase the x position to make the car turn.
+     * Increase the x position to make the car turn.
       */
   public void turnRight(){
         xPos += currentSpeed;
@@ -46,14 +46,14 @@ public abstract class Car implements Movable {
 
 
     /**
-     * This method calculates the acceleration.
+     * Calculates the acceleration.
      * @return the speed change
      */
     public abstract double speedFactor();
 
 
     /**
-     *  This method uses incrementSpeed() to increase the speed of the car and also make sure the amount is between 0 and 1.
+     *  Uses incrementSpeed() to increase the speed of the car and also make sure the amount is between 0 and 1.
      * @param amount is an value between 0 and 1.
      */
     public void gas(double amount) {
@@ -69,7 +69,7 @@ public abstract class Car implements Movable {
 
 
     /**
-     * This method uses decrementSpeed() to slow down the car and also make sure the amount is between 0 and 1.
+     * DecrementSpeed() to slow down the car and also make sure the amount is between 0 and 1.
      * @param amount is an value between 0 and 1.
      */
     public void brake(double amount) {
@@ -83,7 +83,7 @@ public abstract class Car implements Movable {
         }
     }
     /**
-     * This method increase the current speed.
+     * Increase the current speed.
      * @param amount is an value between 0 and 1, that affects how much the speed will increase.
      */
     private void incrementSpeed(double amount){
@@ -91,7 +91,7 @@ public abstract class Car implements Movable {
   }
 
     /**
-     * This method decrease the current speed.
+     * Decrease the current speed.
      * @param amount is an value between 0 and 1, that affects how much the speed will decrease.
      */
     private void decrementSpeed(double amount){
@@ -99,7 +99,7 @@ public abstract class Car implements Movable {
   }
 
     /**
-     * This method starts the engine by setting currentSpeed to 0.1
+     * Starts the engine by setting currentSpeed to 0.1
      */
 
     public void startEngine(){
@@ -107,7 +107,7 @@ public abstract class Car implements Movable {
   }
 
     /**
-     * This method stops the engine by setting currentSpeed to 0.
+     * Stops the engine by setting currentSpeed to 0.
      */
     public void stopEngine(){
         currentSpeed = 0;

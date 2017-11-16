@@ -8,7 +8,7 @@ public class Volvo240 extends Car {
       stopEngine();
     }
     /**
-     * This method calculate the acceleration
+     * Calculate the acceleration
      * @return the acceleration
      */
     public double speedFactor() {
