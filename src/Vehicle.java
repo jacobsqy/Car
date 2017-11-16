@@ -13,7 +13,7 @@ public abstract class Vehicle implements Movable {
   private Dir[] dirs = {Dir.FORWARD, Dir.RIGHT, Dir.BACK, Dir.LEFT};
   private int currentDirIndex = 0;
   private Dir dir;
-  private enum Dir {
+  public enum Dir {
     FORWARD,
     RIGHT,
     BACK,
