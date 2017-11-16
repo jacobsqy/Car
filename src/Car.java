@@ -5,7 +5,6 @@ public abstract class Car implements Movable {
   private double currentSpeed;
   private Color color;
   private String modelName;
-  private boolean turbo;
   private boolean loaded;
 
   //MOVABLE VARS
@@ -123,7 +122,6 @@ public abstract class Car implements Movable {
   }
 
   /*GETTERS AND SETTERS*/
-    public boolean getTurbo() { return turbo; }
     public int getNrDoors(){
       return nrDoors;
   }
