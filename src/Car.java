@@ -1,11 +1,12 @@
 import java.awt.*;
-public abstract class Car implements Movable {
+public abstract class Car extends Vehicle implements Movable {
   private int nrDoors;
   private double enginePower;
   private double currentSpeed;
   private Color color;
   private String modelName;
   private boolean loaded;
+  private Vehicle carrier;
 
   //MOVABLE VARS
   private double xPos;
@@ -170,5 +171,6 @@ public abstract class Car implements Movable {
 
     public void resetLoaded() {
       loaded = false;
+      carrier = null;
     }
 }

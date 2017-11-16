@@ -1,4 +1,4 @@
-public class Ferry {
+public class Ferry extends Vehicle implements Movable {
 
     public Ferry(){
 
