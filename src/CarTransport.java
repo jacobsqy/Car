@@ -7,7 +7,7 @@ public class CarTransport extends Truck {
     private double turboPower;
 
     public CarTransport(){
-        super(2, Color.black, 550, "cartransport");
+        super(2, Color.black, 550, "cartransport", 5);
         ramp = new Stack<Car>();
         rampState = rampState.DOWN;
         loadingRange = 2.0;
