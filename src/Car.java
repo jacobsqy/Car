@@ -8,10 +8,6 @@ public abstract class Car extends Vehicle implements Movable {
   private boolean loaded;
   private Vehicle carrier;
 
-  //MOVABLE VARS
-  private double xPos;
-  private double yPos;
-
   public Car(int nrDoors, Color color, double enginePower, String modelName){
       this.nrDoors = nrDoors;
       this.color = color;
@@ -27,10 +23,9 @@ public abstract class Car extends Vehicle implements Movable {
      */
   public void move() {
     if (loaded) {
-      yPos = carrier.getyPos();
-      xPos = carrier.getxPos();
+      super.move(carrier.getxPos(), carrier.getyPos());
     } else {
-      yPos += currentSpeed;
+      super.move();
     }
   }
 
