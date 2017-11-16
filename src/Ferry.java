@@ -15,9 +15,9 @@ public class Ferry extends TransportVehicle {
 
     private void load(Truck truck) {
         if (withinLoadingRange(truck) &&
-                rampState == this.rampState.DOWN && ramp.size() < ){
-            ramp.push(truck);
-            Car.setLoaded(this);
+                getRampState() == this.getRampState() && getRamp().size() < getCargoSize()){
+            getRamp().push(truck);
+            truck.setLoaded(this);
         }
     }
 }

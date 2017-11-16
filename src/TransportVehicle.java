@@ -3,20 +3,22 @@ import java.util.Stack;
 
 public abstract class TransportVehicle extends Vehicle {
 
-    private Stack<Car> ramp;
+    private Stack<Vehicle> ramp;
     private double loadingRange;
+
     private rampstate rampState;
-    private int cargoSeize;
+
+    private int cargoSize;
     private enum rampstate {
         UP, DOWN
     }
 
-    public TransportVehicle(double enginePower, Color color, String modelname, int cargoSeize){
+    public TransportVehicle(double enginePower, Color color, String modelname, int cargoSize){
         super(enginePower, color, modelname);
-        ramp = new Stack<>();
         loadingRange = 2.0;
+        ramp = new Stack<Vehicle>();
         rampState = rampstate.UP;
-        this.cargoSeize = cargoSeize;
+        this.cargoSize = cargoSize;
     }
 
     private boolean withinLoadingRange(Vehicle vehicle) {
@@ -26,10 +28,10 @@ public abstract class TransportVehicle extends Vehicle {
         return loadingRange > distance;
     }
 
-    private void raiseRamp() {
+    public void raiseRamp() {
         rampState = rampstate.UP;
     }
-    private void lowerRamp() {
+    public void lowerRamp() {
         rampState = rampstate.DOWN;
     }
 
@@ -47,6 +49,16 @@ public abstract class TransportVehicle extends Vehicle {
             car.setPos(getxPos(), getyPos());
             car.resetLoaded();
         }
+    }
+    public int getCargoSize() {
+        return cargoSize;
+    }
+    public Stack<Vehicle> getRamp() {
+        return ramp;
+    }
+
+    public rampstate getRampState() {
+        return rampState;
     }
 
 }
