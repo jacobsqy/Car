@@ -13,9 +13,8 @@ public abstract class TransportVehicle extends Vehicle {
 
     public TransportVehicle(double enginePower, Color color, String modelname, int cargoSeize){
         super(enginePower, color, modelname);
-        ramp = new Stack<>();
         loadingRange = 2.0;
-        rampState = rampstate.UP;
+        raiseRamp();
         this.cargoSeize = cargoSeize;
     }
 
