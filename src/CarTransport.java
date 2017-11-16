@@ -5,7 +5,7 @@ public class CarTransport extends Car {
 
     private boolean turboOn;
     private double turboPower;
-    private Stack<Car> ramp = new Stack();
+    private Stack<Car> ramp;
     private double loadingRange;
     private rampstate rampState;
     private enum rampstate {
@@ -14,6 +14,7 @@ public class CarTransport extends Car {
 
     public CarTransport(){
         super(2, Color.black, 550, "cartransport");
+        ramp = new Stack();
         rampState = rampState.DOWN;
         loadingRange = 2.0;
     }
