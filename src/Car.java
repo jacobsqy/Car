@@ -10,8 +10,6 @@ public abstract class Car extends Vehicle {
 
 
   /*GETTERS AND SETTERS*/
-
-
     public int getNrDoors(){
         return nrDoors;
     }

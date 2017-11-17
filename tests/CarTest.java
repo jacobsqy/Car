@@ -69,18 +69,12 @@ class CarTest {
 
         @Test
         void startEngine () {
-            Car car2 = new Volvo240();
-            car2.startEngine();
-            double output = car2.getCurrentSpeed();
-            assertEquals(0.1, output);
+
         }
 
         @Test
         void stopEngine () {
-            Car car1 = new Saab95();
-            car1.stopEngine();
-            double output = car1.getCurrentSpeed();
-            assertEquals(0, output);
+
         }
 
 
