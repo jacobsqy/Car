@@ -1,12 +1,12 @@
 import java.awt.*;
 
-public abstract class Truck extends TransportVehicle {
+public abstract class Truck extends Vehicle {
     private boolean loaded;
     private int nrDoors;
 
 
     public Truck(int nrDoors, Color color, double enginePower, String modelName, int cargoSeize){
-        super(enginePower,color, modelName, cargoSeize );
+        super(enginePower,color, modelName);
         loaded = false;
         this.nrDoors = nrDoors;
     }

@@ -1,3 +1,5 @@
+import java.util.Stack;
+
 public class Cargo {
 
       private Stack<Vehicle> ramp;

@@ -1,11 +1,11 @@
 import java.awt.*;
 import java.util.Stack;
 
-public class Ferry extends TransportVehicle {
+public class Ferry extends Vehicle {
 
 
     public Ferry(){
-        super(2400, Color.black,"BootenAnna",20);
+        super(2400, Color.black,"BootenAnna");
     }
 
     @Override
