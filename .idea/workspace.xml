@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91ad20e5-ca89-4217-bb33-a390467f0690" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Cargo.java" afterPath="$PROJECT_DIR$/src/VehicleCargo.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CarTransport.java" afterPath="$PROJECT_DIR$/src/CarTransport.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Ferry.java" afterPath="$PROJECT_DIR$/src/Ferry.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Vehicle.java" afterPath="$PROJECT_DIR$/src/Vehicle.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -898,7 +894,14 @@
       <option name="project" value="LOCAL" />
       <updated>1510923867432</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Cleaned up the last broken methods after implementation of Cargo() and fixed that when loaded the car engine is turned of and can't be turned on.">
+      <created>1510925468599</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1510925468599</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -992,7 +995,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added the methods lowerTipper and raiseTipper. Also javadoc for the methods." />
     <MESSAGE value="Cleaned up some code and started on making the truck stand still when the ramp i lowered. Added method isStill()" />
     <MESSAGE value="Added javadoc for move() in Scania. And made isStill private." />
     <MESSAGE value="Added javadoc for move() in Scania." />
@@ -1017,7 +1019,8 @@
     <MESSAGE value="...?" />
     <MESSAGE value="Removed Transport vehicle class and did som tidying up" />
     <MESSAGE value="Cleaned up in cargo and started to implemented cargo in Ferry and cartransport." />
-    <option name="LAST_COMMIT_MESSAGE" value="Cleaned up in cargo and started to implemented cargo in Ferry and cartransport." />
+    <MESSAGE value="Cleaned up the last broken methods after implementation of Cargo() and fixed that when loaded the car engine is turned of and can't be turned on." />
+    <option name="LAST_COMMIT_MESSAGE" value="Cleaned up the last broken methods after implementation of Cargo() and fixed that when loaded the car engine is turned of and can't be turned on." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
