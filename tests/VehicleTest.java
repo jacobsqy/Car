@@ -104,10 +104,6 @@ class VehicleTest {
     }
 
     @Test
-    void setPos() {
-    }
-
-    @Test
     void setLoaded() {
     }
 
