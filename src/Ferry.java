@@ -1,4 +1,5 @@
 import java.awt.*;
+import java.util.Stack;
 
 public class Ferry extends TransportVehicle {
 
@@ -19,5 +20,15 @@ public class Ferry extends TransportVehicle {
             getRamp().push(truck);
             truck.setLoaded(this);
         }
+    }
+
+
+
+    private Stack<Vehicle> invertStack(Stack<Vehicle> oldStack) {
+        Stack<Vehicle> newStack = new Stack<Vehicle>();
+        for (int i = 0; i < oldStack.size(); i++) {
+            newStack.push(oldStack.pop());
+        }
+        return newStack;
     }
 }

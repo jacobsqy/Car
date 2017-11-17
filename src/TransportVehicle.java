@@ -21,6 +21,11 @@ public abstract class TransportVehicle extends Vehicle {
         this.cargoSize = cargoSize;
     }
 
+    /**
+     * Check if the Vehical is in loading range < 2
+     * @param vehicle a vecicle to compare position with
+     * @return
+     */
     public boolean withinLoadingRange(Vehicle vehicle) {
         double dy = vehicle.getyPos() - getyPos();
         double dx = vehicle.getxPos() - getxPos();
@@ -28,21 +33,35 @@ public abstract class TransportVehicle extends Vehicle {
         return loadingRange > distance;
     }
 
+    /**
+     * sets rampState to up
+     */
     public void raiseRamp() {
         rampState = rampstate.UP;
     }
+
+    /**
+     * sets rampState to down
+     */
     public void lowerRamp() {
         rampState = rampstate.DOWN;
     }
 
-
+    /**
+     * loads a car to the ramp
+     * @param car to load
+     */
     public void load(Car car) {
         if (withinLoadingRange(car) &&
-                rampState == CarTransport.rampstate.DOWN && ramp.size() < 5){
+                rampState == CarTransport.rampstate.DOWN && ramp.size() < cargoSize){
             ramp.push(car);
             car.setLoaded(this);
         }
     }
+
+    /**
+     * unloads the car
+     */
     public void unload() {
         if (rampState == CarTransport.rampstate.DOWN) {
             Vehicle vehicle = ramp.pop();
@@ -50,6 +69,7 @@ public abstract class TransportVehicle extends Vehicle {
             vehicle.resetLoaded();
         }
     }
+
     public int getCargoSize() {
         return cargoSize;
     }
