@@ -36,14 +36,14 @@ public abstract class TransportVehicle extends Vehicle {
     }
 
 
-    private void load(Car car) {
+    public void load(Car car) {
         if (withinLoadingRange(car) &&
                 rampState == CarTransport.rampstate.DOWN && ramp.size() < 5){
             ramp.push(car);
             car.setLoaded(this);
         }
     }
-    private void unload() {
+    public void unload() {
         if (rampState == CarTransport.rampstate.DOWN) {
             Vehicle vehicle = ramp.pop();
             moveUnloaded(vehicle);
