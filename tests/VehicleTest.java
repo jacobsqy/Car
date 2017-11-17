@@ -46,14 +46,48 @@ class VehicleTest {
 
     @Test
     void speedFactor() {
+        Car car1 = new Volvo240();
+        car1.speedFactor();
+        double output = car1.speedFactor();
+        assertEquals(1.25, output);
+
+        Car car2 = new Saab95();
+        car2.speedFactor();
+        double output2 = car2.speedFactor();
+        assertEquals(1.25, output);
+
     }
 
     @Test
     void gas() {
+        Car car1 = new Saab95();
+        car1.gas(0.9);
+        double output = car1.getCurrentSpeed();
+        assertEquals(1.125, output);
     }
 
     @Test
     void brake() {
+        Car car1 = new Volvo240();
+        car1.startEngine();
+        car1.gas(0.1);
+        car1.brake(0.6);
+        double output = car1.getCurrentSpeed();
+        assertEquals(0, output);
+
+        Vehicle truck = new CarTransport();
+        truck.startEngine();
+        truck.gas(0.1);
+        truck.brake(0.6);
+        double output2 = truck.getCurrentSpeed();
+        assertEquals(0, output2);
+
+        Vehicle ferry = new Ferry();
+        ferry.startEngine();
+        ferry.gas(0.1);
+        ferry.brake(0.6);
+        double output3 = ferry.getCurrentSpeed();
+        assertEquals(0, output3);
     }
 
     @Test
