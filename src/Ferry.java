@@ -21,6 +21,16 @@ public class Ferry extends TransportVehicle {
             truck.setLoaded(this);
         }
     }
+    @Override
+    public void unload (){
+        if (getRampState() == TransportVehicle.rampstate.DOWN) {
+            invertStack(getRamp());
+            Vehicle vehicle = getRamp().pop();
+            moveUnloaded(vehicle);
+            vehicle.resetLoaded();
+        }
+
+    }
 
 
 

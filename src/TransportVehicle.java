@@ -81,7 +81,7 @@ public abstract class TransportVehicle extends Vehicle {
         return rampState;
     }
 
-    private void moveUnloaded(Vehicle vehicle) {
+    protected void moveUnloaded(Vehicle vehicle) {
     double newXPos;
     double newYPos;
     switch (getDir()) {
