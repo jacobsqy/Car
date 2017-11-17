@@ -105,6 +105,16 @@ class VehicleTest {
 
     @Test
     void setLoaded() {
+        Ferry f = new Ferry();
+        Vehicle v = new Scania();
+        boolean before = v.getLoaded();
+        v.setLoaded(f);
+        boolean after = v.getLoaded();
+        assertFalse(after == before);
+        assertTrue(f == v.getCarrier());
+        v.resetLoaded();
+        after = v.getLoaded();
+        assertTrue(after == before);
     }
 
 }

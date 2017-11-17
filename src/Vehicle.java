@@ -195,4 +195,8 @@ public abstract class Vehicle implements Movable {
       loaded = false;
       carrier = null;
     }
+
+    public Vehicle getCarrier() {
+      return carrier;
+    }
 }

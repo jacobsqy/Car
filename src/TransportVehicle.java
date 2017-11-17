@@ -78,7 +78,7 @@ public abstract class TransportVehicle extends Vehicle {
         newXPos = getxPos() + 1;
         break;
     }
-    vehicle.setPos(getxPos(), getyPos());
+    vehicle.move(getxPos(), getyPos());
   }
 
 }
