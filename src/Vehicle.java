@@ -134,7 +134,9 @@ public abstract class Vehicle implements Movable {
    */
 
   public void startEngine(){
+    if(!loaded){
       currentSpeed = 0.1;
+    }
   }
 
   /**
@@ -143,7 +145,6 @@ public abstract class Vehicle implements Movable {
   public void stopEngine(){
       currentSpeed = 0;
   }
-
 
     /**
      * checks if the Car is still
@@ -185,6 +186,7 @@ public abstract class Vehicle implements Movable {
 
     public void setLoaded(Vehicle carrier) {
       loaded = true;
+      stopEngine();
       this.carrier = carrier;
     }
 

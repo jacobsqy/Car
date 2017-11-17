@@ -2,7 +2,7 @@ import java.awt.*;
 import java.util.Stack;
 
 public class Ferry extends Vehicle {
-    Cargo cargo = new Cargo();
+    VehicleCargo vehicleCargo = new VehicleCargo();
 
 
     public Ferry(){
@@ -16,18 +16,18 @@ public class Ferry extends Vehicle {
     }
 
     private void load(Truck truck) {
-        if (cargo.withinLoadingRange(truck, this) &&
-                cargo.getRampState() == this.cargo.getRampState() && cargo.getRamp().size() < cargo.getCargoSize()){
-            cargo.getRamp().push(truck);
+        if (vehicleCargo.withinLoadingRange(truck, this) &&
+                vehicleCargo.getRampState() == this.vehicleCargo.getRampState() && vehicleCargo.getRamp().size() < vehicleCargo.getCargoSize()){
+            vehicleCargo.getRamp().push(truck);
             truck.setLoaded(this);
         }
     }
 
     public void unload (){
-        if (cargo.getRampState() == Cargo.rampstate.DOWN) {
-            invertStack(cargo.getRamp());
-            Vehicle vehicle = cargo.getRamp().pop();
-            cargo.moveUnloaded(vehicle);
+        if (vehicleCargo.getRampState() == VehicleCargo.rampstate.DOWN) {
+            invertStack(vehicleCargo.getRamp());
+            Vehicle vehicle = vehicleCargo.getRamp().pop();
+            vehicleCargo.moveUnloaded(vehicle);
             vehicle.resetLoaded();
         }
 

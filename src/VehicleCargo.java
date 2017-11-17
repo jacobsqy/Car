@@ -1,6 +1,6 @@
 import java.util.Stack;
 
-public class Cargo {
+public class VehicleCargo {
 
       private Stack<Vehicle> ramp;
       private double loadingRange;
@@ -12,13 +12,13 @@ public class Cargo {
 
       /**
        * Check if the Vehical is in loading range < 2
-       * @param carrier a vecicle to compare the carriers position with
+       * @param cargo a vecicle to compare the carriers position with
        * @param transporter the transporter that carrier compares with
        * @return
        */
-      public boolean withinLoadingRange(Vehicle carrier, Vehicle transporter) {
-          double dy = carrier.getyPos() - transporter.getyPos();
-          double dx = carrier.getxPos() - transporter.getxPos();
+      public boolean withinLoadingRange(Vehicle cargo, Vehicle transporter) {
+          double dy = cargo.getyPos() - transporter.getyPos();
+          double dx = cargo.getxPos() - transporter.getxPos();
           double distance = Math.sqrt(Math.pow(dy, 2) + Math.pow(dx, 2));
           return loadingRange > distance;
       }
@@ -41,11 +41,11 @@ public class Cargo {
        * loads a car to the ramp
        * @param car to load
        */
-      public void load(Car car) {
-          if (withinLoadingRange(car, this) &&
-                  rampState == Cargo.rampstate.DOWN && ramp.size() < cargoSize){
+      public void load(Car car, Vehicle transporter) {
+          if (withinLoadingRange(car, transporter) &&
+                  rampState == VehicleCargo.rampstate.DOWN && ramp.size() < cargoSize){
               ramp.push(car);
-              car.setLoaded(this);
+              car.setLoaded(transporter);
           }
       }
 
@@ -53,7 +53,7 @@ public class Cargo {
        * unloads the car
        */
       public void unload() {
-          if (rampState == Cargo.rampstate.DOWN) {
+          if (rampState == VehicleCargo.rampstate.DOWN) {
               Vehicle vehicle = ramp.pop();
               moveUnloaded(vehicle);
               vehicle.resetLoaded();
@@ -74,22 +74,22 @@ public class Cargo {
       }
 
       protected void moveUnloaded(Vehicle vehicle) {
-      double newXPos;
-      double newYPos;
-      switch (getDir()) {
+      double newXPos = vehicle.getxPos();
+      double newYPos = vehicle.getyPos();
+      switch (vehicle.getDir()) {
         case FORWARD:
-          newYPos = getyPos() - 1;
+          newYPos = vehicle.getyPos() - 1;
           break;
         case RIGHT:
-          newXPos = getxPos() - 1;
+          newXPos = vehicle.getxPos() - 1;
           break;
         case BACK:
-          newYPos = getyPos() + 1;
+          newYPos = vehicle.getyPos() + 1;
           break;
         case LEFT:
-          newXPos = getxPos() + 1;
+          newXPos = vehicle.getxPos() + 1;
           break;
       }
-      vehicle.move(getxPos(), getyPos());
+      vehicle.move(newXPos, newYPos);
     }
 }
