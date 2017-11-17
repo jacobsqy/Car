@@ -4,6 +4,7 @@ public class CarTransport extends Truck {
 
     private boolean turboOn;
     private double turboPower;
+    private Cargo cargo = new Cargo();
 
     public CarTransport(){
         super(2, Color.black, 550, "cartransport", 5);
@@ -11,7 +12,7 @@ public class CarTransport extends Truck {
 
     @Override
     public void move() {
-        if (getRampState() == rampstate.UP) {
+        if (cargo.getRampState() == Cargo.rampstate.UP) {
             super.move();
         }
     }

@@ -12,12 +12,13 @@ public class Cargo {
 
       /**
        * Check if the Vehical is in loading range < 2
-       * @param vehicle a vecicle to compare position with
+       * @param carrier a vecicle to compare the carriers position with
+       * @param transporter the transporter that carrier compares with
        * @return
        */
-      public boolean withinLoadingRange(Vehicle vehicle) {
-          double dy = vehicle.getyPos() - getyPos();
-          double dx = vehicle.getxPos() - getxPos();
+      public boolean withinLoadingRange(Vehicle carrier, Vehicle transporter) {
+          double dy = carrier.getyPos() - transporter.getyPos();
+          double dx = carrier.getxPos() - transporter.getxPos();
           double distance = Math.sqrt(Math.pow(dy, 2) + Math.pow(dx, 2));
           return loadingRange > distance;
       }
@@ -41,8 +42,8 @@ public class Cargo {
        * @param car to load
        */
       public void load(Car car) {
-          if (withinLoadingRange(car) &&
-                  rampState == CarTransport.rampstate.DOWN && ramp.size() < cargoSize){
+          if (withinLoadingRange(car, this) &&
+                  rampState == Cargo.rampstate.DOWN && ramp.size() < cargoSize){
               ramp.push(car);
               car.setLoaded(this);
           }
@@ -52,7 +53,7 @@ public class Cargo {
        * unloads the car
        */
       public void unload() {
-          if (rampState == CarTransport.rampstate.DOWN) {
+          if (rampState == Cargo.rampstate.DOWN) {
               Vehicle vehicle = ramp.pop();
               moveUnloaded(vehicle);
               vehicle.resetLoaded();

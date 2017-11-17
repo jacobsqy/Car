@@ -171,11 +171,11 @@ public abstract class Vehicle implements Movable {
       return enginePower;
     }
 
-  public Color getColor(){
+    public Color getColor(){
     return color;
   }
 
-  public void setColor(Color clr){
+    public void setColor(Color clr){
     color = clr;
   }
 
