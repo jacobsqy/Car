@@ -11,8 +11,7 @@ public abstract class Vehicle implements Movable {
   private boolean loaded;
 
   private Dir[] dirs = {Dir.FORWARD, Dir.RIGHT, Dir.BACK, Dir.LEFT};
-  private int currentDirIndex = 0;
-  private Dir dir;
+  private int currentDirIndex;
   public enum Dir {
     FORWARD,
     RIGHT,
@@ -25,13 +24,14 @@ public abstract class Vehicle implements Movable {
     this.color = color;
     this.modelName = modelname;
     loaded = false;
+    currentDirIndex = 0;
   }
 
   /**
    * Moves the Vehicle in the current direction with the speed currentSpeed
    */
   public void move() {
-    switch (dir) {
+    switch (dirs[currentDirIndex]) {
       case FORWARD:
         yPos += currentSpeed;
         break;
@@ -67,7 +67,6 @@ public abstract class Vehicle implements Movable {
     } else {
       currentDirIndex--;
     }
-    dir = dirs[currentDirIndex];
   }
 
   /**
@@ -75,7 +74,6 @@ public abstract class Vehicle implements Movable {
     */
   public void turnRight(){
     currentDirIndex = (currentDirIndex + 1) % 4;
-    dir = dirs[currentDirIndex];
   }
 
   /**
@@ -187,7 +185,7 @@ public abstract class Vehicle implements Movable {
   }
 
     public Dir getDir() {
-      return dir;
+      return dirs[currentDirIndex];
     }
 
     public void setLoaded(Vehicle carrier) {

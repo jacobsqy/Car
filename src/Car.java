@@ -4,6 +4,7 @@ public abstract class Car extends Vehicle {
 
   public Car(int nrDoors, Color color, double enginePower, String modelName){
       super(enginePower, color, modelName);
+      this.nrDoors = nrDoors;
   }
 
 
