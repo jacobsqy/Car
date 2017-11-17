@@ -1,5 +1,4 @@
 import java.awt.*;
-import java.util.Stack;
 
 public class CarTransport extends Truck {
 
