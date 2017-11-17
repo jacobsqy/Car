@@ -24,12 +24,24 @@ class VehicleTest {
 
     @Test
     void turnLeft() {
-        Vehicle v = new Scania();
-
+        Vehicle v = new Ferry();
+        Vehicle.Dir dir1 = v.getDir();
+        v.turnLeft();
+        Vehicle.Dir dir2 = v.getDir();
+        assertFalse(dir1 == dir2);
+        assertEquals(dir2, Vehicle.Dir.LEFT);
     }
 
     @Test
     void turnRight() {
+        TransportVehicle v = new CarTransport();
+        Vehicle.Dir dir1 = v.getDir();
+        v.turnRight();
+        v.turnRight();
+        v.turnRight();
+        v.turnRight();
+        Vehicle.Dir dir2 = v.getDir();
+        assertEquals(dir1, dir2);
     }
 
     @Test
@@ -123,10 +135,6 @@ class VehicleTest {
         assertFalse(car1.isStill());
         car1.stopEngine();
         assertTrue(car1.isStill());
-    }
-
-    @Test
-    void setPos() {
     }
 
     @Test
