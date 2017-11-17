@@ -70,9 +70,11 @@ public abstract class TransportVehicle extends Vehicle {
         }
     }
 
+
     public int getCargoSize() {
         return cargoSize;
     }
+
     public Stack<Vehicle> getRamp() {
         return ramp;
     }
