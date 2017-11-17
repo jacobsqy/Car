@@ -35,7 +35,7 @@ public class Scania extends Truck {
      */
     @Override
     public void move() {
-      if (tipAngle != 0) {
+      if (tipAngle == 0) {
         super.move();
       }
     }
