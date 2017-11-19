@@ -3,15 +3,15 @@ import java.util.Stack;
 public class VehicleCargo {
 
       private Stack<Vehicle> cargo;
-      public double loadingRange;
-      private rampstate rampState;
-      public int cargoSize;
-      public enum rampstate {
+      private double loadingRange;
+      private rampUpDown rampState;
+      private int cargoSize;
+      public enum rampUpDown {
           UP, DOWN
       }
 
       /**
-       * Check if the Vehicle is within the loading range
+       * Check if the Vehical is in loading range < 2
        * @param cargo a vecicle to compare the carriers position with
        * @param transporter the transporter that carrier compares with
        * @return
@@ -27,14 +27,14 @@ public class VehicleCargo {
        * sets rampState to up
        */
       public void raiseRamp() {
-          rampState = rampstate.UP;
+          rampState = rampUpDown.UP;
       }
 
       /**
        * sets rampState to down
        */
       public void lowerRamp() {
-          rampState = rampstate.DOWN;
+          rampState = rampUpDown.DOWN;
       }
 
       /**
@@ -43,7 +43,7 @@ public class VehicleCargo {
        */
       public void load(Car car, Vehicle transporter) {
           if (withinLoadingRange(car, transporter) &&
-                  rampState == VehicleCargo.rampstate.DOWN && cargo.size() < cargoSize){
+                  rampState == VehicleCargo.rampUpDown.DOWN && cargo.size() < cargoSize){
               cargo.push(car);
               car.setLoaded(transporter);
           }
@@ -53,7 +53,7 @@ public class VehicleCargo {
        * unloads the car
        */
       public void unload() {
-          if (rampState == VehicleCargo.rampstate.DOWN) {
+          if (rampState == VehicleCargo.rampUpDown.DOWN) {
               Vehicle vehicle = cargo.pop();
               moveUnloaded(vehicle);
               vehicle.resetLoaded();
@@ -69,7 +69,7 @@ public class VehicleCargo {
           return cargo;
       }
 
-      public rampstate getRampState() {
+      public rampUpDown getRampState() {
           return rampState;
       }
 
