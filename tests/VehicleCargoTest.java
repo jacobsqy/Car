@@ -53,10 +53,12 @@ class VehicleCargoTest {
 
     @Test
     void moveUnloaded() {
-        Car Mysbil = new Volvo240();
-        Truck BamseBil = new CarTransport();
+        Car mysbil = new Volvo240();
         VehicleCargo vc = new VehicleCargo();
-
+        mysbil.move(1,1);
+        vc.moveUnloaded(mysbil);
+        assertEquals(1, mysbil.getxPos());
+        assertEquals(0, mysbil.getyPos());
     }
 
 }
