@@ -7,6 +7,8 @@ public class Ferry extends Vehicle {
 
     public Ferry(){
         super(2400, Color.black,"BootenAnna");
+        vehicleCargo.loadingRange = 2.0;
+        vehicleCargo.cargoSize = 10;
     }
 
     @Override
@@ -35,11 +37,11 @@ public class Ferry extends Vehicle {
 
 
 
-    private Stack<Vehicle> invertStack(Stack<Vehicle> oldStack) {
+    private void invertStack(Stack<Vehicle> oldStack) {
         Stack<Vehicle> newStack = new Stack<Vehicle>();
         for (int i = 0; i < oldStack.size(); i++) {
             newStack.push(oldStack.pop());
         }
-        return newStack;
+        oldStack = newStack;
     }
 }
