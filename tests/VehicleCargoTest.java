@@ -10,10 +10,10 @@ class VehicleCargoTest {
         Car car = new Saab95();
         tv.move(1.0, 1.0);
         car.move(2.0,2.0);
-        assertTrue(vc.withinLoadingRange(car));
+        assertTrue(vc.withinLoadingRange(car, tv));
 
         car.move(2.1,3.0);
-        assertFalse(vc.withinLoadingRange(car));
+        assertFalse(vc.withinLoadingRange(car, tv));
     }
 
     @Test
