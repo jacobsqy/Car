@@ -26,13 +26,12 @@ class VehicleCargoTest {
 
     @Test
     void load() {
-        Vehicle tv = new CarTransport();
+        CarTransport tv = new CarTransport();
         Car car = new Saab95();
-        VehicleCargo vc = new VehicleCargo(2,1);
         tv.move(1, 1);
         car.move(1.1, 1.1);
-        vc.lowerRamp();
-        vc.load(car, tv);
+        tv.vehicleCargo.lowerRamp();
+        tv.vehicleCargo.load(car, tv);
         assertEquals(car.getxPos(), tv.getxPos());
     }
 
