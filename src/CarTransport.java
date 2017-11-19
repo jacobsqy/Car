@@ -6,9 +6,10 @@ public class CarTransport extends Truck {
     private double turboPower;
     private VehicleCargo vehicleCargo = new VehicleCargo();
 
-    public CarTransport(){
+    public CarTransport() {
         super(2, Color.black, 550, "cartransport");
         vehicleCargo.cargoSize = 5;
+        vehicleCargo.loadingRange = 2.0;
     }
 
     @Override
