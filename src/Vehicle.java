@@ -187,6 +187,8 @@ public abstract class Vehicle implements Movable {
     public void setLoaded(Vehicle carrier) {
       loaded = true;
       stopEngine();
+      xPos = carrier.getxPos();
+      yPos = carrier.getyPos();
       this.carrier = carrier;
     }
 
