@@ -26,7 +26,7 @@ public class Ferry extends Vehicle {
     }
 
     public void unload (){
-        if (vehicleCargo.getRampState() == VehicleCargo.rampUpDown.DOWN) {
+        if (vehicleCargo.getRampState() == VehicleCargo.RampState.DOWN) {
             invertStack(vehicleCargo.getCargo());
             Vehicle vehicle = vehicleCargo.getCargo().pop();
             vehicleCargo.moveUnloaded(vehicle);

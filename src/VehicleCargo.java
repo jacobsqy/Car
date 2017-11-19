@@ -4,9 +4,9 @@ public class VehicleCargo {
 
       private Stack<Vehicle> cargo;
       public double loadingRange;
-      private rampUpDown rampState;
+      private RampState rampState;
       public int cargoSize;
-      public enum rampUpDown {
+      public enum RampState {
           UP, DOWN
       }
 
@@ -20,21 +20,21 @@ public class VehicleCargo {
           double dy = cargo.getyPos() - transporter.getyPos();
           double dx = cargo.getxPos() - transporter.getxPos();
           double distance = Math.sqrt(Math.pow(dy, 2) + Math.pow(dx, 2));
-          return loadingRange >= distance;
+          return loadingRange > distance;
       }
 
       /**
        * sets rampState to up
        */
       public void raiseRamp() {
-          rampState = rampUpDown.UP;
+          rampState = RampState.UP;
       }
 
       /**
        * sets rampState to down
        */
       public void lowerRamp() {
-          rampState = rampUpDown.DOWN;
+          rampState = RampState.DOWN;
       }
 
       /**
@@ -43,7 +43,7 @@ public class VehicleCargo {
        */
       public void load(Car car, Vehicle transporter) {
           if (withinLoadingRange(car, transporter) &&
-                  rampState == VehicleCargo.rampUpDown.DOWN && cargo.size() < cargoSize){
+              rampState == RampState.DOWN && cargo.size() < cargoSize){
               cargo.push(car);
               car.setLoaded(transporter);
           }
@@ -53,7 +53,7 @@ public class VehicleCargo {
        * unloads the car
        */
       public void unload() {
-          if (rampState == VehicleCargo.rampUpDown.DOWN) {
+          if (rampState == RampState.DOWN) {
               Vehicle vehicle = cargo.pop();
               moveUnloaded(vehicle);
               vehicle.resetLoaded();
@@ -69,7 +69,7 @@ public class VehicleCargo {
           return cargo;
       }
 
-      public rampUpDown getRampState() {
+      public RampState getRampState() {
           return rampState;
       }
 
