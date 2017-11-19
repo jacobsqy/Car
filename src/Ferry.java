@@ -2,7 +2,7 @@ import java.awt.*;
 import java.util.Stack;
 
 public class Ferry extends Vehicle {
-    VehicleCargo vehicleCargo = new VehicleCargo();
+    private VehicleCargo vehicleCargo = new VehicleCargo();
 
 
     public Ferry(){
@@ -12,8 +12,13 @@ public class Ferry extends Vehicle {
     }
 
     @Override
-    public double speedFactor() {
+    public void move() {
+      super.move();
+      vehicleCargo.moveCargo();
+    }
 
+    @Override
+    public double speedFactor() {
         return getEnginePower() * 0.0001;
     }
 
