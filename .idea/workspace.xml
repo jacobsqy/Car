@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="91ad20e5-ca89-4217-bb33-a390467f0690" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/VehicleCargoTest.java" afterPath="$PROJECT_DIR$/tests/VehicleCargoTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,11 +20,19 @@
       <file leaf-file-name="VehicleCargo.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/VehicleCargo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1039">
-              <caret line="18" column="76" lean-forward="false" selection-start-line="18" selection-start-column="76" selection-end-line="18" selection-end-column="76" />
+            <state relative-caret-position="165">
+              <caret line="18" column="77" lean-forward="false" selection-start-line="18" selection-start-column="77" selection-end-line="18" selection-end-column="77" />
               <folding>
+                <element signature="e#887#888#0" expanded="true" />
+                <element signature="e#931#932#0" expanded="true" />
+                <element signature="e#1016#1017#0" expanded="true" />
+                <element signature="e#1062#1063#0" expanded="true" />
+                <element signature="docComment;method#load#0;class#VehicleCargo#0" expanded="false" />
+                <element signature="method#load#0;class#VehicleCargo#0" expanded="false" />
+                <element signature="docComment;method#unload#0;class#VehicleCargo#0" expanded="false" />
+                <element signature="method#unload#0;class#VehicleCargo#0" expanded="false" />
+                <element signature="method#moveUnloaded#0;class#VehicleCargo#0" expanded="false" />
                 <marker date="1511119638663" expanded="false" signature="1934:1942" ph=" }" />
-                <marker date="1511119638663" expanded="true" signature="1995:2486" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -34,10 +41,13 @@
       <file leaf-file-name="VehicleCargoTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tests/VehicleCargoTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1134">
-              <caret line="54" column="24" lean-forward="false" selection-start-line="54" selection-start-column="24" selection-end-line="54" selection-end-column="24" />
+            <state relative-caret-position="216">
+              <caret line="10" column="28" lean-forward="false" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
               <folding>
-                <element signature="method#withinLoadingRange#0;class#VehicleCargoTest#0" expanded="false" />
+                <element signature="method#lowerRamp#0;class#VehicleCargoTest#0" expanded="false" />
+                <element signature="method#load#0;class#VehicleCargoTest#0" expanded="false" />
+                <element signature="method#unload#0;class#VehicleCargoTest#0" expanded="false" />
+                <element signature="method#moveUnloaded#0;class#VehicleCargoTest#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -326,27 +336,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.VehicleCargoTest.moveUnloaded">
-    <configuration name="CarTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="Car" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CarTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
+  <component name="RunManager" selected="JUnit.VehicleCargoTest.withinLoadingRange">
     <configuration name="VehicleCargoTest.load" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="Car" />
@@ -387,14 +377,14 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="VehicleTest.turnLeft" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="VehicleCargoTest.unload" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="Car" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="VehicleTest" />
-      <option name="METHOD_NAME" value="turnLeft" />
+      <option name="MAIN_CLASS_NAME" value="VehicleCargoTest" />
+      <option name="METHOD_NAME" value="unload" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -407,14 +397,34 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="VehicleTest.turnRight" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="VehicleCargoTest.withinLoadingRange" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="Car" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="VehicleCargoTest" />
+      <option name="METHOD_NAME" value="withinLoadingRange" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="VehicleTest.turnLeft" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="Car" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="VehicleTest" />
-      <option name="METHOD_NAME" value="turnRight" />
+      <option name="METHOD_NAME" value="turnLeft" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -626,19 +636,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.CarTest" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.VehicleTest.turnRight" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.VehicleTest.turnLeft" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.VehicleCargoTest.load" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.VehicleCargoTest.moveUnloaded" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.VehicleTest.turnLeft" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.VehicleCargoTest.load" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.VehicleCargoTest.moveUnloaded" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.VehicleCargoTest.unload" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.VehicleCargoTest.withinLoadingRange" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.VehicleCargoTest.moveUnloaded" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.VehicleCargoTest.load" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.VehicleTest.turnLeft" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.VehicleTest.turnRight" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.CarTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.VehicleCargoTest.withinLoadingRange" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.VehicleCargoTest.unload" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.VehicleCargoTest.moveUnloaded" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.VehicleCargoTest.load" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.VehicleTest.turnLeft" />
       </list>
     </recent_temporary>
   </component>
@@ -739,25 +749,24 @@
       <option name="project" value="LOCAL" />
       <updated>1511118518868</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Finished the moveUnloaded() test">
+      <created>1511119669108</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1511119669108</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Finished the moveUnloaded() test">
+      <created>1511119981781</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1511119981781</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CarTest - 2017.11.09 at 15h 11m 28s.xml">
-      <configuration name="CarTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CarTest - 2017.11.09 at 16h 15m 39s.xml">
-      <configuration name="CarTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CarTest - 2017.11.09 at 16h 17m 32s.xml">
-      <configuration name="CarTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CarTest_startEngine - 2017.11.09 at 15h 04m 23s.xml">
-      <configuration name="CarTest.startEngine" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="VehicleCargoTest_load - 2017.11.19 at 20h 02m 48s.xml">
-      <configuration name="VehicleCargoTest.load" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="VehicleCargoTest_moveUnloaded - 2017.11.19 at 20h 12m 39s.xml">
       <configuration name="VehicleCargoTest.moveUnloaded" configurationId="JUnit" />
     </history-entry>
@@ -770,7 +779,22 @@
     <history-entry file="VehicleCargoTest_moveUnloaded - 2017.11.19 at 20h 26m 22s.xml">
       <configuration name="VehicleCargoTest.moveUnloaded" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="VehicleCargoTest_unload - 2017.11.19 at 20h 28m 46s.xml">
+      <configuration name="VehicleCargoTest.unload" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="VehicleCargoTest_withinLoadingRange - 2017.11.19 at 20h 27m 24s.xml">
+      <configuration name="VehicleCargoTest.withinLoadingRange" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="VehicleCargoTest_withinLoadingRange - 2017.11.19 at 20h 29m 04s.xml">
+      <configuration name="VehicleCargoTest.withinLoadingRange" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="VehicleCargoTest_withinLoadingRange - 2017.11.19 at 20h 31m 07s.xml">
+      <configuration name="VehicleCargoTest.withinLoadingRange" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="VehicleCargoTest_withinLoadingRange - 2017.11.19 at 20h 31m 51s.xml">
+      <configuration name="VehicleCargoTest.withinLoadingRange" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="VehicleCargoTest_withinLoadingRange - 2017.11.19 at 20h 32m 54s.xml">
       <configuration name="VehicleCargoTest.withinLoadingRange" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -884,7 +908,8 @@
     <MESSAGE value="Added the classes Vehicle and Truck" />
     <MESSAGE value="Fixed the withinLoadingRange" />
     <MESSAGE value="Started on the moveUnloaded() test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Started on the moveUnloaded() test" />
+    <MESSAGE value="Finished the moveUnloaded() test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished the moveUnloaded() test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -895,8 +920,22 @@
           <properties />
           <option name="timeStamp" value="11" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/tests/VehicleCargoTest.java</url>
+          <line>13</line>
+          <properties />
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/VehicleCargo.java</url>
+          <line>18</line>
+          <properties class="VehicleCargo" method="withinLoadingRange">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="15" />
+      <option name="time" value="17" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -910,8 +949,16 @@
         <state relative-caret-position="324">
           <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding>
+            <element signature="e#887#888#0" expanded="true" />
+            <element signature="e#931#932#0" expanded="true" />
+            <element signature="e#1016#1017#0" expanded="true" />
+            <element signature="e#1062#1063#0" expanded="true" />
+            <element signature="docComment;method#load#0;class#VehicleCargo#0" expanded="false" />
+            <element signature="method#load#0;class#VehicleCargo#0" expanded="false" />
+            <element signature="docComment;method#unload#0;class#VehicleCargo#0" expanded="false" />
+            <element signature="method#unload#0;class#VehicleCargo#0" expanded="false" />
+            <element signature="method#moveUnloaded#0;class#VehicleCargo#0" expanded="false" />
             <marker date="1511119638663" expanded="false" signature="1934:1942" ph=" }" />
-            <marker date="1511119638663" expanded="true" signature="1995:2486" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -921,7 +968,10 @@
         <state relative-caret-position="189">
           <caret line="20" column="17" lean-forward="true" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
           <folding>
-            <element signature="method#withinLoadingRange#0;class#VehicleCargoTest#0" expanded="false" />
+            <element signature="method#lowerRamp#0;class#VehicleCargoTest#0" expanded="false" />
+            <element signature="method#load#0;class#VehicleCargoTest#0" expanded="false" />
+            <element signature="method#unload#0;class#VehicleCargoTest#0" expanded="false" />
+            <element signature="method#moveUnloaded#0;class#VehicleCargoTest#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1163,18 +1213,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Truck.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-          <folding>
-            <element signature="method#Truck#0;class#Truck#0" expanded="false" />
-            <element signature="e#337#338#0" expanded="true" />
-            <element signature="e#367#368#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Vehicle.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -1211,6 +1249,45 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/TransportVehicleTest.java" />
+    <entry file="file://$PROJECT_DIR$/tests/VehicleTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="36" column="15" lean-forward="false" selection-start-line="36" selection-start-column="15" selection-end-line="36" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/VehicleCargo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="18" column="77" lean-forward="false" selection-start-line="18" selection-start-column="77" selection-end-line="18" selection-end-column="77" />
+          <folding>
+            <element signature="e#887#888#0" expanded="true" />
+            <element signature="e#931#932#0" expanded="true" />
+            <element signature="e#1016#1017#0" expanded="true" />
+            <element signature="e#1062#1063#0" expanded="true" />
+            <element signature="docComment;method#load#0;class#VehicleCargo#0" expanded="false" />
+            <element signature="method#load#0;class#VehicleCargo#0" expanded="false" />
+            <element signature="docComment;method#unload#0;class#VehicleCargo#0" expanded="false" />
+            <element signature="method#unload#0;class#VehicleCargo#0" expanded="false" />
+            <element signature="method#moveUnloaded#0;class#VehicleCargo#0" expanded="false" />
+            <marker date="1511119638663" expanded="false" signature="1934:1942" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Truck.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+          <folding>
+            <element signature="method#Truck#0;class#Truck#0" expanded="false" />
+            <element signature="e#337#338#0" expanded="true" />
+            <element signature="e#367#368#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/CarTransport.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1219,30 +1296,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/VehicleTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="36" column="15" lean-forward="false" selection-start-line="36" selection-start-column="15" selection-end-line="36" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/VehicleCargo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1039">
-          <caret line="18" column="76" lean-forward="false" selection-start-line="18" selection-start-column="76" selection-end-line="18" selection-end-column="76" />
-          <folding>
-            <marker date="1511119638663" expanded="false" signature="1934:1942" ph=" }" />
-            <marker date="1511119638663" expanded="true" signature="1995:2486" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/VehicleCargoTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1134">
-          <caret line="54" column="24" lean-forward="false" selection-start-line="54" selection-start-column="24" selection-end-line="54" selection-end-column="24" />
+        <state relative-caret-position="216">
+          <caret line="10" column="28" lean-forward="false" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
           <folding>
-            <element signature="method#withinLoadingRange#0;class#VehicleCargoTest#0" expanded="false" />
+            <element signature="method#lowerRamp#0;class#VehicleCargoTest#0" expanded="false" />
+            <element signature="method#load#0;class#VehicleCargoTest#0" expanded="false" />
+            <element signature="method#unload#0;class#VehicleCargoTest#0" expanded="false" />
+            <element signature="method#moveUnloaded#0;class#VehicleCargoTest#0" expanded="false" />
           </folding>
         </state>
       </provider>
