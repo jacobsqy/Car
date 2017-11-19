@@ -7,7 +7,8 @@ public class CarTransport extends Truck {
     private VehicleCargo vehicleCargo = new VehicleCargo();
 
     public CarTransport(){
-        super(2, Color.black, 550, "cartransport", 5);
+        super(2, Color.black, 550, "cartransport");
+        vehicleCargo.cargoSize = 5;
     }
 
     @Override

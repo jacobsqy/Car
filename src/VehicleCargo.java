@@ -11,7 +11,7 @@ public class VehicleCargo {
       }
 
       /**
-       * Check if the Vehical is in loading range < 2
+       * Check if the Vehicle is within the loading range
        * @param cargo a vecicle to compare the carriers position with
        * @param transporter the transporter that carrier compares with
        * @return

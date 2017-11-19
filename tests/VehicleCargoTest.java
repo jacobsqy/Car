@@ -9,7 +9,7 @@ class VehicleCargoTest {
         VehicleCargo vc = new VehicleCargo();
         Car car = new Saab95();
         tv.move(1.0, 1.0);
-        car.move(2.0,2.0);
+        car.move(2.0, 2.0);
         assertTrue(vc.withinLoadingRange(car, tv));
 
         car.move(2.1,3.0);

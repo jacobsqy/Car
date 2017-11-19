@@ -5,7 +5,7 @@ public abstract class Truck extends Vehicle {
     private int nrDoors;
 
 
-    public Truck(int nrDoors, Color color, double enginePower, String modelName, int cargoSeize){
+    public Truck(int nrDoors, Color color, double enginePower, String modelName){
         super(enginePower,color, modelName);
         loaded = false;
         this.nrDoors = nrDoors;
