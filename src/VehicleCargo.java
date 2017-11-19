@@ -20,7 +20,7 @@ public class VehicleCargo {
           double dy = cargo.getyPos() - transporter.getyPos();
           double dx = cargo.getxPos() - transporter.getxPos();
           double distance = Math.sqrt(Math.pow(dy, 2) + Math.pow(dx, 2));
-          return loadingRange > distance;
+          return loadingRange >= distance;
       }
 
       /**
