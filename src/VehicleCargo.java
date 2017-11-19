@@ -3,11 +3,16 @@ import java.util.Stack;
 public class VehicleCargo {
 
       private Stack<Vehicle> cargo;
-      public double loadingRange;
+      public final double loadingRange;
       private RampState rampState;
-      public int cargoSize;
+      public final int cargoSize;
       public enum RampState {
           UP, DOWN
+      }
+
+      public VehicleCargo(double loadingRange, int cargoSize) {
+        this.loadingRange = loadingRange;
+        this.cargoSize = cargoSize;
       }
 
       /**

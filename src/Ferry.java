@@ -2,13 +2,11 @@ import java.awt.*;
 import java.util.Stack;
 
 public class Ferry extends Vehicle {
-    private VehicleCargo vehicleCargo = new VehicleCargo();
+    public VehicleCargo vehicleCargo = new VehicleCargo(2.0, 10);
 
 
     public Ferry(){
         super(2400, Color.black,"BootenAnna");
-        vehicleCargo.loadingRange = 2.0;
-        vehicleCargo.cargoSize = 10;
         vehicleCargo.raiseRamp();
     }
 

@@ -5,12 +5,10 @@ public class CarTransport extends Truck {
     private boolean turboOn;
     private double turboPower;
 
-    private VehicleCargo vehicleCargo = new VehicleCargo();
+    public VehicleCargo vehicleCargo = new VehicleCargo(2.0, 5);
 
     public CarTransport() {
         super(2, Color.black, 550, "cartransport");
-        vehicleCargo.cargoSize = 5;
-        vehicleCargo.loadingRange = 2.0;
         vehicleCargo.raiseRamp();
     }
 
