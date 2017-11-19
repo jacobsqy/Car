@@ -23,6 +23,19 @@ public class VehicleCargo {
           return loadingRange >= distance;
       }
 
+      public void moveCargo(Vehicle carrier, double x, double y) {
+        Stack<Vehicle> tempS = new Stack<Vehicle>();
+        Vehicle tempV;
+        for (int i = 0; i < cargo.size(); i++) {
+          tempV = cargo.pop();
+          tempV.move(x, y);
+          tempS.push(tempV);
+        }
+        for (int i = 0; i < cargo.size(); i++) {
+          cargo.push(tempS.pop());
+        }
+      }
+
       /**
        * sets rampState to up
        */
