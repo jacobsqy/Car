@@ -9,6 +9,7 @@ public class Ferry extends Vehicle {
         super(2400, Color.black,"BootenAnna");
         vehicleCargo.loadingRange = 2.0;
         vehicleCargo.cargoSize = 10;
+        vehicleCargo.raiseRamp();
     }
 
     @Override

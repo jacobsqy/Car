@@ -11,7 +11,7 @@ public class CarTransport extends Truck {
         super(2, Color.black, 550, "cartransport");
         vehicleCargo.cargoSize = 5;
         vehicleCargo.loadingRange = 2.0;
-        vehicleCargo.lowerRamp();
+        vehicleCargo.raiseRamp();
     }
 
     @Override
