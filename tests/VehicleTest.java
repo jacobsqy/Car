@@ -34,7 +34,7 @@ class VehicleTest {
 
     @Test
     void turnRight() {
-        TransportVehicle v = new CarTransport();
+        Vehicle v = new CarTransport();
         Vehicle.Dir dir1 = v.getDir();
         v.turnRight();
         v.turnRight();

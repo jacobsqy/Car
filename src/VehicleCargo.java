@@ -2,7 +2,7 @@ import java.util.Stack;
 
 public class VehicleCargo {
 
-      private Stack<Vehicle> ramp;
+      private Stack<Vehicle> cargo;
       private double loadingRange;
       private rampstate rampState;
       private int cargoSize;
@@ -43,8 +43,8 @@ public class VehicleCargo {
        */
       public void load(Car car, Vehicle transporter) {
           if (withinLoadingRange(car, transporter) &&
-                  rampState == VehicleCargo.rampstate.DOWN && ramp.size() < cargoSize){
-              ramp.push(car);
+                  rampState == VehicleCargo.rampstate.DOWN && cargo.size() < cargoSize){
+              cargo.push(car);
               car.setLoaded(transporter);
           }
       }
@@ -54,7 +54,7 @@ public class VehicleCargo {
        */
       public void unload() {
           if (rampState == VehicleCargo.rampstate.DOWN) {
-              Vehicle vehicle = ramp.pop();
+              Vehicle vehicle = cargo.pop();
               moveUnloaded(vehicle);
               vehicle.resetLoaded();
           }
@@ -65,8 +65,8 @@ public class VehicleCargo {
           return cargoSize;
       }
 
-      public Stack<Vehicle> getRamp() {
-          return ramp;
+      public Stack<Vehicle> getCargo() {
+          return cargo;
       }
 
       public rampstate getRampState() {
