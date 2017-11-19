@@ -57,7 +57,7 @@ public class VehicleCargo {
       public void load(Car car, Vehicle transporter) {
           if (withinLoadingRange(car, transporter) &&
                   rampState == RampState.DOWN &&
-                  cargo.size() < cargoSize && car.getLoaded()){
+                  cargo.size() < cargoSize && !car.getLoaded()){
               cargo.push(car);
               car.setLoaded(transporter);
           }
