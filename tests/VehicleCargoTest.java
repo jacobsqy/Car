@@ -37,14 +37,14 @@ class VehicleCargoTest {
 
     @Test
     void unload() {
-        Vehicle tv = new CarTransport();
-        VehicleCargo vc = new VehicleCargo(2, 5);
+        CarTransport tv = new CarTransport();
         Car car1 = new Volvo240();
         Car car2 = new Volvo240();
-        vc.lowerRamp();
-        vc.load(car1, tv);
-        vc.load(car2, tv);
-        vc.unload();
+        tv.vehicleCargo.lowerRamp();
+        tv.vehicleCargo.load(car1, tv);
+        tv.vehicleCargo.load(car2, tv);
+        tv.vehicleCargo.unload();
+
 
     }
 
