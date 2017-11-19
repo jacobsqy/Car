@@ -3,9 +3,9 @@ import java.util.Stack;
 public class VehicleCargo {
 
       private Stack<Vehicle> cargo;
-      private double loadingRange;
+      public double loadingRange;
       private rampUpDown rampState;
-      private int cargoSize;
+      public int cargoSize;
       public enum rampUpDown {
           UP, DOWN
       }
