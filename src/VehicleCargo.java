@@ -2,7 +2,7 @@ import java.util.Stack;
 
 public class VehicleCargo {
 
-      private Stack<Vehicle> cargo;
+      private Stack<Vehicle> cargo = new Stack<Vehicle>;
       public final double loadingRange;
       private RampState rampState;
       public final int cargoSize;
