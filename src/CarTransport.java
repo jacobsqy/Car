@@ -15,7 +15,7 @@ public class CarTransport extends Truck {
 
     @Override
     public void move() {
-        if (vehicleCargo.getRampState() == VehicleCargo.rampUpDown.UP) {
+        if (vehicleCargo.getRampState() == VehicleCargo.RampState.UP) {
             super.move();
         }
     }
