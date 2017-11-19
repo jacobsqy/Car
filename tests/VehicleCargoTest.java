@@ -6,9 +6,8 @@ class VehicleCargoTest {
     @Test
     void withinLoadingRange() {
         Vehicle tv = new CarTransport();
-        VehicleCargo vc = new VehicleCargo();
+        VehicleCargo vc = new VehicleCargo(2, 0);
         Car car = new Saab95();
-        vc.loadingRange = 2;
         tv.move(1.0, 1.0);
         car.move(2.0,2.0);
         assertTrue(vc.withinLoadingRange(car, tv));
@@ -19,7 +18,7 @@ class VehicleCargoTest {
 
     @Test
     void lowerRamp() {
-        VehicleCargo vc = new VehicleCargo();
+        VehicleCargo vc = new VehicleCargo(0,0);
         vc.lowerRamp();
         System.out.println(vc.getRampState());
 
@@ -29,8 +28,7 @@ class VehicleCargoTest {
     void load() {
         Vehicle tv = new CarTransport();
         Car car = new Saab95();
-        VehicleCargo vc = new VehicleCargo();
-        vc.cargoSize = 1;
+        VehicleCargo vc = new VehicleCargo(2,1);
         tv.move(1, 1);
         car.move(1.1, 1.1);
         vc.lowerRamp();
@@ -41,7 +39,7 @@ class VehicleCargoTest {
     @Test
     void unload() {
         Vehicle tv = new CarTransport();
-        VehicleCargo vc = new VehicleCargo();
+        VehicleCargo vc = new VehicleCargo(2, 5);
         Car car1 = new Volvo240();
         Car car2 = new Volvo240();
         vc.lowerRamp();
@@ -56,7 +54,7 @@ class VehicleCargoTest {
     @Test
     void moveUnloaded() {
         Car mysbil = new Volvo240();
-        VehicleCargo vc = new VehicleCargo();
+        VehicleCargo vc = new VehicleCargo(2, 5);
         mysbil.move(1,1);
         vc.moveUnloaded(mysbil);
         assertEquals(1, mysbil.getxPos());
