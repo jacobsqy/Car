@@ -8,7 +8,9 @@ class VehicleTest {
     void setLoaded1() {
         Car car = new Saab95();
         Vehicle tv = new CarTransport();
-
+        car.move(1,1);
+        tv.setLoaded(car);
+        assertEquals(car.getxPos(), tv.getxPos());
 
     }
 
