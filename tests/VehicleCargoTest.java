@@ -32,9 +32,8 @@ class VehicleCargoTest {
         VehicleCargo vc = new VehicleCargo();
         tv.move(1, 1);
         car.move(1.1, 1.1);
-        vc.lowerRamp();
         vc.load(car, tv);
-        assertSame(car.getxPos(), tv.getxPos());
+        assertEquals(car.getxPos(), tv.getxPos());
     }
 
     @Test

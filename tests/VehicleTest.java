@@ -5,6 +5,14 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class VehicleTest {
     @Test
+    void setLoaded1() {
+        Car car = new Saab95();
+        Vehicle tv = new CarTransport();
+
+
+    }
+
+    @Test
     void move() {
         Vehicle car1 = new Scania();
         double y1 = car1.getyPos();
