@@ -44,6 +44,10 @@ class VehicleCargoTest {
 
     @Test
     void moveUnloaded() {
+        Car Mysbil = new Volvo240();
+        Truck BamseBil = new CarTransport();
+        VehicleCargo vc = new VehicleCargo();
+
     }
 
 }
