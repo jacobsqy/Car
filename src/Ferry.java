@@ -14,7 +14,7 @@ public class Ferry extends Vehicle {
     @Override
     public void move() {
       super.move();
-      vehicleCargo.moveCargo();
+      vehicleCargo.moveCargo(this, getxPos(), getyPos());
     }
 
     @Override
