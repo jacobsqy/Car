@@ -23,7 +23,8 @@ public class Ferry extends Vehicle {
 
     private void load(Truck truck) {
         if (vehicleCargo.withinLoadingRange(truck, this) &&
-                vehicleCargo.getRampState() == this.vehicleCargo.getRampState() && vehicleCargo.getCargo().size() < vehicleCargo.getCargoSize()){
+                vehicleCargo.getRampState() == this.vehicleCargo.getRampState() &&
+                vehicleCargo.getCargo().size() < vehicleCargo.getCargoSize()){
             vehicleCargo.getCargo().push(truck);
             truck.setLoaded(this);
         }
