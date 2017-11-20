@@ -16,10 +16,10 @@ public class VehicleCargo {
       }
 
       /**
-       * Check if the Vehical is in loading range < 2
-       * @param cargo a vecicle to compare the carriers position with
+       * Check if the Vehicle is within loading range
+       * @param cargo a vehicle to compare the carriers position with
        * @param transporter the transporter that carrier compares with
-       * @return
+       * @return true if the vehicle is within the cargo loading range
        */
       public boolean withinLoadingRange(Vehicle cargo, Vehicle transporter) {
           double dy = cargo.getyPos() - transporter.getyPos();
@@ -57,7 +57,8 @@ public class VehicleCargo {
 
       /**
        * loads a car to the ramp
-       * @param car to load
+       * @param car the car to load
+       * @param transporter the vehicle to load the car on
        */
       public void load(Car car, Vehicle transporter) {
           if (withinLoadingRange(car, transporter) &&
