@@ -35,6 +35,7 @@ public class Ferry extends Vehicle {
             Vehicle vehicle = vehicleCargo.getCargo().pop();
             vehicleCargo.moveUnloaded(vehicle);
             vehicle.resetLoaded();
+            invertStack(vehicleCargo.getCargo());
         }
 
     }
