@@ -69,4 +69,7 @@ public class CarController {
             car.brake(brake);
         }
     }
+    void colition(){
+
+    }
 }
