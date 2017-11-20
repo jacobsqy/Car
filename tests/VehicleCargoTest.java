@@ -44,7 +44,7 @@ class VehicleCargoTest {
         tv.vehicleCargo.load(car1, tv);
         tv.vehicleCargo.load(car2, tv);
         tv.vehicleCargo.unload();
-
+        assertEquals(tv.vehicleCargo.getCargo().peek(), car1);
 
     }
 
