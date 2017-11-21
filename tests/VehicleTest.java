@@ -16,7 +16,7 @@ class VehicleTest {
 
     @Test
     void move() {
-        Vehicle car1 = new Scania();
+        CarTransport car1 = new CarTransport();
         double y1 = car1.getyPos();
         car1.startEngine();
         car1.move();

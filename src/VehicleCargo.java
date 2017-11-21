@@ -3,9 +3,10 @@ import java.util.Stack;
 public class VehicleCargo {
 
       private Stack<Vehicle> cargo = new Stack<Vehicle>();
-      public final double loadingRange;
+      private final double loadingRange;
       private RampState rampState;
-      public final int cargoSize;
+      private final int cargoSize;
+
       public enum RampState {
           UP, DOWN
       }
@@ -28,7 +29,7 @@ public class VehicleCargo {
           return loadingRange >= distance;
       }
 
-      public void moveCargo(Vehicle carrier, double x, double y) {
+      public void moveCargo(double x, double y) {
         Stack<Vehicle> tempS = new Stack<Vehicle>();
         Vehicle tempV;
         for (int i = 0; i < cargo.size(); i++) {
@@ -58,14 +59,11 @@ public class VehicleCargo {
       /**
        * loads a car to the ramp
        * @param car the car to load
-       * @param transporter the vehicle to load the car on
        */
-      public void load(Car car, Vehicle transporter) {
-          if (withinLoadingRange(car, transporter) &&
-                  rampState == RampState.DOWN &&
+      public void load(Car car) {
+          if (rampState == RampState.DOWN &&
                   cargo.size() < cargoSize && !car.getLoaded()){
               cargo.push(car);
-              car.setLoaded(transporter);
           }
       }
 
@@ -93,7 +91,7 @@ public class VehicleCargo {
           return rampState;
       }
 
-      protected void moveUnloaded(Vehicle vehicle) {
+      private void moveUnloaded(Vehicle vehicle) {
       double newXPos = vehicle.getxPos();
       double newYPos = vehicle.getyPos();
       switch (vehicle.getDir()) {
