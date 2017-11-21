@@ -1,9 +1,10 @@
 import java.awt.*;
 
 public class Scania extends Truck {
-    private int tipAngle;
     private boolean turboOn;
     private double turboPower;
+    private Tipper tipper = new Tipper();
+
 
 
 
@@ -11,23 +12,9 @@ public class Scania extends Truck {
         super(2, Color.black, 550, "Scania Truck");
         turboOn = false;
         turboPower = 1.5;
-        tipAngle = 0;
         stopEngine();
     }
 
-    /**
-     * Increases tipAngle but only if lower then 70.
-     */
-    private void raiseTipper(){
-        if(tipAngle < 70) tipAngle++;
-    }
-
-    /**
-     * Decreases int tipAngle, but only if it higher then 0.
-     */
-    private void lowerTipper(){
-        if(tipAngle > 0 && isStill()) tipAngle--;
-    }
 
     /**
      * Adds currentSpeed() to the y position to make it go forward,
@@ -35,7 +22,7 @@ public class Scania extends Truck {
      */
     @Override
     public void move() {
-      if (tipAngle == 0) {
+      if (tipper.tipAngle == 0) {
         super.move();
       }
     }
