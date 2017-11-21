@@ -14,8 +14,8 @@ public class Tipper {
     /**
      * Decreases int tipAngle, but only if it higher then 0.
      */
-    public void lowerTipper(Vehicle vehicle){
-        if(tipAngle > 0 && vehicle.isStill()) tipAngle--;
+    public void lowerTipper(){
+        if(tipAngle > 0) tipAngle--;
     }
 
 }

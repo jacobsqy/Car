@@ -8,8 +8,8 @@ public class VehicleCargo {
       private final int cargoSize;
 
       public enum RampState {
-          UP, DOWN
-      }
+        UP, DOWN
+    }
 
       public VehicleCargo(double loadingRange, int cargoSize) {
         this.loadingRange = loadingRange;

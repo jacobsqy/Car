@@ -33,4 +33,12 @@ public class Scania extends Truck {
         return getEnginePower() * 0.001 * turbo;
     }
 
+    public void lowerTipper() {
+        if (isStill()) tipper.lowerTipper();
+    }
+
+    public void raiseTipper() {
+        if (isStill()) tipper.raiseTipper();
+    }
+
 }
