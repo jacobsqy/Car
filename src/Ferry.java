@@ -13,7 +13,7 @@ public class Ferry extends Vehicle {
     @Override
     public void move() {
       super.move();
-      vehicleCargo.moveCargo(this, getxPos(), getyPos());
+      vehicleCargo.moveCargo(getxPos(), getyPos());
     }
 
     @Override
@@ -21,33 +21,14 @@ public class Ferry extends Vehicle {
         return getEnginePower() * 0.0001;
     }
 
-    private void load(Truck truck) {
-        if (vehicleCargo.withinLoadingRange(truck, this) &&
-                vehicleCargo.getRampState() == this.vehicleCargo.getRampState() &&
-                vehicleCargo.getCargo().size() < vehicleCargo.getCargoSize()){
-            vehicleCargo.getCargo().push(truck);
-            truck.setLoaded(this);
+    public void load(Vehicle vehicle) {
+        if (vehicleCargo.withinLoadingRange(vehicle, this)) {
+            vehicleCargo.load(vehicle);
+            vehicle.setLoaded(this);
         }
     }
 
     public void unload (){
-        if (vehicleCargo.getRampState() == VehicleCargo.RampState.DOWN) {
-            invertStack(vehicleCargo.getCargo());
-            Vehicle vehicle = vehicleCargo.getCargo().pop();
-            vehicleCargo.moveUnloaded(vehicle);
-            vehicle.resetLoaded();
-            invertStack(vehicleCargo.getCargo());
-        }
-
-    }
-
-
-
-    private void invertStack(Stack<Vehicle> oldStack) {
-        Stack<Vehicle> newStack = new Stack<Vehicle>();
-        for (int i = 0; i < oldStack.size(); i++) {
-            newStack.push(oldStack.pop());
-        }
-        oldStack = newStack;
+        vehicleCargo.unloadFIFO();
     }
 }

@@ -58,23 +58,33 @@ public class VehicleCargo {
 
       /**
        * loads a car to the ramp
-       * @param car the car to load
+       * @param vehicle the car to load
        */
-      public void load(Car car) {
+      public void load(Vehicle vehicle) {
           if (rampState == RampState.DOWN &&
-                  cargo.size() < cargoSize && !car.getLoaded()){
-              cargo.push(car);
+                  cargo.size() < cargoSize && !vehicle.getLoaded()){
+              cargo.push(vehicle);
           }
       }
 
       /**
        * unloads the car
        */
-      public void unload() {
+      public void unloadFILO() {
           if (rampState == RampState.DOWN) {
               Vehicle vehicle = cargo.pop();
               moveUnloaded(vehicle);
               vehicle.resetLoaded();
+          }
+      }
+
+      public void unloadFIFO() {
+          if (rampState == RampState.DOWN) {
+              invertStack(cargo);
+              Vehicle vehicle = cargo.pop();
+              moveUnloaded(vehicle);
+              vehicle.resetLoaded();
+              invertStack(cargo);
           }
       }
 
@@ -109,5 +119,13 @@ public class VehicleCargo {
           break;
       }
       vehicle.move(newXPos, newYPos);
+    }
+
+    private void invertStack(Stack<Vehicle> oldStack) {
+        Stack<Vehicle> newStack = new Stack<Vehicle>();
+        for (int i = 0; i < oldStack.size(); i++) {
+            newStack.push(oldStack.pop());
+        }
+        oldStack = newStack;
     }
 }

@@ -28,7 +28,7 @@ public class CarTransport extends Truck {
     }
 
     public void unload() {
-        vehicleCargo.unload();
+        vehicleCargo.unloadFILO();
     }
 
     public void lowerRamp() {
