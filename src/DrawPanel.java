@@ -2,6 +2,8 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.nio.Buffer;
+import java.util.ArrayList;
 import javax.imageio.ImageIO;
 import javax.swing.*;
 
@@ -10,7 +12,8 @@ import javax.swing.*;
 public class DrawPanel extends JPanel{
 
     // Just a single image, TODO: Generalize
-    BufferedImage volvoImage;
+    ArrayList<BufferedImage> carImages = new ArrayList<BufferedImage>();
+
     // To keep track of a single cars position
     Point volvoPoint = new Point();
 
@@ -32,7 +35,7 @@ public class DrawPanel extends JPanel{
             // Rememember to rightclick src New -> Package -> name: pics -> MOVE *.jpg to pics.
             // if you are starting in IntelliJ.
             // Linux users need to modify \ to / in path string
-            volvoImage = ImageIO.read(new File("src\\pics\\Volvo240.jpg"));
+            carImages.add(ImageIO.read(new File("src\\pics\\Volvo240.jpg")));
         } catch (IOException ex)
         {
             ex.printStackTrace();

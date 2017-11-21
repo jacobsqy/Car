@@ -50,6 +50,7 @@ public class CarController {
                 frame.drawPanel.moveit(x, y);
                 // repaint() calls the paintComponent method of the panel
                 frame.drawPanel.repaint();
+                collision(car);
             }
         }
     }
@@ -67,6 +68,13 @@ public class CarController {
         double brake = ((double) amount) / 100;
         for (Vehicle car : cars) {
             car.brake(brake);
+        }
+    }
+
+    void collision(Vehicle car) {
+        if (0 > car.getyPos() || car.getyPos() > 800 - 240 - 60 || 0 > car.getxPos() || car.getxPos() > 800) {
+            car.turnRight();
+            car.turnRight();
         }
     }
 }
