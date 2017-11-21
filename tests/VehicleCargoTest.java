@@ -30,8 +30,8 @@ class VehicleCargoTest {
         Car car = new Saab95();
         tv.move(1, 1);
         car.move(1.1, 1.1);
-        tv.vehicleCargo.lowerRamp();
-        tv.vehicleCargo.load(car, tv);
+        tv.lowerRamp();
+        tv.load(car);
         assertEquals(car.getxPos(), tv.getxPos());
     }
 
@@ -40,17 +40,17 @@ class VehicleCargoTest {
         CarTransport tv = new CarTransport();
         Car car1 = new Volvo240();
         Car car2 = new Volvo240();
-        tv.vehicleCargo.lowerRamp();
-        tv.vehicleCargo.load(car1, tv);
-        tv.vehicleCargo.load(car2, tv);
-        tv.vehicleCargo.unload();
-        assertEquals(tv.vehicleCargo.getCargo().peek(), car1);
+        tv.lowerRamp();
+        tv.load(car1);
+        tv.load(car2);
+        tv.unload();
+        assertEquals(tv.getCargo().peek(), car1);
 
     }
 
 
 
-    @Test
+    /*@Test
     void moveUnloaded() {
         Car mysbil = new Volvo240();
         VehicleCargo vc = new VehicleCargo(2, 5);
@@ -58,6 +58,6 @@ class VehicleCargoTest {
         vc.moveUnloaded(mysbil);
         assertEquals(1, mysbil.getxPos());
         assertEquals(0, mysbil.getyPos());
-    }
+    }*/
 
 }

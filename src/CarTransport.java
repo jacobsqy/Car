@@ -1,4 +1,5 @@
 import java.awt.*;
+import java.util.Stack;
 
 public class CarTransport extends Truck {
 
@@ -37,6 +38,10 @@ public class CarTransport extends Truck {
 
     public void raiseRamp() {
         vehicleCargo.raiseRamp();
+    }
+
+    public Stack<Vehicle> getCargo() {
+        return vehicleCargo.getCargo();
     }
 
     public double speedFactor() {
