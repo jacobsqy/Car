@@ -69,7 +69,10 @@ public class CarController {
             car.brake(brake);
         }
     }
-    void colition(){
+    void collision(){
+        for(Vehicle car : cars){
+            if(car.getyPos() < ) //TODO fix this shit
+        }
 
     }
 }
