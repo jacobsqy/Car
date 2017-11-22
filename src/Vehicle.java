@@ -99,11 +99,11 @@ public abstract class Vehicle implements Movable {
   }
 
 
-  /**
-   * DecrementSpeed() to slow down the car and also make sure the amount is between 0 and 1.
-   * @param amount is an value between 0 and 1.
-   */
-  public void brake(double amount) {
+    /**
+    * DecrementSpeed() to slow down the car and also make sure the amount is between 0 and 1.
+    * @param amount is an value between 0 and 1.
+    */
+    public void brake(double amount) {
       try {
           if (1.0 < amount || amount < 0.0) {
               throw new Exception("Invalid amount");
@@ -117,7 +117,7 @@ public abstract class Vehicle implements Movable {
    * Increase the current speed.
    * @param amount is an value between 0 and 1, that affects how much the speed will increase.
    */
-  private void incrementSpeed(double amount){
+    private void incrementSpeed(double amount){
       currentSpeed = Math.min(getCurrentSpeed() + speedFactor() * amount,enginePower);
   }
 
@@ -125,7 +125,7 @@ public abstract class Vehicle implements Movable {
    * Decrease the current speed.
    * @param amount is an value between 0 and 1, that affects how much the speed will decrease.
    */
-  private void decrementSpeed(double amount){
+    private void decrementSpeed(double amount){
       currentSpeed = Math.max(getCurrentSpeed() - speedFactor() * amount,0);
   }
 
@@ -133,8 +133,8 @@ public abstract class Vehicle implements Movable {
    * Starts the engine by setting currentSpeed to 0.1
    */
 
-  public void startEngine(){
-    if(!loaded){
+    public void startEngine(){
+      if(!loaded){
       currentSpeed = 0.1;
     }
   }
@@ -142,7 +142,7 @@ public abstract class Vehicle implements Movable {
   /**
    * Stops the engine by setting currentSpeed to 0.
    */
-  public void stopEngine(){
+    public void stopEngine(){
       currentSpeed = 0;
   }
 

@@ -2,7 +2,7 @@ import java.util.Stack;
 
 public class VehicleCargo {
 
-      private Stack<Vehicle> cargo = new Stack<Vehicle>();
+      private Stack<Vehicle> cargo = new Stack<>();
       private final double loadingRange;
       private RampState rampState;
       private final int cargoSize;
@@ -22,15 +22,20 @@ public class VehicleCargo {
        * @param transporter the transporter that carrier compares with
        * @return true if the vehicle is within the cargo loading range
        */
-      public boolean withinLoadingRange(Vehicle cargo, Vehicle transporter) {
+      boolean withinLoadingRange(Vehicle cargo, Vehicle transporter) {
           double dy = cargo.getyPos() - transporter.getyPos();
           double dx = cargo.getxPos() - transporter.getxPos();
           double distance = Math.sqrt(Math.pow(dy, 2) + Math.pow(dx, 2));
           return loadingRange >= distance;
       }
 
-      public void moveCargo(double x, double y) {
-        Stack<Vehicle> tempS = new Stack<Vehicle>();
+    /**
+     * sets the cargos xpos and ypos to the same as transport vehicle
+     * @param x xPos
+     * @param y yPos
+     */
+      void moveCargo(double x, double y) {
+        Stack<Vehicle> tempS = new Stack<>();
         Vehicle tempV;
         for (int i = 0; i < cargo.size(); i++) {
           tempV = cargo.pop();
@@ -45,14 +50,14 @@ public class VehicleCargo {
       /**
        * sets rampState to up
        */
-      public void raiseRamp() {
+      void raiseRamp() {
           rampState = RampState.UP;
       }
 
       /**
        * sets rampState to down
        */
-      public void lowerRamp() {
+      void lowerRamp() {
           rampState = RampState.DOWN;
       }
 
@@ -60,7 +65,7 @@ public class VehicleCargo {
        * loads a car to the ramp
        * @param vehicle the car to load
        */
-      public void load(Vehicle vehicle) {
+      void load(Vehicle vehicle) {
           if (rampState == RampState.DOWN &&
                   cargo.size() < cargoSize && !vehicle.getLoaded()){
               cargo.push(vehicle);
@@ -70,7 +75,7 @@ public class VehicleCargo {
       /**
        * unloads the car
        */
-      public void unloadFILO() {
+      void unloadFILO() {
           if (rampState == RampState.DOWN) {
               Vehicle vehicle = cargo.pop();
               moveUnloaded(vehicle);
@@ -78,7 +83,10 @@ public class VehicleCargo {
           }
       }
 
-      public void unloadFIFO() {
+    /**
+     * Ferry unload invertStack
+     */
+      void unloadFIFO() {
           if (rampState == RampState.DOWN) {
               invertStack(cargo);
               Vehicle vehicle = cargo.pop();
@@ -88,35 +96,22 @@ public class VehicleCargo {
           }
       }
 
-
-      public int getCargoSize() {
-          return cargoSize;
-      }
-
-      public Stack<Vehicle> getCargo() {
-          return cargo;
-      }
-
-      public RampState getRampState() {
-          return rampState;
-      }
-
-      private void moveUnloaded(Vehicle vehicle) {
-      double newXPos = vehicle.getxPos();
-      double newYPos = vehicle.getyPos();
-      switch (vehicle.getDir()) {
-        case FORWARD:
-          newYPos = vehicle.getyPos() - 1;
-          break;
-        case RIGHT:
-          newXPos = vehicle.getxPos() - 1;
-          break;
-        case BACK:
-          newYPos = vehicle.getyPos() + 1;
-          break;
-        case LEFT:
-          newXPos = vehicle.getxPos() + 1;
-          break;
+      void moveUnloaded(Vehicle vehicle) {
+        double newXPos = vehicle.getxPos();
+        double newYPos = vehicle.getyPos();
+        switch (vehicle.getDir()) {
+            case FORWARD:
+                newYPos = vehicle.getyPos() - 1;
+                break;
+            case RIGHT:
+                newXPos = vehicle.getxPos() - 1;
+                break;
+            case BACK:
+                newYPos = vehicle.getyPos() + 1;
+                break;
+            case LEFT:
+                newXPos = vehicle.getxPos() + 1;
+                break;
       }
       vehicle.move(newXPos, newYPos);
     }
@@ -127,5 +122,16 @@ public class VehicleCargo {
             newStack.push(oldStack.pop());
         }
         oldStack = newStack;
+    }
+    public int getCargoSize() {
+        return cargoSize;
+    }
+
+    Stack<Vehicle> getCargo() {
+        return cargo;
+    }
+
+    RampState getRampState() {
+        return rampState;
     }
 }
