@@ -1,5 +1,7 @@
 import java.awt.*;
 public class Saab95 extends Car {
+
+
     private boolean turboOn;
     private double turboPower;
 
@@ -7,7 +9,6 @@ public class Saab95 extends Car {
         super(2, Color.red, 125, "Saab95");
         turboOn = false;
         turboPower = 1.3;
-        stopEngine();
     }
 
     /**
@@ -20,11 +21,11 @@ public class Saab95 extends Car {
         return getEnginePower() * 0.01 * turbo;
     }
 
-    public void setTurboOn() {
-        turboOn = true;
-    }
+    public void setTurboOn() { turboOn = true;}
     public void setTurboOff() {
         turboOn = false;
     }
+    public boolean isTurboOn() { return turboOn;}
+
 
 }

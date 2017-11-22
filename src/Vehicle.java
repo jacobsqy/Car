@@ -10,6 +10,7 @@ public abstract class Vehicle implements Movable {
   private Vehicle carrier;
   private boolean loaded;
 
+
   private Dir[] dirs = {Dir.FORWARD, Dir.RIGHT, Dir.BACK, Dir.LEFT};
   private int currentDirIndex;
   public enum Dir {
@@ -183,6 +184,8 @@ public abstract class Vehicle implements Movable {
     public Dir getDir() {
       return dirs[currentDirIndex];
     }
+
+    public String getModelName() { return modelName; }
 
     public void setLoaded(Vehicle carrier) {
       loaded = true;

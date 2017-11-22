@@ -5,7 +5,6 @@ public class Volvo240 extends Car {
     public Volvo240(){
       super(4, Color.black, 100, "Volvo240");
       trimFactor = 1.25;
-      stopEngine();
     }
     /**
      * Calculate the acceleration

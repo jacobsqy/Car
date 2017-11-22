@@ -13,7 +13,7 @@ public class Ferry extends Vehicle {
     @Override
     public void move() {
       super.move();
-      vehicleCargo.moveCargo(this, getxPos(), getyPos());
+      vehicleCargo.moveCargo(getxPos(), getyPos());
     }
 
     @Override
@@ -21,12 +21,13 @@ public class Ferry extends Vehicle {
         return getEnginePower() * 0.0001;
     }
 
-    private void load(Truck truck) {
-        if (vehicleCargo.withinLoadingRange(truck, this) &&
+    private void load(Vehicle vehicle) {
+        if (vehicleCargo.withinLoadingRange(vehicle, this) &&
                 vehicleCargo.getRampState() == this.vehicleCargo.getRampState() &&
-                vehicleCargo.getCargo().size() < vehicleCargo.getCargoSize()){
-            vehicleCargo.getCargo().push(truck);
-            truck.setLoaded(this);
+                vehicleCargo.getCargo().size() < vehicleCargo.getCargoSize() &&
+                !(vehicle instanceof Ferry)){
+            vehicleCargo.getCargo().push(vehicle);
+            vehicle.setLoaded(this);
         }
     }
 

@@ -28,8 +28,9 @@ public class CarController {
     public static void main(String[] args) {
         // Instance of this class
         CarController cc = new CarController();
-
+        cc.cars.add(new Saab95());
         cc.cars.add(new Volvo240());
+        cc.cars.add(new Scania());
 
         // Start a new view and send a reference of self
         cc.frame = new CarView("CarSim 1.0", cc);
@@ -58,10 +59,17 @@ public class CarController {
     // Calls the gas method for each car once
     void gas(int amount) {
         double gas = ((double) amount) / 100;
-        for (Vehicle car : cars
-                ) {
+        for (Vehicle car : cars) {
             car.gas(gas);
         }
+    }
+
+    void startAllCars() {
+        for(Vehicle car : cars){
+        car.startEngine();
+            System.out.println(car.getModelName());
+        }
+
     }
 
     void brake(int amount) {
@@ -75,6 +83,42 @@ public class CarController {
         if (0 > car.getyPos() || car.getyPos() > 800 - 240 - 60 || 0 > car.getxPos() || car.getxPos() > 800) {
             car.turnRight();
             car.turnRight();
+        }
+    }
+
+    public void getTurboOn() {
+        for (Vehicle car : cars) {
+            if(car.getModelName().toLowerCase().equalsIgnoreCase("saab95")) {
+                ((Saab95) car).setTurboOn();
+                System.out.println(((Saab95) car).isTurboOn());
+            }
+        }
+    }
+
+    public void getTurboOff() {
+        for (Vehicle car : cars) {
+            if(car.getModelName().toLowerCase().equalsIgnoreCase("saab95")) {
+                ((Saab95) car).setTurboOff();
+                System.out.println(((Saab95) car).isTurboOn());
+            }
+        }
+    }
+
+    public void raiseTipper(){
+        for(Vehicle car : cars){
+            if(car.getModelName().toLowerCase().equalsIgnoreCase("scania")){
+                ((Scania) car).raiseTipper();
+                System.out.println("Up");
+            }
+        }
+    }
+
+    public void lowTipper() {
+        for (Vehicle car : cars) {
+            if (car.getModelName().toLowerCase().equalsIgnoreCase("scania")) {
+                ((Scania) car).lowerTipper();
+                System.out.println("Ner");
+            }
         }
     }
 }

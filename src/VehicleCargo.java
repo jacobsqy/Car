@@ -3,9 +3,9 @@ import java.util.Stack;
 public class VehicleCargo {
 
       private Stack<Vehicle> cargo = new Stack<Vehicle>();
-      public final double loadingRange;
+      private final double loadingRange;
       private RampState rampState;
-      public final int cargoSize;
+      private final int cargoSize;
       public enum RampState {
           UP, DOWN
       }
@@ -28,7 +28,7 @@ public class VehicleCargo {
           return loadingRange >= distance;
       }
 
-      public void moveCargo(Vehicle carrier, double x, double y) {
+      public void moveCargo(double x, double y) {
         Stack<Vehicle> tempS = new Stack<Vehicle>();
         Vehicle tempV;
         for (int i = 0; i < cargo.size(); i++) {

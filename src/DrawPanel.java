@@ -16,15 +16,30 @@ public class DrawPanel extends JPanel{
 
     // To keep track of a single cars position
     Point volvoPoint = new Point();
+    ArrayList<Point> pointList = new ArrayList<>();
 
     // TODO: Make this genereal for all cars
     void moveit(int x, int y){
-        volvoPoint.x = x;
-        volvoPoint.y = y;
+        int z = 0;
+        for(int i = 0; i < pointList.size(); i++){
+            if(i > 0){
+                pointList.get(i).x = x;
+                z += 100;
+                pointList.get(i).y = z;
+            }else{
+                pointList.get(i).x = x;
+                pointList.get(i).y = y;
+            }
+        }
+
     }
 
     // Initializes the panel and reads the images
     public DrawPanel(int x, int y) {
+        pointList.add(new Point());
+        pointList.add(new Point());
+        pointList.add(new Point());
+
         this.setDoubleBuffered(true);
         this.setPreferredSize(new Dimension(x, y));
         this.setBackground(Color.green);
@@ -36,6 +51,8 @@ public class DrawPanel extends JPanel{
             // if you are starting in IntelliJ.
             // Linux users need to modify \ to / in path string
             carImages.add(ImageIO.read(new File("src\\pics\\Volvo240.jpg")));
+            carImages.add(ImageIO.read(new File("src\\pics\\Scania.jpg")));
+            carImages.add(ImageIO.read(new File("src\\pics\\Saab95.jpg")));
         } catch (IOException ex)
         {
             ex.printStackTrace();
@@ -48,6 +65,9 @@ public class DrawPanel extends JPanel{
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
-        g.drawImage(volvoImage, volvoPoint.x, volvoPoint.y, null); // see javadoc for more info on the parameters
+        for(int i = 0; i < pointList.size(); i++){
+            g.drawImage(carImages.get(i), pointList.get(i).x, pointList.get(i).y, null); // see javadoc for more info on the parameters
+        }
+
     }
 }

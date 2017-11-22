@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="367.93112244897964" y="250.0">Saab95</node>
+    <node x="88.45833333333334" y="80.0">Vehicle</node>
+    <node x="512.4311224489796" y="170.0">Tipper</node>
+    <node x="84.45833333333334" y="0.0">Movable</node>
+    <node x="110.9311224489796" y="250.0">CarTransport</node>
+    <node x="371.49107142857144" y="170.0">Truck</node>
+    <node x="42.45833333333334" y="170.0">VehicleCargo</node>
+    <node x="0.0" y="250.0">Ferry</node>
+    <node x="249.93112244897958" y="250.0">Volvo240</node>
+    <node x="264.9311224489796" y="170.0">Car</node>
+    <node x="474.93112244897964" y="250.0">Scania</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="Ferry" target="VehicleCargo">
+      <point x="9.5" y="-15.0" />
+      <point x="47.5" y="230.0" />
+      <point x="54.45833333333334" y="230.0" />
+      <point x="-48.0" y="15.0" />
+    </edge>
+    <edge source="Volvo240" target="Car">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="Car" target="Vehicle">
+      <point x="0.0" y="-15.0" />
+      <point x="298.9311224489796" y="140.0" />
+      <point x="157.6011904761905" y="140.0" />
+      <point x="25.142857142857167" y="15.0" />
+    </edge>
+    <edge source="Ferry" target="Vehicle">
+      <point x="-9.5" y="-15.0" />
+      <point x="28.5" y="230.0" />
+      <point x="24.5" y="230.0" />
+      <point x="24.5" y="140.0" />
+      <point x="107.3154761904762" y="140.0" />
+      <point x="-25.14285714285714" y="15.0" />
+    </edge>
+    <edge source="CarTransport" target="VehicleCargo">
+      <point x="-49.58333333333333" y="-15.0" />
+      <point x="120.84778911564626" y="230.0" />
+      <point x="102.45833333333334" y="230.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="CarTransport" target="Vehicle">
+      <point x="9.916666666666657" y="-15.0" />
+      <point x="180.34778911564626" y="230.0" />
+      <point x="172.95833333333337" y="230.0" />
+      <point x="172.95833333333337" y="150.0" />
+      <point x="145.02976190476193" y="150.0" />
+      <point x="12.571428571428584" y="15.0" />
+    </edge>
+    <edge source="VehicleCargo" target="Vehicle">
+      <point x="30.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="Saab95" target="Car">
+      <point x="0.0" y="-15.0" />
+      <point x="411.43112244897964" y="220.0" />
+      <point x="321.59778911564626" y="220.0" />
+      <point x="22.666666666666686" y="15.0" />
+    </edge>
+    <edge source="Vehicle" target="Movable">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="Truck" target="Vehicle">
+      <point x="0.0" y="-15.0" />
+      <point x="411.49107142857144" y="130.0" />
+      <point x="170.17261904761907" y="130.0" />
+      <point x="37.71428571428572" y="15.0" />
+    </edge>
+    <edge source="Scania" target="Truck">
+      <point x="-28.0" y="-15.0" />
+      <point x="488.93112244897964" y="230.0" />
+      <point x="431.49107142857144" y="230.0" />
+      <point x="20.0" y="15.0" />
+    </edge>
+    <edge source="CarTransport" target="Car">
+      <point x="29.75" y="-15.0" />
+      <point x="200.18112244897958" y="220.0" />
+      <point x="276.2644557823129" y="220.0" />
+      <point x="-22.666666666666686" y="15.0" />
+    </edge>
+    <edge source="CarTransport" target="Truck">
+      <point x="49.58333333333334" y="-15.0" />
+      <point x="220.01445578231295" y="230.0" />
+      <point x="391.49107142857144" y="230.0" />
+      <point x="-20.0" y="15.0" />
+    </edge>
+    <edge source="Scania" target="Tipper">
+      <point x="28.0" y="-15.0" />
+      <point x="544.9311224489796" y="230.0" />
+      <point x="575.4311224489796" y="230.0" />
+      <point x="21.0" y="15.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="298.5" y="140.0" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
