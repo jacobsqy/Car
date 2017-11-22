@@ -22,7 +22,7 @@ public class VehicleCargo {
        * @param transporter the transporter that carrier compares with
        * @return true if the vehicle is within the cargo loading range
        */
-      boolean withinLoadingRange(Vehicle cargo, Vehicle transporter) {
+      public boolean withinLoadingRange(Vehicle cargo, Vehicle transporter) {
           double dy = cargo.getyPos() - transporter.getyPos();
           double dx = cargo.getxPos() - transporter.getxPos();
           double distance = Math.sqrt(Math.pow(dy, 2) + Math.pow(dx, 2));
@@ -34,7 +34,7 @@ public class VehicleCargo {
      * @param x xPos
      * @param y yPos
      */
-      void moveCargo(double x, double y) {
+      public void moveCargo(double x, double y) {
         Stack<Vehicle> tempS = new Stack<>();
         Vehicle tempV;
         for (int i = 0; i < cargo.size(); i++) {
@@ -50,14 +50,14 @@ public class VehicleCargo {
       /**
        * sets rampState to up
        */
-      void raiseRamp() {
+      public void raiseRamp() {
           rampState = RampState.UP;
       }
 
       /**
        * sets rampState to down
        */
-      void lowerRamp() {
+      public void lowerRamp() {
           rampState = RampState.DOWN;
       }
 
@@ -65,7 +65,7 @@ public class VehicleCargo {
        * loads a car to the ramp
        * @param vehicle the car to load
        */
-      void load(Vehicle vehicle) {
+      public void load(Vehicle vehicle) {
           if (rampState == RampState.DOWN &&
                   cargo.size() < cargoSize && !vehicle.getLoaded()){
               cargo.push(vehicle);
@@ -75,7 +75,7 @@ public class VehicleCargo {
       /**
        * unloads the car
        */
-      void unloadFILO() {
+      public void unloadFILO() {
           if (rampState == RampState.DOWN) {
               Vehicle vehicle = cargo.pop();
               moveUnloaded(vehicle);
@@ -83,10 +83,10 @@ public class VehicleCargo {
           }
       }
 
-    /**
-     * Ferry unload invertStack
-     */
-      void unloadFIFO() {
+      /**
+       * Ferry unload invertStack
+       */
+      public void unloadFIFO() {
           if (rampState == RampState.DOWN) {
               invertStack(cargo);
               Vehicle vehicle = cargo.pop();
@@ -96,7 +96,7 @@ public class VehicleCargo {
           }
       }
 
-      void moveUnloaded(Vehicle vehicle) {
+      public void moveUnloaded(Vehicle vehicle) {
         double newXPos = vehicle.getxPos();
         double newYPos = vehicle.getyPos();
         switch (vehicle.getDir()) {
