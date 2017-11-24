@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="91ad20e5-ca89-4217-bb33-a390467f0690" name="Default" comment="uml">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UML/labb.uml" afterPath="$PROJECT_DIR$/UML/labb.uml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UML/labb3.png" afterPath="$PROJECT_DIR$/UML/labb3.png" />
+    <list default="true" id="91ad20e5-ca89-4217-bb33-a390467f0690" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Ferry.java" afterPath="$PROJECT_DIR$/src/Ferry.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CarView.java" afterPath="$PROJECT_DIR$/src/CarView.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DrawPanel.java" afterPath="$PROJECT_DIR$/src/DrawPanel.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,218 +18,73 @@
     <SUITE FILE_PATH="coverage/Car$CarTest.coverage" NAME="CarTest Coverage Results" MODIFIED="1510240650818" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="VehicleCargo.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/VehicleCargo.java">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
+      <file leaf-file-name="Scania.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Scania.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="422">
-              <caret line="98" column="33" lean-forward="false" selection-start-line="98" selection-start-column="33" selection-end-line="98" selection-end-column="33" />
+            <state relative-caret-position="648">
+              <caret line="24" column="5" lean-forward="false" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CarView.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/CarView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="243">
+              <caret line="14" column="36" lean-forward="true" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DrawPanel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DrawPanel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1161">
+              <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
               <folding>
-                <element signature="e#100#109#0" expanded="true" />
-                <element signature="e#1139#1148#0" expanded="true" />
-                <marker date="1511516302990" expanded="true" signature="3165:3172" ph="{...}" />
+                <element signature="method#addImages#0;class#DrawPanel#0" expanded="false" />
+                <marker date="1511517677353" expanded="true" signature="2849:2855" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="labb.uml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/UML/labb.uml">
-          <provider selected="true" editor-type-id="UmlEditorProvider">
-            <state>
-              <ID>JAVA</ID>
-              <OriginalElement />
-              <nodes>
-                <node x="1084.4855311355311" y="1241.0">Saab95</node>
-                <node x="473.45451007326005" y="2050.0">CarView</node>
-                <node x="1489.2444597069598" y="168.0">Vehicle</node>
-                <node x="448.94642857142867" y="953.0">Tipper</node>
-                <node x="0.0" y="1664.5">DrawPanel</node>
-                <node x="1590.2444597069598" y="0.0">Movable</node>
-                <node x="1412.4079899267394" y="1691.5">CarTransport</node>
-                <node x="842.9545100732599" y="966.5">Truck</node>
-                <node x="72.33656135531123" y="1282.5">VehicleImagePoint</node>
-                <node x="1599.9464285714287" y="1160.0">VehicleCargo</node>
-                <node x="1803.7964285714284" y="1678.0">Ferry</node>
-                <node x="556.9545100732599" y="1584.0">CarController</node>
-                <node x="802.4855311355311" y="1282.0">Volvo240</node>
-                <node x="1264.9545100732598" y="980.5">Car</node>
-                <node x="514.9855311355311" y="1227.5">Scania</node>
-              </nodes>
-              <notes />
-              <edges>
-                <edge source="Ferry" target="VehicleCargo">
-                  <point x="-60.59999999999968" y="-114.0" />
-                  <point x="98.25" y="182.0" />
-                </edge>
-                <edge source="CarController" target="Scania">
-                  <point x="0.0" y="-208.0" />
-                  <point x="676.9545100732599" y="1564.0" />
-                  <point x="697.2355311355311" y="1564.0" />
-                  <point x="60.75" y="114.5" />
-                </edge>
-                <edge source="Volvo240" target="Car">
-                  <point x="0.0" y="-60.0" />
-                  <point x="933.4855311355311" y="1130.0" />
-                  <point x="1329.7878434065933" y="1130.0" />
-                  <point x="-129.66666666666674" y="46.0" />
-                </edge>
-                <edge source="Car" target="Vehicle">
-                  <point x="0.0" y="-46.0" />
-                  <point x="1459.4545100732598" y="933.0" />
-                  <point x="1660.3069597069598" y="933.0" />
-                  <point x="-24.4375" y="357.5" />
-                </edge>
-                <edge source="Ferry" target="Vehicle">
-                  <point x="121.20000000000005" y="-114.0" />
-                  <point x="2076.4964285714286" y="1554.0" />
-                  <point x="2014.4464285714287" y="1554.0" />
-                  <point x="2014.4464285714287" y="903.0" />
-                  <point x="1855.8069597069598" y="903.0" />
-                  <point x="171.06250000000006" y="357.5" />
-                </edge>
-                <edge source="CarTransport" target="VehicleCargo">
-                  <point x="-35.625" y="-100.5" />
-                  <point x="1519.2829899267394" y="1544.0" />
-                  <point x="1632.6964285714287" y="1544.0" />
-                  <point x="-163.75" y="182.0" />
-                </edge>
-                <edge source="CarController" target="Volvo240">
-                  <point x="34.285714285714334" y="-208.0" />
-                  <point x="711.2402243589743" y="1544.0" />
-                  <point x="933.4855311355311" y="1544.0" />
-                  <point x="0.0" y="60.0" />
-                </edge>
-                <edge source="VehicleCargo" target="Car">
-                  <point x="-131.0" y="-182.0" />
-                  <point x="1665.4464285714287" y="1140.0" />
-                  <point x="1589.1211767399263" y="1140.0" />
-                  <point x="129.66666666666652" y="46.0" />
-                </edge>
-                <edge source="DrawPanel" target="VehicleImagePoint">
-                  <point x="104.5" y="-127.5" />
-                  <point x="313.5" y="1564.0" />
-                  <point x="299.58656135531123" y="1564.0" />
-                  <point x="75.75" y="59.5" />
-                </edge>
-                <edge source="CarController" target="Saab95">
-                  <point x="68.57142857142856" y="-208.0" />
-                  <point x="745.5259386446885" y="1554.0" />
-                  <point x="1146.7355311355311" y="1554.0" />
-                  <point x="-62.25" y="101.0" />
-                </edge>
-                <edge source="CarView" target="DrawPanel">
-                  <point x="-119.58333333333337" y="-276.0" />
-                  <point x="497.3711767399267" y="2030.0" />
-                  <point x="104.5" y="2030.0" />
-                  <point x="-104.5" y="127.5" />
-                </edge>
-                <edge source="CarController" target="CarView">
-                  <point x="90.0" y="208.0" />
-                  <point x="766.9545100732599" y="2030.0" />
-                  <point x="736.5378434065934" y="2030.0" />
-                  <point x="119.58333333333337" y="-276.0" />
-                </edge>
-                <edge source="CarView" target="CarController">
-                  <point x="-23.916666666666742" y="-276.0" />
-                  <point x="593.0378434065933" y="2030.0" />
-                  <point x="586.9545100732599" y="2030.0" />
-                  <point x="-90.0" y="208.0" />
-                </edge>
-                <edge source="VehicleCargo" target="Vehicle">
-                  <point x="0.0" y="-182.0" />
-                  <point x="1796.4464285714287" y="933.0" />
-                  <point x="1709.1819597069598" y="933.0" />
-                  <point x="24.437500000000057" y="357.5" />
-                </edge>
-                <edge source="Saab95" target="Car">
-                  <point x="0.0" y="-101.0" />
-                  <point x="1208.9855311355311" y="1140.0" />
-                  <point x="1459.4545100732598" y="1140.0" />
-                  <point x="0.0" y="46.0" />
-                </edge>
-                <edge source="CarController" target="Vehicle">
-                  <point x="-102.85714285714278" y="-208.0" />
-                  <point x="574.0973672161172" y="1564.0" />
-                  <point x="427.44642857142867" y="1564.0" />
-                  <point x="427.44642857142867" y="903.0" />
-                  <point x="1513.6819597069598" y="903.0" />
-                  <point x="-171.0625" y="357.5" />
-                </edge>
-                <edge source="Vehicle" target="Movable">
-                  <point x="0.0" y="-357.5" />
-                  <point x="0.0" y="59.0" />
-                </edge>
-                <edge source="Truck" target="Vehicle">
-                  <point x="0.0" y="-60.0" />
-                  <point x="1043.9545100732598" y="923.0" />
-                  <point x="1611.4319597069598" y="923.0" />
-                  <point x="-73.3125" y="357.5" />
-                </edge>
-                <edge source="Scania" target="Truck">
-                  <point x="81.0" y="-114.5" />
-                  <point x="717.4855311355311" y="1120.0" />
-                  <point x="943.4545100732599" y="1120.0" />
-                  <point x="-100.5" y="60.0" />
-                </edge>
-                <edge source="Scania" target="Tipper">
-                  <point x="0.0" y="-114.5" />
-                  <point x="636.4855311355311" y="1140.0" />
-                  <point x="604.9464285714287" y="1140.0" />
-                  <point x="52.0" y="73.5" />
-                </edge>
-                <edge source="CarTransport" target="Truck">
-                  <point x="-106.875" y="-100.5" />
-                  <point x="1448.0329899267394" y="1564.0" />
-                  <point x="1363.7444597069598" y="1564.0" />
-                  <point x="1363.7444597069598" y="1120.0" />
-                  <point x="1144.4545100732598" y="1120.0" />
-                  <point x="100.5" y="60.0" />
-                </edge>
-              </edges>
-              <settings layout="Hierarchic Group" zoom="0.8259803921568631" x="653.5637982195844" y="1175.5637982195844" />
-              <SelectedNodes>
-                <node>Scania</node>
-              </SelectedNodes>
-              <Categories>
-                <Category>Fields</Category>
-                <Category>Inner Classes</Category>
-                <Category>Constructors</Category>
-                <Category>Properties</Category>
-                <Category>Methods</Category>
-              </Categories>
-              <SCOPE>All</SCOPE>
-              <VISIBILITY>private</VISIBILITY>
+      <file leaf-file-name="CarController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/CarController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-342">
+              <caret line="5" column="3" lean-forward="false" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+              <folding>
+                <element signature="method#main#0;class#CarController#0" expanded="false" />
+                <element signature="class#TimerListener#0;class#CarController#0" expanded="false" />
+                <element signature="method#actionPerformed#0;class#TimerListener#0;class#CarController#0" expanded="false" />
+                <element signature="docComment;method#gas#0;class#CarController#0" expanded="false" />
+                <element signature="method#gas#0;class#CarController#0" expanded="false" />
+                <element signature="method#startAllCars#0;class#CarController#0" expanded="false" />
+                <element signature="method#stopAllCars#0;class#CarController#0" expanded="false" />
+                <element signature="method#brake#0;class#CarController#0" expanded="false" />
+                <element signature="method#collision#0;class#CarController#0" expanded="false" />
+                <element signature="method#getTurboOn#0;class#CarController#0" expanded="false" />
+                <element signature="method#getTurboOff#0;class#CarController#0" expanded="false" />
+                <element signature="method#raiseTipper#0;class#CarController#0" expanded="false" />
+                <element signature="method#lowTipper#0;class#CarController#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Ferry.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Ferry.java">
+      <file leaf-file-name="VehicleImagePoint.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/VehicleImagePoint.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="29" column="36" lean-forward="true" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Scania.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Scania.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CarTransport.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/CarTransport.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="16" column="68" lean-forward="false" selection-start-line="16" selection-start-column="68" selection-end-line="16" selection-end-column="68" />
-              <folding />
+            <state relative-caret-position="189">
+              <caret line="7" column="44" lean-forward="false" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#VehicleImagePoint#0;class#VehicleImagePoint#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -264,7 +118,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="labb3" />
       </map>
     </option>
   </component>
@@ -287,15 +141,15 @@
         <option value="$PROJECT_DIR$/src/CarTransport.java" />
         <option value="$PROJECT_DIR$/src/Volvo240.java" />
         <option value="$PROJECT_DIR$/src/Saab95.java" />
+        <option value="$PROJECT_DIR$/src/Ferry.java" />
         <option value="$PROJECT_DIR$/tests/VehicleCargoTest.java" />
         <option value="$PROJECT_DIR$/tests/VehicleTest.java" />
-        <option value="$PROJECT_DIR$/src/VehicleImagePoint.java" />
-        <option value="$PROJECT_DIR$/src/DrawPanel.java" />
         <option value="$PROJECT_DIR$/src/Tipper.java" />
         <option value="$PROJECT_DIR$/src/Scania.java" />
+        <option value="$PROJECT_DIR$/src/VehicleImagePoint.java" />
         <option value="$PROJECT_DIR$/src/CarController.java" />
+        <option value="$PROJECT_DIR$/src/DrawPanel.java" />
         <option value="$PROJECT_DIR$/src/CarView.java" />
-        <option value="$PROJECT_DIR$/src/Ferry.java" />
       </list>
     </option>
   </component>
@@ -305,11 +159,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
-    <option name="height" value="1102" />
+    <option name="height" value="1176" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -327,47 +181,37 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="Car" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Car" type="462c0819:PsiDirectoryNode" />
+              <item name="Labb1_Car" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Labb1_Car" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Car" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Car" type="462c0819:PsiDirectoryNode" />
+              <item name="Labb1_Car" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Labb1_Car" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Car" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Car" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Car" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Car" type="462c0819:PsiDirectoryNode" />
-              <item name="UML" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/UML/labb3.png" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Car-Labb3R" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -719,7 +563,6 @@
       <workItem from="1511112672881" duration="950000" />
       <workItem from="1511355326085" duration="114000" />
       <workItem from="1511376426358" duration="13478000" />
-      <workItem from="1511517870736" duration="771000" />
     </task>
     <task id="LOCAL-00001" summary="Created the subclass Scania and gave it the needed values">
       <created>1510569224576</created>
@@ -896,7 +739,14 @@
       <option name="project" value="LOCAL" />
       <updated>1511172987346</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Fixat javadoc för CarController klassen och tagit bort lite överflödigt i drawpannel.">
+      <created>1511517500314</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1511517500314</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -932,44 +782,95 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17199000" />
+    <option name="totallyTimeSpent" value="16428000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <frame x="-9" y="-9" width="1938" height="1060" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="simpleUML" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17434211" sideWeight="0.48125" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32785088" sideWeight="0.5083333" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32719395" sideWeight="0.49166667" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25885418" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39869988" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32739213" sideWeight="0.5083333" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32815734" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32645404" sideWeight="0.49166667" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32981783" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2640625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39868668" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="simpleUML" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17542213" sideWeight="0.48125" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32645404" sideWeight="0.49166667" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32885906" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32981783" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26492536" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31525424" sideWeight="0.516129" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39962476" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3698324" sideWeight="0.48541668" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31525424" sideWeight="0.48387095" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26951092" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -1028,8 +929,8 @@
     <MESSAGE value="fixed CarController.java" />
     <MESSAGE value="added brake() in CarController.java" />
     <MESSAGE value="Några buggar måste fixas" />
-    <MESSAGE value="uml" />
-    <option name="LAST_COMMIT_MESSAGE" value="uml" />
+    <MESSAGE value="Fixat javadoc för CarController klassen och tagit bort lite överflödigt i drawpannel." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixat javadoc för CarController klassen och tagit bort lite överflödigt i drawpannel." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1187,6 +1088,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../Labb2/Car-master/src/Movable.java" />
+    <entry file="file://$PROJECT_DIR$/UML/labb.uml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/UML/labb2.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1216,10 +1125,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ferry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="8" column="58" lean-forward="true" selection-start-line="8" selection-start-column="58" selection-end-line="8" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Saab95.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="55" lean-forward="true" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CarTransport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="63" lean-forward="true" selection-start-line="10" selection-start-column="63" selection-end-line="10" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/VehicleCargo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="28" lean-forward="false" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
           <folding />
         </state>
       </provider>
@@ -1236,7 +1169,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="876">
           <caret line="61" column="2" lean-forward="false" selection-start-line="61" selection-start-column="2" selection-end-line="61" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1248,10 +1180,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CarController.java">
+    <entry file="file://$PROJECT_DIR$/src/Scania.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="81" column="29" lean-forward="true" selection-start-line="81" selection-start-column="29" selection-end-line="81" selection-end-column="29" />
+        <state relative-caret-position="648">
+          <caret line="24" column="5" lean-forward="false" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -1269,278 +1201,61 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/UML/labb2.uml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-476">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DrawPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1161">
+          <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+          <folding>
+            <element signature="method#addImages#0;class#DrawPanel#0" expanded="false" />
+            <marker date="1511517677353" expanded="true" signature="2849:2855" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/CarView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="29" column="4" lean-forward="true" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
+        <state relative-caret-position="243">
+          <caret line="14" column="36" lean-forward="true" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/VehicleImagePoint.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="16" lean-forward="false" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+        <state relative-caret-position="189">
+          <caret line="7" column="44" lean-forward="false" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#519#520#0" expanded="true" />
-            <element signature="e#547#548#0" expanded="true" />
-            <element signature="e#578#579#0" expanded="true" />
-            <element signature="e#606#607#0" expanded="true" />
+            <element signature="method#VehicleImagePoint#0;class#VehicleImagePoint#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DrawPanel.java">
+    <entry file="file://$PROJECT_DIR$/src/CarController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1131">
-          <caret line="72" column="0" lean-forward="true" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+        <state relative-caret-position="-342">
+          <caret line="5" column="3" lean-forward="false" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#475#490#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UML/labb2.uml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="-476">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement />
-          <nodes>
-            <node x="" y="">Saab95</node>
-            <node x="" y="">Vehicle</node>
-            <node x="" y="">Tipper</node>
-            <node x="" y="">Movable</node>
-            <node x="" y="">CarTransport</node>
-            <node x="" y="">Truck</node>
-            <node x="" y="">VehicleCargo</node>
-            <node x="" y="">Ferry</node>
-            <node x="" y="">Volvo240</node>
-            <node x="" y="">Car</node>
-            <node x="" y="">Scania</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="299.0" y="140.0" />
-          <SelectedNodes />
-          <Categories />
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Scania.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CarTransport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" column="68" lean-forward="false" selection-start-line="16" selection-start-column="68" selection-end-line="16" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ferry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="29" column="36" lean-forward="true" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UML/labb.uml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement />
-          <nodes>
-            <node x="1084.4855311355311" y="1241.0">Saab95</node>
-            <node x="473.45451007326005" y="2050.0">CarView</node>
-            <node x="1489.2444597069598" y="168.0">Vehicle</node>
-            <node x="448.94642857142867" y="953.0">Tipper</node>
-            <node x="0.0" y="1664.5">DrawPanel</node>
-            <node x="1590.2444597069598" y="0.0">Movable</node>
-            <node x="1412.4079899267394" y="1691.5">CarTransport</node>
-            <node x="842.9545100732599" y="966.5">Truck</node>
-            <node x="72.33656135531123" y="1282.5">VehicleImagePoint</node>
-            <node x="1599.9464285714287" y="1160.0">VehicleCargo</node>
-            <node x="1803.7964285714284" y="1678.0">Ferry</node>
-            <node x="556.9545100732599" y="1584.0">CarController</node>
-            <node x="802.4855311355311" y="1282.0">Volvo240</node>
-            <node x="1264.9545100732598" y="980.5">Car</node>
-            <node x="514.9855311355311" y="1227.5">Scania</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="Ferry" target="VehicleCargo">
-              <point x="-60.59999999999968" y="-114.0" />
-              <point x="98.25" y="182.0" />
-            </edge>
-            <edge source="CarController" target="Scania">
-              <point x="0.0" y="-208.0" />
-              <point x="676.9545100732599" y="1564.0" />
-              <point x="697.2355311355311" y="1564.0" />
-              <point x="60.75" y="114.5" />
-            </edge>
-            <edge source="Volvo240" target="Car">
-              <point x="0.0" y="-60.0" />
-              <point x="933.4855311355311" y="1130.0" />
-              <point x="1329.7878434065933" y="1130.0" />
-              <point x="-129.66666666666674" y="46.0" />
-            </edge>
-            <edge source="Car" target="Vehicle">
-              <point x="0.0" y="-46.0" />
-              <point x="1459.4545100732598" y="933.0" />
-              <point x="1660.3069597069598" y="933.0" />
-              <point x="-24.4375" y="357.5" />
-            </edge>
-            <edge source="Ferry" target="Vehicle">
-              <point x="121.20000000000005" y="-114.0" />
-              <point x="2076.4964285714286" y="1554.0" />
-              <point x="2014.4464285714287" y="1554.0" />
-              <point x="2014.4464285714287" y="903.0" />
-              <point x="1855.8069597069598" y="903.0" />
-              <point x="171.06250000000006" y="357.5" />
-            </edge>
-            <edge source="CarTransport" target="VehicleCargo">
-              <point x="-35.625" y="-100.5" />
-              <point x="1519.2829899267394" y="1544.0" />
-              <point x="1632.6964285714287" y="1544.0" />
-              <point x="-163.75" y="182.0" />
-            </edge>
-            <edge source="CarController" target="Volvo240">
-              <point x="34.285714285714334" y="-208.0" />
-              <point x="711.2402243589743" y="1544.0" />
-              <point x="933.4855311355311" y="1544.0" />
-              <point x="0.0" y="60.0" />
-            </edge>
-            <edge source="VehicleCargo" target="Car">
-              <point x="-131.0" y="-182.0" />
-              <point x="1665.4464285714287" y="1140.0" />
-              <point x="1589.1211767399263" y="1140.0" />
-              <point x="129.66666666666652" y="46.0" />
-            </edge>
-            <edge source="DrawPanel" target="VehicleImagePoint">
-              <point x="104.5" y="-127.5" />
-              <point x="313.5" y="1564.0" />
-              <point x="299.58656135531123" y="1564.0" />
-              <point x="75.75" y="59.5" />
-            </edge>
-            <edge source="CarController" target="Saab95">
-              <point x="68.57142857142856" y="-208.0" />
-              <point x="745.5259386446885" y="1554.0" />
-              <point x="1146.7355311355311" y="1554.0" />
-              <point x="-62.25" y="101.0" />
-            </edge>
-            <edge source="CarView" target="DrawPanel">
-              <point x="-119.58333333333337" y="-276.0" />
-              <point x="497.3711767399267" y="2030.0" />
-              <point x="104.5" y="2030.0" />
-              <point x="-104.5" y="127.5" />
-            </edge>
-            <edge source="CarController" target="CarView">
-              <point x="90.0" y="208.0" />
-              <point x="766.9545100732599" y="2030.0" />
-              <point x="736.5378434065934" y="2030.0" />
-              <point x="119.58333333333337" y="-276.0" />
-            </edge>
-            <edge source="CarView" target="CarController">
-              <point x="-23.916666666666742" y="-276.0" />
-              <point x="593.0378434065933" y="2030.0" />
-              <point x="586.9545100732599" y="2030.0" />
-              <point x="-90.0" y="208.0" />
-            </edge>
-            <edge source="VehicleCargo" target="Vehicle">
-              <point x="0.0" y="-182.0" />
-              <point x="1796.4464285714287" y="933.0" />
-              <point x="1709.1819597069598" y="933.0" />
-              <point x="24.437500000000057" y="357.5" />
-            </edge>
-            <edge source="Saab95" target="Car">
-              <point x="0.0" y="-101.0" />
-              <point x="1208.9855311355311" y="1140.0" />
-              <point x="1459.4545100732598" y="1140.0" />
-              <point x="0.0" y="46.0" />
-            </edge>
-            <edge source="CarController" target="Vehicle">
-              <point x="-102.85714285714278" y="-208.0" />
-              <point x="574.0973672161172" y="1564.0" />
-              <point x="427.44642857142867" y="1564.0" />
-              <point x="427.44642857142867" y="903.0" />
-              <point x="1513.6819597069598" y="903.0" />
-              <point x="-171.0625" y="357.5" />
-            </edge>
-            <edge source="Vehicle" target="Movable">
-              <point x="0.0" y="-357.5" />
-              <point x="0.0" y="59.0" />
-            </edge>
-            <edge source="Truck" target="Vehicle">
-              <point x="0.0" y="-60.0" />
-              <point x="1043.9545100732598" y="923.0" />
-              <point x="1611.4319597069598" y="923.0" />
-              <point x="-73.3125" y="357.5" />
-            </edge>
-            <edge source="Scania" target="Truck">
-              <point x="81.0" y="-114.5" />
-              <point x="717.4855311355311" y="1120.0" />
-              <point x="943.4545100732599" y="1120.0" />
-              <point x="-100.5" y="60.0" />
-            </edge>
-            <edge source="Scania" target="Tipper">
-              <point x="0.0" y="-114.5" />
-              <point x="636.4855311355311" y="1140.0" />
-              <point x="604.9464285714287" y="1140.0" />
-              <point x="52.0" y="73.5" />
-            </edge>
-            <edge source="CarTransport" target="Truck">
-              <point x="-106.875" y="-100.5" />
-              <point x="1448.0329899267394" y="1564.0" />
-              <point x="1363.7444597069598" y="1564.0" />
-              <point x="1363.7444597069598" y="1120.0" />
-              <point x="1144.4545100732598" y="1120.0" />
-              <point x="100.5" y="60.0" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="0.8259803921568631" x="653.5637982195844" y="1175.5637982195844" />
-          <SelectedNodes>
-            <node>Scania</node>
-          </SelectedNodes>
-          <Categories>
-            <Category>Fields</Category>
-            <Category>Inner Classes</Category>
-            <Category>Constructors</Category>
-            <Category>Properties</Category>
-            <Category>Methods</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/VehicleCargo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="98" column="33" lean-forward="false" selection-start-line="98" selection-start-column="33" selection-end-line="98" selection-end-column="33" />
-          <folding>
-            <element signature="e#100#109#0" expanded="true" />
-            <element signature="e#1139#1148#0" expanded="true" />
-            <marker date="1511516302990" expanded="true" signature="3165:3172" ph="{...}" />
+            <element signature="method#main#0;class#CarController#0" expanded="false" />
+            <element signature="class#TimerListener#0;class#CarController#0" expanded="false" />
+            <element signature="method#actionPerformed#0;class#TimerListener#0;class#CarController#0" expanded="false" />
+            <element signature="docComment;method#gas#0;class#CarController#0" expanded="false" />
+            <element signature="method#gas#0;class#CarController#0" expanded="false" />
+            <element signature="method#startAllCars#0;class#CarController#0" expanded="false" />
+            <element signature="method#stopAllCars#0;class#CarController#0" expanded="false" />
+            <element signature="method#brake#0;class#CarController#0" expanded="false" />
+            <element signature="method#collision#0;class#CarController#0" expanded="false" />
+            <element signature="method#getTurboOn#0;class#CarController#0" expanded="false" />
+            <element signature="method#getTurboOff#0;class#CarController#0" expanded="false" />
+            <element signature="method#raiseTipper#0;class#CarController#0" expanded="false" />
+            <element signature="method#lowTipper#0;class#CarController#0" expanded="false" />
           </folding>
         </state>
       </provider>

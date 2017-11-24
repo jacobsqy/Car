@@ -3,7 +3,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
-/*
+/**
 * This class represents the Controller part in the MVC pattern.
 * It's responsibilities is to listen to the View and responds in a appropriate manner by
 * modifying the model state and the updating the view.
@@ -40,15 +40,13 @@ public class CarController {
             cc.frame.drawPanel.addImages(x, y, car.getModelName());
         }
 
-
-
         // Start the timer
         cc.timer.start();
     }
 
-    /* Each step the TimerListener moves all the cars in the list and tells the
-    * view to update its images. Change this method to your needs.
-    * */
+    /** Each step the TimerListener moves all the cars in the list and tells the
+     * view to update its images. It also call on the method collision.
+     */
     private class TimerListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
             for (int i = 0; i < cars.size(); i++) {
@@ -63,20 +61,30 @@ public class CarController {
         }
     }
 
-    // Calls the gas method for each car once
-    void gas(int amount) {
+
+    /**
+     * calls on gas() in class Vehicle with double gas that is calculated with amount/100.
+     * @param amount an int from the GUI between 0 and 100.
+     */    void gas(int amount) {
         double gas = ((double) amount) / 100;
         for (Vehicle car : cars) {
             car.gas(gas);
         }
     }
 
+    /**
+     * loops through all vehicles and use the startEngine() method from Vehicle class.
+     */
     void startAllCars() {
         for(Vehicle car : cars){
         car.startEngine();
         }
 
     }
+
+    /**
+     * loops through all vehicles and use the stopEngine() method from Vehicle class.
+     */
     void stopAllCars() {
         for(Vehicle car : cars){
             car.stopEngine();
@@ -84,6 +92,9 @@ public class CarController {
 
     }
 
+    /**
+     * Loops through all vehicles and use the brake() method from Vehicle class.
+     */
     void brake(int amount) {
         double brake = ((double) amount) / 100;
         for (Vehicle car : cars) {
@@ -91,6 +102,9 @@ public class CarController {
         }
     }
 
+    /**
+     * Checks if the whole car is within the gamewindow, turns the car twice right if not.
+     */
     void collision(Vehicle car) {
         if (0 > car.getyPos() || car.getyPos() > 800 - 240 - 60 || 0 > car.getxPos() || car.getxPos() > 800) {
             car.turnRight();
@@ -98,6 +112,10 @@ public class CarController {
         }
     }
 
+    /**
+     * loops through all vehicles and if the vehicle has the modellname "saab95"
+     * it calls on setTurboOn().
+     */
     public void getTurboOn() {
         for (Vehicle car : cars) {
             if(car.getModelName().toLowerCase().equalsIgnoreCase("saab95")) {
@@ -107,6 +125,10 @@ public class CarController {
         }
     }
 
+    /**
+     * loops through all vehicles and if the vehicle has the modellname "saab95"
+     * it calls on setTurboOff().
+     */
     public void getTurboOff() {
         for (Vehicle car : cars) {
             if(car.getModelName().toLowerCase().equalsIgnoreCase("saab95")) {
@@ -116,6 +138,10 @@ public class CarController {
         }
     }
 
+    /**
+     * loops through all vehicles and if the vehicle has the modellname "scania"
+     * it calls on raiseTipper().
+     */
     public void raiseTipper(){
         for(Vehicle car : cars){
             if(car.getModelName().toLowerCase().equalsIgnoreCase("scania")){
@@ -125,6 +151,10 @@ public class CarController {
         }
     }
 
+    /**
+     * loops through all vehicles and if the vehicle has the modellname "scania"
+     * it calls on lowerTipper().
+     */
     public void lowTipper() {
         for (Vehicle car : cars) {
             if (car.getModelName().toLowerCase().equalsIgnoreCase("scania")) {
