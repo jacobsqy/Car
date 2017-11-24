@@ -9,6 +9,7 @@ public abstract class Vehicle implements Movable {
   private String modelName;
   private Vehicle carrier;
   private boolean loaded;
+  private boolean engineOn;
 
 
   private Dir[] dirs = {Dir.FORWARD, Dir.RIGHT, Dir.BACK, Dir.LEFT};
@@ -95,7 +96,7 @@ public abstract class Vehicle implements Movable {
           if (1.0 < amount || amount < 0.0) {
               throw new Exception("Invalid amount");
           }
-          incrementSpeed(amount);
+          if (engineOn) incrementSpeed(amount);
       } catch(Exception e) {
           System.err.println(e.getMessage());
       }
@@ -139,6 +140,7 @@ public abstract class Vehicle implements Movable {
   public void startEngine(){
     if(!loaded){
       currentSpeed = 0.1;
+      engineOn = true;
     }
   }
 
@@ -147,6 +149,7 @@ public abstract class Vehicle implements Movable {
    */
   public void stopEngine(){
       currentSpeed = 0;
+      engineOn = false;
   }
 
     /**
