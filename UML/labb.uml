@@ -3,152 +3,79 @@
   <ID>JAVA</ID>
   <OriginalElement />
   <nodes>
-    <node x="546.7145454545455" y="1175.5">Saab95</node>
-    <node x="1238.8395454545455" y="1033.0">CarView</node>
-    <node x="183.51189393939387" y="146.0">Vehicle</node>
-    <node x="1021.3395454545455" y="821.0">Tipper</node>
-    <node x="1221.3395454545455" y="799.0">DrawPanel</node>
-    <node x="221.51189393939387" y="0.0">Movable</node>
-    <node x="301.1562121212122" y="1639.5">CarTransport</node>
-    <node x="614.0634848484848" y="832.0">Truck</node>
-    <node x="92.49999999999989" y="1109.5">VehicleCargo</node>
-    <node x="0.0" y="1628.5">Ferry</node>
-    <node x="1088.688484848485" y="1563.0">CarController</node>
-    <node x="749.7145454545455" y="1209.0">Volvo240</node>
-    <node x="365.0634848484848" y="843.5">Car</node>
-    <node x="952.7145454545455" y="1176.0">Scania</node>
+    <node x="1084.4855311355311" y="1241.0">Saab95</node>
+    <node x="473.45451007326005" y="2050.0">CarView</node>
+    <node x="1489.2444597069598" y="168.0">Vehicle</node>
+    <node x="448.94642857142856" y="953.0">Tipper</node>
+    <node x="0.0" y="1664.5">DrawPanel</node>
+    <node x="1590.2444597069598" y="0.0">Movable</node>
+    <node x="1412.4079899267397" y="1691.5">CarTransport</node>
+    <node x="842.9545100732599" y="966.5">Truck</node>
+    <node x="72.33656135531123" y="1282.5">VehicleImagePoint</node>
+    <node x="1599.9464285714287" y="1160.0">VehicleCargo</node>
+    <node x="1803.7964285714286" y="1678.0">Ferry</node>
+    <node x="556.9545100732599" y="1584.0">CarController</node>
+    <node x="802.4855311355311" y="1282.0">Volvo240</node>
+    <node x="1264.9545100732598" y="980.5">Car</node>
+    <node x="514.9855311355311" y="1227.5">Scania</node>
   </nodes>
   <notes />
   <edges>
-    <edge source="CarController" target="Scania">
-      <point x="-35.454545454545496" y="-158.5" />
-      <point x="1150.7339393939394" y="1513.0" />
-      <point x="998.4645454545455" y="1513.0" />
-      <point x="-45.75" y="82.0" />
-    </edge>
-    <edge source="Ferry" target="Vehicle">
-      <point x="-98.0" y="-93.0" />
-      <point x="24.5" y="1533.0" />
-      <point x="71.0" y="1533.0" />
-      <point x="71.0" y="749.0" />
-      <point x="197.94939393939387" y="749.0" />
-      <point x="-101.0625" y="291.5" />
-    </edge>
-    <edge source="CarTransport" target="VehicleCargo">
-      <point x="26.625" y="-82.0" />
-      <point x="434.2812121212122" y="1523.0" />
-      <point x="382.1666666666665" y="1523.0" />
-      <point x="131.66666666666663" y="148.5" />
-    </edge>
-    <edge source="CarController" target="Saab95">
-      <point x="-88.63636363636351" y="-158.5" />
-      <point x="1097.5521212121214" y="1543.0" />
-      <point x="592.4645454545455" y="1543.0" />
-      <point x="-45.75" y="82.5" />
-    </edge>
-    <edge source="CarView" target="DrawPanel">
-      <point x="58.25" y="-225.0" />
-      <point x="1413.5895454545455" y="1013.0" />
-      <point x="1422.3395454545455" y="1013.0" />
-      <point x="67.0" y="82.0" />
-    </edge>
-    <edge source="VehicleCargo" target="Vehicle">
-      <point x="0.0" y="-148.5" />
-      <point x="250.4999999999999" y="1013.0" />
-      <point x="236.51189393939387" y="1013.0" />
-      <point x="236.51189393939387" y="779.0" />
-      <point x="284.5743939393939" y="779.0" />
-      <point x="-14.4375" y="291.5" />
-    </edge>
-    <edge source="Saab95" target="Car">
-      <point x="0.0" y="-82.5" />
-      <point x="638.2145454545455" y="1003.0" />
-      <point x="479.5634848484848" y="1003.0" />
-      <point x="0.0" y="37.5" />
-    </edge>
-    <edge source="Truck" target="Vehicle">
-      <point x="0.0" y="-49.0" />
-      <point x="734.5634848484848" y="769.0" />
-      <point x="342.3243939393939" y="769.0" />
-      <point x="43.3125" y="291.5" />
-    </edge>
-    <edge source="Scania" target="Truck">
-      <point x="-61.0" y="-82.0" />
-      <point x="983.2145454545455" y="983.0" />
-      <point x="794.8134848484848" y="983.0" />
-      <point x="60.25" y="49.0" />
-    </edge>
-    <edge source="Scania" target="Tipper">
-      <point x="0.0" y="-82.0" />
-      <point x="1044.2145454545455" y="1013.0" />
-      <point x="1063.3395454545455" y="1013.0" />
-      <point x="-42.0" y="60.0" />
-    </edge>
-    <edge source="Ferry" target="VehicleCargo">
-      <point x="98.0" y="-93.0" />
-      <point x="220.5" y="1543.0" />
-      <point x="224.16666666666652" y="1543.0" />
-      <point x="-26.333333333333343" y="148.5" />
-    </edge>
     <edge source="Volvo240" target="Car">
-      <point x="0.0" y="-49.0" />
-      <point x="841.2145454545455" y="993.0" />
-      <point x="555.8968181818182" y="993.0" />
-      <point x="76.33333333333337" y="37.5" />
+      <point x="0.0" y="-60.0" />
+      <point x="933.4855311355311" y="1130.0" />
+      <point x="1329.7878434065933" y="1130.0" />
+      <point x="-129.66666666666663" y="46.0" />
     </edge>
     <edge source="Car" target="Vehicle">
-      <point x="0.0" y="-37.5" />
-      <point x="479.5634848484848" y="779.0" />
-      <point x="313.4493939393939" y="779.0" />
-      <point x="14.4375" y="291.5" />
+      <point x="0.0" y="-46.0" />
+      <point x="1459.4545100732598" y="933.0" />
+      <point x="1660.3069597069598" y="933.0" />
+      <point x="-24.4375" y="357.5" />
     </edge>
-    <edge source="CarController" target="Volvo240">
-      <point x="-53.181818181818244" y="-158.5" />
-      <point x="1133.0066666666667" y="1523.0" />
-      <point x="841.2145454545455" y="1523.0" />
-      <point x="0.0" y="49.0" />
+    <edge source="Ferry" target="Vehicle">
+      <point x="60.59999999999991" y="-114.0" />
+      <point x="2015.8964285714285" y="1564.0" />
+      <point x="2003.4464285714287" y="1564.0" />
+      <point x="2003.4464285714287" y="913.0" />
+      <point x="1806.9319597069598" y="913.0" />
+      <point x="122.18750000000006" y="357.5" />
     </edge>
-    <edge source="VehicleCargo" target="Car">
-      <point x="105.33333333333331" y="-148.5" />
-      <point x="355.8333333333332" y="1013.0" />
-      <point x="403.2301515151514" y="1013.0" />
-      <point x="-76.33333333333337" y="37.5" />
-    </edge>
-    <edge source="CarController" target="CarView">
-      <point x="53.181818181818244" y="-158.5" />
-      <point x="1239.3703030303031" y="1523.0" />
-      <point x="1326.2145454545455" y="1523.0" />
-      <point x="-29.125" y="225.0" />
-    </edge>
-    <edge source="CarView" target="CarController">
-      <point x="87.375" y="225.0" />
-      <point x="1442.7145454545455" y="1543.0" />
-      <point x="1274.8248484848484" y="1543.0" />
-      <point x="88.63636363636351" y="-158.5" />
+    <edge source="Saab95" target="Car">
+      <point x="0.0" y="-101.0" />
+      <point x="1208.9855311355311" y="1140.0" />
+      <point x="1459.4545100732598" y="1140.0" />
+      <point x="0.0" y="46.0" />
     </edge>
     <edge source="Vehicle" target="Movable">
-      <point x="0.0" y="-291.5" />
-      <point x="0.0" y="48.0" />
+      <point x="0.0" y="-357.5" />
+      <point x="0.0" y="59.0" />
     </edge>
-    <edge source="CarController" target="Vehicle">
-      <point x="17.727272727272748" y="-158.5" />
-      <point x="1203.9157575757577" y="1543.0" />
-      <point x="1210.8395454545455" y="1543.0" />
-      <point x="1210.8395454545455" y="749.0" />
-      <point x="400.0743939393939" y="749.0" />
-      <point x="101.0625" y="291.5" />
+    <edge source="Truck" target="Vehicle">
+      <point x="0.0" y="-60.0" />
+      <point x="1043.9545100732598" y="923.0" />
+      <point x="1611.4319597069598" y="923.0" />
+      <point x="-73.3125" y="357.5" />
+    </edge>
+    <edge source="Scania" target="Truck">
+      <point x="81.0" y="-114.5" />
+      <point x="717.4855311355311" y="1120.0" />
+      <point x="943.4545100732599" y="1120.0" />
+      <point x="-100.5" y="60.0" />
     </edge>
     <edge source="CarTransport" target="Truck">
-      <point x="79.875" y="-82.0" />
-      <point x="487.5312121212122" y="1543.0" />
-      <point x="527.8035606060605" y="1543.0" />
-      <point x="527.8035606060605" y="1013.0" />
-      <point x="674.3134848484848" y="1013.0" />
-      <point x="-60.25" y="49.0" />
+      <point x="-106.875" y="-100.5" />
+      <point x="1448.0329899267397" y="1564.0" />
+      <point x="1363.7444597069598" y="1564.0" />
+      <point x="1363.7444597069598" y="1120.0" />
+      <point x="1144.4545100732598" y="1120.0" />
+      <point x="100.5" y="60.0" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="0.625980392156863" x="988.25841816758" y="598.1111981205948" />
-  <SelectedNodes />
+  <settings layout="Hierarchic Group" zoom="0.8259803921568631" x="894.3471810089017" y="1517.7240356083084" />
+  <SelectedNodes>
+    <node>Scania</node>
+  </SelectedNodes>
   <Categories>
     <Category>Fields</Category>
     <Category>Inner Classes</Category>

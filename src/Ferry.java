@@ -25,7 +25,7 @@ public class Ferry extends Vehicle {
         if (vehicleCargo.withinLoadingRange(vehicle, this) &&
                 vehicleCargo.getRampState() == this.vehicleCargo.getRampState() &&
                 vehicleCargo.getCargo().size() < vehicleCargo.getCargoSize() &&
-                !(vehicle instanceof Ferry)){
+                !vehicle.getClass().getName().equals(this.getClass().getName())){
             vehicleCargo.getCargo().push(vehicle);
             vehicle.setLoaded(this);
         }
