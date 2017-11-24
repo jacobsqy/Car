@@ -13,17 +13,11 @@ import javax.swing.*;
 
 public class DrawPanel extends JPanel{
 
-    // Just a single image, TODO: Generalize
-    ArrayList<BufferedImage> carImages = new ArrayList<BufferedImage>();
 
-    // To keep track of a single cars position
-    Point volvoPoint = new Point();
-    ArrayList<Point> pointList = new ArrayList<>();
     ArrayList<VehicleImagePoint> vehicleImagePoints = new ArrayList<>();
 
 
     void addImages(int x, int y, String modellName){
-            pointList.add(new Point(x,y));
             try {
                 switch (modellName) {
                     case "Saab95":
