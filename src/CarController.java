@@ -105,8 +105,8 @@ public class CarController {
     /**
      * Checks if the whole car is within the gamewindow, turns the car twice right if not.
      */
-    void collision(Vehicle car) {
-        if (0 > car.getyPos() || car.getyPos() > 800 - 240 - 60 || 0 > car.getxPos() || car.getxPos() > 800) {
+    private void collision(Vehicle car) {
+        if (0 > car.getyPos() || car.getyPos() > 800 - 240 - 60 || 0 > car.getxPos() || car.getxPos() > 800 - 120) {
             car.turnRight();
             car.turnRight();
         }
@@ -120,7 +120,6 @@ public class CarController {
         for (Vehicle car : cars) {
             if(car.getModelName().toLowerCase().equalsIgnoreCase("saab95")) {
                 ((Saab95) car).setTurboOn();
-                System.out.println(((Saab95) car).isTurboOn());
             }
         }
     }
@@ -133,7 +132,6 @@ public class CarController {
         for (Vehicle car : cars) {
             if(car.getModelName().toLowerCase().equalsIgnoreCase("saab95")) {
                 ((Saab95) car).setTurboOff();
-                System.out.println(((Saab95) car).isTurboOn());
             }
         }
     }
@@ -146,7 +144,6 @@ public class CarController {
         for(Vehicle car : cars){
             if(car.getModelName().toLowerCase().equalsIgnoreCase("scania")){
                 ((Scania) car).raiseTipper();
-                System.out.println(((Scania) car).getTipAngle());
             }
         }
     }
@@ -159,9 +156,6 @@ public class CarController {
         for (Vehicle car : cars) {
             if (car.getModelName().toLowerCase().equalsIgnoreCase("scania")) {
                 ((Scania) car).lowerTipper();
-                System.out.println(((Scania) car).getTipAngle());
-                System.out.println(((Scania) car).getCurrentSpeed());
-                System.out.println(((Scania) car).isStill());
             }
         }
     }

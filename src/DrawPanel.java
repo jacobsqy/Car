@@ -49,22 +49,6 @@ public class DrawPanel extends JPanel{
         this.setDoubleBuffered(true);
         this.setPreferredSize(new Dimension(x, y));
         this.setBackground(Color.green);
-        /*
-        // Print an error message in case file is not found with a try/catch block
-        try {
-            // You can remove the "src\\pics" part if running outside of IntelliJ and
-            // everything is in the same main folder.
-            // Rememember to rightclick src New -> Package -> name: pics -> MOVE *.jpg to pics.
-            // if you are starting in IntelliJ.
-            // Linux users need to modify \ to / in path string
-            carImages.add(ImageIO.read(new File("src\\pics\\Volvo240.jpg")));
-            carImages.add(ImageIO.read(new File("src\\pics\\Scania.jpg")));
-            carImages.add(ImageIO.read(new File("src\\pics\\Saab95.jpg")));
-        } catch (IOException ex)
-        {
-            ex.printStackTrace();
-        } */
-
     }
 
     @Override

@@ -37,16 +37,16 @@ public abstract class Vehicle implements Movable {
   public void move() {
     switch (dirs[currentDirIndex]) {
       case FORWARD:
-        yPos += currentSpeed;
-        break;
-      case RIGHT:
         xPos += currentSpeed;
         break;
+      case RIGHT:
+        yPos += currentSpeed;
+        break;
       case BACK:
-        yPos -= currentSpeed;
+        xPos -= currentSpeed;
         break;
       case LEFT:
-        xPos -= currentSpeed;
+        yPos -= currentSpeed;
         break;
     }
   }
