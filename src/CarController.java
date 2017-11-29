@@ -118,7 +118,7 @@ public class CarController {
      */
     public void getTurboOn() {
         for (Vehicle car : cars) {
-            if(car.getModelName().toLowerCase().equalsIgnoreCase("saab95")) {
+            if(car.getClass().getName().equals("Saab95")) {
                 ((Saab95) car).setTurboOn();
             }
         }
@@ -130,7 +130,7 @@ public class CarController {
      */
     public void getTurboOff() {
         for (Vehicle car : cars) {
-            if(car.getModelName().toLowerCase().equalsIgnoreCase("saab95")) {
+            if(car.getClass().getName().equals("Saab95")) {
                 ((Saab95) car).setTurboOff();
             }
         }
@@ -142,7 +142,7 @@ public class CarController {
      */
     public void raiseTipper(){
         for(Vehicle car : cars){
-            if(car.getModelName().toLowerCase().equalsIgnoreCase("scania")){
+            if(car.getClass().getName().equals("Scania")){
                 ((Scania) car).raiseTipper();
             }
         }
@@ -154,7 +154,7 @@ public class CarController {
      */
     public void lowTipper() {
         for (Vehicle car : cars) {
-            if (car.getModelName().toLowerCase().equalsIgnoreCase("scania")) {
+            if (car.getClass().getName().equals("Scania")) {
                 ((Scania) car).lowerTipper();
             }
         }
