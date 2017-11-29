@@ -1,4 +1,3 @@
-//import com.sun.java.util.jar.pack.Instruction;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;
@@ -18,23 +17,24 @@ public class DrawPanel extends JPanel{
 
 
     void addImages(int x, int y, String modellName){
-            try {
-                switch (modellName) {
-                    case "Saab95":
-                        vehicleImagePoints.add(new VehicleImagePoint("src\\pics\\Saab95.jpg", new Point(x, y)));
-                        break;
-                    case "Volvo240":
-                        vehicleImagePoints.add(new VehicleImagePoint("src\\pics\\Volvo240.jpg", new Point(x, y)));
-                        break;
-                    case "Scania":
-                        vehicleImagePoints.add(new VehicleImagePoint("src\\pics\\Scania.jpg", new Point(x, y)));
-                        break;
-                    default:
-                        throw new Exception("file not found");
-                }
-            } catch (Exception e) {
-                System.err.println(e.getMessage());
+        try {
+            switch (modellName) {
+                case "Saab95":
+                    vehicleImagePoints.add(new VehicleImagePoint("src\\pics\\Saab95.jpg", new Point(x, y)));
+                    break;
+                case "Volvo240":
+                    vehicleImagePoints.add(new VehicleImagePoint("src\\pics\\Volvo240.jpg", new Point(x, y)));
+                    break;
+                case "Scania":
+                    vehicleImagePoints.add(new VehicleImagePoint("src\\pics\\Scania.jpg", new Point(x, y)));
+                    break;
+                default:
+                    throw new Exception("file not found");
             }
+        }
+        catch (Exception e) {
+            System.err.println(e.getMessage());
+        }
     }
 
     void moveIt(int x, int y, int i) {
