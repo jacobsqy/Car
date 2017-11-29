@@ -113,7 +113,7 @@ public class CarController {
     }
 
     /**
-     * loops through all vehicles and if the vehicle has the modellname "saab95"
+     * loops through all vehicles and if the vehicle has the class name "saab95"
      * it calls on setTurboOn().
      */
     public void getTurboOn() {
@@ -125,7 +125,7 @@ public class CarController {
     }
 
     /**
-     * loops through all vehicles and if the vehicle has the modellname "saab95"
+     * loops through all vehicles and if the vehicle has the class name "saab95"
      * it calls on setTurboOff().
      */
     public void getTurboOff() {
@@ -137,7 +137,7 @@ public class CarController {
     }
 
     /**
-     * loops through all vehicles and if the vehicle has the modellname "scania"
+     * loops through all vehicles and if the vehicle has the class name "scania"
      * it calls on raiseTipper().
      */
     public void raiseTipper(){
@@ -149,7 +149,7 @@ public class CarController {
     }
 
     /**
-     * loops through all vehicles and if the vehicle has the modellname "scania"
+     * loops through all vehicles and if the vehicle has the class name "scania"
      * it calls on lowerTipper().
      */
     public void lowTipper() {
