@@ -45,7 +45,8 @@ public class CarController {
     }
 
     /** Each step the TimerListener moves all the cars in the list and tells the
-     * view to update its images. It also call on the method collision.
+     * view to update its images. It also call on the method collision() that checks if the car.
+     * hits any of the window edges.
      */
     private class TimerListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
@@ -65,7 +66,8 @@ public class CarController {
     /**
      * calls on gas() in class Vehicle with double gas that is calculated with amount/100.
      * @param amount an int from the GUI between 0 and 100.
-     */    void gas(int amount) {
+     */
+    void gas(int amount) {
         double gas = ((double) amount) / 100;
         for (Vehicle car : cars) {
             car.gas(gas);

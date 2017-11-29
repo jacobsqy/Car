@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="91ad20e5-ca89-4217-bb33-a390467f0690" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CarView.java" afterPath="$PROJECT_DIR$/src/CarView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DrawPanel.java" afterPath="$PROJECT_DIR$/src/DrawPanel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CarController.java" afterPath="$PROJECT_DIR$/src/CarController.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,9 +21,22 @@
       <file leaf-file-name="CarController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/CarController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="21" column="4" lean-forward="true" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
-              <folding />
+            <state relative-caret-position="242">
+              <caret line="48" column="36" lean-forward="false" selection-start-line="48" selection-start-column="36" selection-end-line="48" selection-end-column="36" />
+              <folding>
+                <element signature="docComment;class#CarController#0" expanded="false" />
+                <element signature="method#main#0;class#CarController#0" expanded="false" />
+                <element signature="class#TimerListener#0;class#CarController#0" expanded="false" />
+                <element signature="method#gas#0;class#CarController#0" expanded="false" />
+                <element signature="method#startAllCars#0;class#CarController#0" expanded="false" />
+                <element signature="method#stopAllCars#0;class#CarController#0" expanded="false" />
+                <element signature="method#brake#0;class#CarController#0" expanded="false" />
+                <element signature="method#collision#0;class#CarController#0" expanded="false" />
+                <element signature="method#getTurboOn#0;class#CarController#0" expanded="false" />
+                <element signature="method#getTurboOff#0;class#CarController#0" expanded="false" />
+                <element signature="method#raiseTipper#0;class#CarController#0" expanded="false" />
+                <element signature="method#lowTipper#0;class#CarController#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -35,7 +47,10 @@
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="method#addImages#0;class#DrawPanel#0" expanded="false" />
+                <element signature="method#moveIt#0;class#DrawPanel#0" expanded="false" />
+                <element signature="method#DrawPanel#0;class#DrawPanel#0" expanded="false" />
+                <element signature="method#paintComponent#0;class#DrawPanel#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -44,9 +59,13 @@
       <file leaf-file-name="CarView.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CarView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2241">
+            <state relative-caret-position="216">
               <caret line="18" column="28" lean-forward="true" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
               <folding>
+                <element signature="docComment;class#CarView#0" expanded="false" />
+                <element signature="method#CarView#0;class#CarView#0" expanded="false" />
+                <element signature="method#initComponents#0;class#CarView#0" expanded="false" />
+                <element signature="class#2059:2227" expanded="false" />
                 <element signature="class#3389:3524" expanded="false" />
                 <element signature="method#actionPerformed#0;class#3389:3524" expanded="false" />
                 <element signature="class#3570:3690" expanded="false" />
@@ -71,10 +90,31 @@
       <file leaf-file-name="Vehicle.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Vehicle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9">
-              <caret line="165" column="0" lean-forward="false" selection-start-line="165" selection-start-column="0" selection-end-line="165" selection-end-column="0" />
+            <state relative-caret-position="1647">
+              <caret line="164" column="27" lean-forward="false" selection-start-line="164" selection-start-column="27" selection-end-line="164" selection-end-column="27" />
               <folding>
-                <element signature="e#3838#3839#0" expanded="true" />
+                <element signature="class#Dir#0;class#Vehicle#0" expanded="false" />
+                <element signature="method#Vehicle#0;class#Vehicle#0" expanded="false" />
+                <element signature="docComment;method#move#0;class#Vehicle#0" expanded="false" />
+                <element signature="method#move#0;class#Vehicle#0" expanded="false" />
+                <element signature="docComment;method#move#1;class#Vehicle#0" expanded="false" />
+                <element signature="method#move#1;class#Vehicle#0" expanded="false" />
+                <element signature="docComment;method#turnLeft#0;class#Vehicle#0" expanded="false" />
+                <element signature="method#turnLeft#0;class#Vehicle#0" expanded="false" />
+                <element signature="docComment;method#turnRight#0;class#Vehicle#0" expanded="false" />
+                <element signature="docComment;method#speedFactor#0;class#Vehicle#0" expanded="false" />
+                <element signature="docComment;method#gas#0;class#Vehicle#0" expanded="false" />
+                <element signature="method#gas#0;class#Vehicle#0" expanded="false" />
+                <element signature="docComment;method#brake#0;class#Vehicle#0" expanded="false" />
+                <element signature="method#brake#0;class#Vehicle#0" expanded="false" />
+                <element signature="docComment;method#incrementSpeed#0;class#Vehicle#0" expanded="false" />
+                <element signature="method#incrementSpeed#0;class#Vehicle#0" expanded="false" />
+                <element signature="docComment;method#decrementSpeed#0;class#Vehicle#0" expanded="false" />
+                <element signature="docComment;method#startEngine#0;class#Vehicle#0" expanded="false" />
+                <element signature="method#startEngine#0;class#Vehicle#0" expanded="false" />
+                <element signature="docComment;method#stopEngine#0;class#Vehicle#0" expanded="false" />
+                <element signature="method#stopEngine#0;class#Vehicle#0" expanded="false" />
+                <element signature="docComment;method#isStill#0;class#Vehicle#0" expanded="false" />
                 <element signature="method#setLoaded#0;class#Vehicle#0" expanded="false" />
                 <element signature="method#resetLoaded#0;class#Vehicle#0" expanded="false" />
               </folding>
@@ -140,9 +180,9 @@
         <option value="$PROJECT_DIR$/src/Scania.java" />
         <option value="$PROJECT_DIR$/src/VehicleImagePoint.java" />
         <option value="$PROJECT_DIR$/src/Vehicle.java" />
-        <option value="$PROJECT_DIR$/src/CarController.java" />
         <option value="$PROJECT_DIR$/src/CarView.java" />
         <option value="$PROJECT_DIR$/src/DrawPanel.java" />
+        <option value="$PROJECT_DIR$/src/CarController.java" />
       </list>
     </option>
   </component>
@@ -769,7 +809,14 @@
       <option name="project" value="LOCAL" />
       <updated>1511970232613</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Rensat lite bland onödiga gamla kommentarer">
+      <created>1511975145923</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1511975145923</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -929,7 +976,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added javadoc for move() in Scania." />
     <MESSAGE value="Added javadoc for move() in Scania. And made istStill() private" />
     <MESSAGE value="Added TransportTruck Class with Construktor() and Speedfactor()" />
     <MESSAGE value="Added numbers to the construktor and speedFactor" />
@@ -954,7 +1000,8 @@
     <MESSAGE value="Resnat bort lite kommentarer." />
     <MESSAGE value="Javadoc" />
     <MESSAGE value="Fixed JavaDock in controller för tipper m.m" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed JavaDock in controller för tipper m.m" />
+    <MESSAGE value="Rensat lite bland onödiga gamla kommentarer" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rensat lite bland onödiga gamla kommentarer" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1214,18 +1261,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Vehicle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9">
-          <caret line="165" column="0" lean-forward="false" selection-start-line="165" selection-start-column="0" selection-end-line="165" selection-end-column="0" />
-          <folding>
-            <element signature="e#3838#3839#0" expanded="true" />
-            <element signature="method#setLoaded#0;class#Vehicle#0" expanded="false" />
-            <element signature="method#resetLoaded#0;class#Vehicle#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/VehicleImagePoint.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
@@ -1237,21 +1272,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DrawPanel.java">
+    <entry file="file://$PROJECT_DIR$/src/Vehicle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="1647">
+          <caret line="164" column="27" lean-forward="false" selection-start-line="164" selection-start-column="27" selection-end-line="164" selection-end-column="27" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="class#Dir#0;class#Vehicle#0" expanded="false" />
+            <element signature="method#Vehicle#0;class#Vehicle#0" expanded="false" />
+            <element signature="docComment;method#move#0;class#Vehicle#0" expanded="false" />
+            <element signature="method#move#0;class#Vehicle#0" expanded="false" />
+            <element signature="docComment;method#move#1;class#Vehicle#0" expanded="false" />
+            <element signature="method#move#1;class#Vehicle#0" expanded="false" />
+            <element signature="docComment;method#turnLeft#0;class#Vehicle#0" expanded="false" />
+            <element signature="method#turnLeft#0;class#Vehicle#0" expanded="false" />
+            <element signature="docComment;method#turnRight#0;class#Vehicle#0" expanded="false" />
+            <element signature="docComment;method#speedFactor#0;class#Vehicle#0" expanded="false" />
+            <element signature="docComment;method#gas#0;class#Vehicle#0" expanded="false" />
+            <element signature="method#gas#0;class#Vehicle#0" expanded="false" />
+            <element signature="docComment;method#brake#0;class#Vehicle#0" expanded="false" />
+            <element signature="method#brake#0;class#Vehicle#0" expanded="false" />
+            <element signature="docComment;method#incrementSpeed#0;class#Vehicle#0" expanded="false" />
+            <element signature="method#incrementSpeed#0;class#Vehicle#0" expanded="false" />
+            <element signature="docComment;method#decrementSpeed#0;class#Vehicle#0" expanded="false" />
+            <element signature="docComment;method#startEngine#0;class#Vehicle#0" expanded="false" />
+            <element signature="method#startEngine#0;class#Vehicle#0" expanded="false" />
+            <element signature="docComment;method#stopEngine#0;class#Vehicle#0" expanded="false" />
+            <element signature="method#stopEngine#0;class#Vehicle#0" expanded="false" />
+            <element signature="docComment;method#isStill#0;class#Vehicle#0" expanded="false" />
+            <element signature="method#setLoaded#0;class#Vehicle#0" expanded="false" />
+            <element signature="method#resetLoaded#0;class#Vehicle#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CarView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2241">
+        <state relative-caret-position="216">
           <caret line="18" column="28" lean-forward="true" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
           <folding>
+            <element signature="docComment;class#CarView#0" expanded="false" />
+            <element signature="method#CarView#0;class#CarView#0" expanded="false" />
+            <element signature="method#initComponents#0;class#CarView#0" expanded="false" />
+            <element signature="class#2059:2227" expanded="false" />
             <element signature="class#3389:3524" expanded="false" />
             <element signature="method#actionPerformed#0;class#3389:3524" expanded="false" />
             <element signature="class#3570:3690" expanded="false" />
@@ -1265,11 +1327,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/DrawPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="method#addImages#0;class#DrawPanel#0" expanded="false" />
+            <element signature="method#moveIt#0;class#DrawPanel#0" expanded="false" />
+            <element signature="method#DrawPanel#0;class#DrawPanel#0" expanded="false" />
+            <element signature="method#paintComponent#0;class#DrawPanel#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/CarController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="21" column="4" lean-forward="true" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
-          <folding />
+        <state relative-caret-position="242">
+          <caret line="48" column="36" lean-forward="false" selection-start-line="48" selection-start-column="36" selection-end-line="48" selection-end-column="36" />
+          <folding>
+            <element signature="docComment;class#CarController#0" expanded="false" />
+            <element signature="method#main#0;class#CarController#0" expanded="false" />
+            <element signature="class#TimerListener#0;class#CarController#0" expanded="false" />
+            <element signature="method#gas#0;class#CarController#0" expanded="false" />
+            <element signature="method#startAllCars#0;class#CarController#0" expanded="false" />
+            <element signature="method#stopAllCars#0;class#CarController#0" expanded="false" />
+            <element signature="method#brake#0;class#CarController#0" expanded="false" />
+            <element signature="method#collision#0;class#CarController#0" expanded="false" />
+            <element signature="method#getTurboOn#0;class#CarController#0" expanded="false" />
+            <element signature="method#getTurboOff#0;class#CarController#0" expanded="false" />
+            <element signature="method#raiseTipper#0;class#CarController#0" expanded="false" />
+            <element signature="method#lowTipper#0;class#CarController#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
