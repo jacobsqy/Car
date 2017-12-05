@@ -84,7 +84,7 @@ public class CarController implements Listener {
      * loops through all vehicles and if the vehicle has the class name "saab95"
      * it calls on setTurboOn().
      */
-    public void getTurboOn() {
+    public void setTurboOn() {
         for (Vehicle car : cars) {
             if(car.getClass().getName().equals("Model.Saab95")) {
                 ((Saab95) car).setTurboOn();
@@ -96,7 +96,7 @@ public class CarController implements Listener {
      * loops through all vehicles and if the vehicle has the class name "saab95"
      * it calls on setTurboOff().
      */
-    public void getTurboOff() {
+    public void setTurboOff() {
         for (Vehicle car : cars) {
             if(car.getClass().getName().equals("Model.Saab95")) {
                 ((Saab95) car).setTurboOff();

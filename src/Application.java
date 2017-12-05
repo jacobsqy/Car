@@ -55,7 +55,23 @@ public class Application implements Listener {
             case "Start all cars":
                 cc.startAllCars();
                 break;
-
+            case "Stop all cars":
+                cc.stopAllCars();
+                break;
+            case "Saab Turbo on":
+                cc.setTurboOn();
+                break;
+            case "Saab Turbo off":
+                cc.setTurboOff();
+                break;
+            case "Scania Lift Bed":
+                cc.raiseTipper();
+                break;
+            case "Lower Lift Bed":
+                cc.lowTipper();
+                break;
+            default:
+                System.err.println("NO MATCH FOR LABEL");
         }
     }
 
