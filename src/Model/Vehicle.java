@@ -140,7 +140,7 @@ public abstract class Vehicle implements Movable {
    */
 
   public void startEngine(){
-    if(!loaded){
+    if(!loaded && currentSpeed == 0){
       currentSpeed = 0.1;
       engineOn = true;
     }
