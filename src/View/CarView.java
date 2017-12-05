@@ -157,4 +157,7 @@ public class CarView extends JFrame{
         }
     }
 
+    public int getGasAmount() {
+        return gasAmount;
+    }
 }

@@ -1,6 +1,7 @@
 import Controller.CarController;
 import Model.Vehicle;
 import View.CarView;
+import View.Listener;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -8,7 +9,7 @@ import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Application {
+public class Application implements Listener {
     // The delay (ms) corresponds to 20 updates a sec (hz)
     private final int delay = 50;
     // The timer is started with an listener (see below) that executes the statements
@@ -36,11 +37,26 @@ public class Application {
         // Start a new view and send a reference of self
         frame = new CarView("CarSim 1.0");
 
-        frame.addListener(cc);
+        frame.addListener(this);
         for (Vehicle car : cc.getCars()) {
             frame.getDrawPanel().addImages(car);
         }
         timer.start();
+    }
+
+    public void action(ActionEvent e) {
+        switch (e.getActionCommand()) {
+            case "Gas":
+                cc.gas(frame.getGasAmount());
+                break;
+            case "Break":
+                cc.brake(frame.getGasAmount());
+                break;
+            case "Start all cars":
+                cc.startAllCars();
+                break;
+
+        }
     }
 
     private class TimerListener implements ActionListener {
