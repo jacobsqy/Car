@@ -3,7 +3,10 @@ package Controller;
 import Model.Saab95;
 import Model.Scania;
 import Model.Vehicle;
+import View.Listener;
 
+import javax.swing.*;
+import java.awt.event.ActionEvent;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,7 +16,7 @@ import java.util.List;
 * modifying the model state and the updating the view.
  */
 
-public class CarController {
+public class CarController implements Listener {
 
     public List<Vehicle> getCars() {
         return cars;
@@ -123,5 +126,9 @@ public class CarController {
                 ((Scania) car).lowerTipper();
             }
         }
+    }
+
+    public void action(ActionEvent e) {
+        System.out.println(e.getActionCommand());
     }
 }

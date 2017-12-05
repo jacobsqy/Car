@@ -26,7 +26,6 @@ public class Application {
     public static void main(String[] args) { new Application().program(); }
 
     void program() {
-
         vehicleList.add(VehicleFactory.createVolvo240(0, 0));
         vehicleList.add(VehicleFactory.createSaab95(0, 100));
         vehicleList.add(VehicleFactory.createScania(0, 200));
@@ -35,7 +34,9 @@ public class Application {
         cc.setCars(vehicleList);
 
         // Start a new view and send a reference of self
-        frame = new CarView("CarSim 1.0", cc);
+        frame = new CarView("CarSim 1.0");
+
+        frame.addListener(cc);
         for (Vehicle car : cc.getCars()) {
             frame.getDrawPanel().addImages(car);
         }
