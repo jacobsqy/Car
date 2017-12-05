@@ -16,24 +16,14 @@ import java.util.List;
 * modifying the model state and the updating the view.
  */
 
-public class CarController implements Listener {
-
-    public List<Vehicle> getCars() {
-        return cars;
-    }
-
-    public void setCars(List<Vehicle> cars) {
-        this.cars = cars;
-    }
-
-    // A list of cars, modify if needed
-    List<Vehicle> cars = new ArrayList<>();
+public class CarController {
+    
 
     /**
      * calls on gas() in class Model.Vehicle with double gas that is calculated with amount/100.
      * @param amount an int from the GUI between 0 and 100.
      */
-    public void gas(int amount) {
+    public void gas(int amount, List<Vehicle> cars) {
         double gas = ((double) amount) / 100;
         for (Vehicle car : cars) {
             car.gas(gas);
@@ -43,7 +33,7 @@ public class CarController implements Listener {
     /**
      * loops through all vehicles and use the startEngine() method from Model.Vehicle class.
      */
-    public void startAllCars() {
+    public void startAllCars(List<Vehicle> cars) {
         for(Vehicle car : cars){
         car.startEngine();
         }
@@ -53,7 +43,7 @@ public class CarController implements Listener {
     /**
      * loops through all vehicles and use the stopEngine() method from Model.Vehicle class.
      */
-    public void stopAllCars() {
+    public void stopAllCars(List<Vehicle> cars) {
         for(Vehicle car : cars){
             car.stopEngine();
         }
@@ -63,7 +53,7 @@ public class CarController implements Listener {
     /**
      * Loops through all vehicles and use the brake() method from Model.Vehicle class.
      */
-    public void brake(int amount) {
+    public void brake(int amount, List<Vehicle> cars) {
         double brake = ((double) amount) / 100;
         for (Vehicle car : cars) {
             car.brake(brake);
@@ -84,7 +74,7 @@ public class CarController implements Listener {
      * loops through all vehicles and if the vehicle has the class name "saab95"
      * it calls on setTurboOn().
      */
-    public void setTurboOn() {
+    public void setTurboOn(List<Vehicle> cars) {
         for (Vehicle car : cars) {
             if(car.getClass().getName().equals("Model.Saab95")) {
                 ((Saab95) car).setTurboOn();
@@ -96,7 +86,7 @@ public class CarController implements Listener {
      * loops through all vehicles and if the vehicle has the class name "saab95"
      * it calls on setTurboOff().
      */
-    public void setTurboOff() {
+    public void setTurboOff(List<Vehicle> cars) {
         for (Vehicle car : cars) {
             if(car.getClass().getName().equals("Model.Saab95")) {
                 ((Saab95) car).setTurboOff();
@@ -108,7 +98,7 @@ public class CarController implements Listener {
      * loops through all vehicles and if the vehicle has the class name "scania"
      * it calls on raiseTipper().
      */
-    public void raiseTipper(){
+    public void raiseTipper(List<Vehicle> cars){
         for(Vehicle car : cars){
             if(car.getClass().getName().equals("Model.Scania")){
                 ((Scania) car).raiseTipper();
@@ -120,15 +110,11 @@ public class CarController implements Listener {
      * loops through all vehicles and if the vehicle has the class name "scania"
      * it calls on lowerTipper().
      */
-    public void lowTipper() {
+    public void lowTipper(List<Vehicle> cars) {
         for (Vehicle car : cars) {
             if (car.getClass().getName().equals("Model.Scania")) {
                 ((Scania) car).lowerTipper();
             }
         }
-    }
-
-    public void action(ActionEvent e) {
-        System.out.println(e.getActionCommand());
     }
 }

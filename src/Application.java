@@ -17,12 +17,12 @@ public class Application implements Listener {
     private Timer timer = new Timer(delay, new TimerListener());
 
     // The frame that represents this instance View of the MVC pattern
-    CarView frame;
+    private CarView frame;
 
     // Instance of this class
-    CarController cc = new CarController();
+    private CarController cc = new CarController();
 
-    List<Vehicle> vehicleList =new ArrayList<>();
+    private List<Vehicle> vehicleList =new ArrayList<>();
 
     public static void main(String[] args) { new Application().program(); }
 
@@ -32,13 +32,12 @@ public class Application implements Listener {
         vehicleList.add(VehicleFactory.createScania(0, 200));
         vehicleList.add(VehicleFactory.createSaab95(0, 300));
 
-        cc.setCars(vehicleList);
 
         // Start a new view and send a reference of self
         frame = new CarView("CarSim 1.0");
 
         frame.addListener(this);
-        for (Vehicle car : cc.getCars()) {
+        for (Vehicle car : vehicleList) {
             frame.getDrawPanel().addImages(car);
         }
         timer.start();
@@ -47,28 +46,28 @@ public class Application implements Listener {
     public void action(ActionEvent e) {
         switch (e.getActionCommand()) {
             case "Gas":
-                cc.gas(frame.getGasAmount());
+                cc.gas(frame.getGasAmount(), vehicleList);
                 break;
             case "Break":
-                cc.brake(frame.getGasAmount());
+                cc.brake(frame.getGasAmount(), vehicleList);
                 break;
             case "Start all cars":
-                cc.startAllCars();
+                cc.startAllCars(vehicleList);
                 break;
             case "Stop all cars":
-                cc.stopAllCars();
+                cc.stopAllCars(vehicleList);
                 break;
             case "Saab Turbo on":
-                cc.setTurboOn();
+                cc.setTurboOn(vehicleList);
                 break;
             case "Saab Turbo off":
-                cc.setTurboOff();
+                cc.setTurboOff(vehicleList);
                 break;
             case "Scania Lift Bed":
-                cc.raiseTipper();
+                cc.raiseTipper(vehicleList);
                 break;
             case "Lower Lift Bed":
-                cc.lowTipper();
+                cc.lowTipper(vehicleList);
                 break;
             default:
                 System.err.println("NO MATCH FOR LABEL");
@@ -77,13 +76,13 @@ public class Application implements Listener {
 
     private class TimerListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
-            for (int i = 0; i < cc.getCars().size(); i++) {
-                cc.getCars().get(i).move();
-                int x = (int) Math.round(cc.getCars().get(i).getxPos());
-                int y = (int) Math.round(cc.getCars().get(i).getyPos());
+            for (int i = 0; i < vehicleList.size(); i++) {
+                vehicleList.get(i).move();
+                int x = (int) Math.round(vehicleList.get(i).getxPos());
+                int y = (int) Math.round(vehicleList.get(i).getyPos());
                 // repaint() calls the paintComponent method of the panel
                 frame.getDrawPanel().repaint();
-                cc.collision(cc.getCars().get(i));
+                cc.collision(vehicleList.get(i));
             }
         }
     }
