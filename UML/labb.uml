@@ -25,8 +25,8 @@
     <edge source="Controller.CarController" target="Model">
       <point x="0.0" y="-114.5" />
       <point x="118.5" y="101.951171875" />
-      <point x="503.69458874458866" y="101.951171875" />
-      <point x="-10.454545454545496" y="15.0" />
+      <point x="503.6945887445887" y="101.951171875" />
+      <point x="-10.454545454545439" y="15.0" />
     </edge>
     <edge source="Model" target="Model">
       <point x="-41.81818181818181" y="15.0" />
@@ -42,7 +42,7 @@
       <point x="-59.25" y="114.5" />
     </edge>
     <edge source="View.CarView" target="View.Listener">
-      <point x="96.4" y="-269.5" />
+      <point x="96.39999999999998" y="-269.5" />
       <point x="803.7690476190476" y="321.951171875" />
       <point x="864.0" y="321.951171875" />
       <point x="0.0" y="26.0" />
@@ -53,7 +53,7 @@
       <point x="915.7551406926407" y="910.951171875" />
       <point x="915.7551406926407" y="321.951171875" />
       <point x="931.3333333333333" y="321.951171875" />
-      <point x="67.33333333333331" y="26.0" />
+      <point x="67.33333333333326" y="26.0" />
     </edge>
     <edge source="Application" target="View.CarView">
       <point x="12.625" y="-103.5" />
@@ -80,13 +80,13 @@
       <point x="31.363636363636374" y="15.0" />
     </edge>
     <edge source="View.CarView" target="View.DrawPanel">
-      <point x="-48.19999999999999" y="-269.5" />
+      <point x="-48.19999999999993" y="-269.5" />
       <point x="659.1690476190477" y="311.951171875" />
       <point x="596.5" y="311.951171875" />
       <point x="0.0" y="60.0" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="0.6800976800976801" x="399.7755834829443" y="739.5" />
+  <settings layout="Hierarchic Group" zoom="0.6800976800976801" x="399.7755834829443" y="419.5" />
   <SelectedNodes />
   <Categories>
     <Category>Fields</Category>

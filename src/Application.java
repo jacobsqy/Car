@@ -30,8 +30,7 @@ public class Application implements Listener {
         vehicleList.add(VehicleFactory.createVolvo240(0, 0));
         vehicleList.add(VehicleFactory.createSaab95(0, 100));
         vehicleList.add(VehicleFactory.createScania(0, 200));
-        vehicleList.add(VehicleFactory.createFerry(0, 300));
-        vehicleList.add(VehicleFactory.createCarTransport(0,400));
+
 
 
         // Start a new view and send a reference of self
@@ -70,6 +69,9 @@ public class Application implements Listener {
             case "Lower Lift Bed":
                 cc.lowTipper(vehicleList);
                 break;
+            case "Add Car":
+                addCar();
+                break;
             default:
                 System.err.println("NO MATCH FOR LABEL");
         }
@@ -86,5 +88,10 @@ public class Application implements Listener {
                 cc.collision(vehicleList.get(i));
             }
         }
+    }
+    public void addCar(){
+        double y = vehicleList.get(vehicleList.size()-1).getyPos()+100;
+        vehicleList.add(VehicleFactory.createSaab95(0,y));
+        frame.getDrawPanel().addImages(vehicleList.get(vehicleList.size()-1));
     }
 }
