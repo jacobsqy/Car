@@ -29,6 +29,19 @@ public class DrawPanel extends JPanel{
         }
     }
 
+    public void removeImage(Vehicle vehicle){
+        try {
+            imageMap.remove(vehicle);
+            if(imageMap.size() == 0){
+                imageMap.clear();
+                repaint();
+            }
+        }
+        catch (Exception e) {
+            System.err.println(e.getMessage());
+        }
+    }
+
     // Initializes the panel and reads the images
     public DrawPanel(int x, int y) {
 

@@ -28,8 +28,6 @@ public class Application implements Listener {
 
     void program() {
         vehicleList.add(VehicleFactory.createVolvo240(0, 0));
-        vehicleList.add(VehicleFactory.createSaab95(0, 100));
-        vehicleList.add(VehicleFactory.createScania(0, 200));
 
 
 
@@ -72,6 +70,9 @@ public class Application implements Listener {
             case "Add Car":
                 addCar();
                 break;
+            case "Remove Car":
+                removeCar();
+                break;
             default:
                 System.err.println("NO MATCH FOR LABEL");
         }
@@ -89,9 +90,21 @@ public class Application implements Listener {
             }
         }
     }
-    public void addCar(){
-        double y = vehicleList.get(vehicleList.size()-1).getyPos()+100;
-        vehicleList.add(VehicleFactory.createSaab95(0,y));
-        frame.getDrawPanel().addImages(vehicleList.get(vehicleList.size()-1));
+    public void addCar() {
+        double y = 0;
+        if (vehicleList.size() <= 9 && vehicleList.size() >= -1){
+            if(vehicleList.size() == 0){ y = 0;
+            }else{ y = vehicleList.get(vehicleList.size() - 1).getyPos() + 100; }
+            vehicleList.add(VehicleFactory.createSaab95(0, y));
+            frame.getDrawPanel().addImages(vehicleList.get(vehicleList.size() - 1));
+        }
+    }
+
+    public void removeCar() {
+        if (!vehicleList.isEmpty()) {
+            System.out.println("i removeCar " + vehicleList.size());
+            frame.getDrawPanel().removeImage(vehicleList.get(vehicleList.size() - 1));
+            vehicleList.remove(vehicleList.size() - 1);
+        }
     }
 }
