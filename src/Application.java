@@ -91,7 +91,7 @@ public class Application implements Listener {
         }
     }
     public void addCar() {
-        double y = vehicleList.size() * 100;
+        double y = vehicleList.size() * 60;
         if (vehicleList.size() < 10){
             vehicleList.add(VehicleFactory.createRandom(0, y));
             frame.getDrawPanel().addImages(vehicleList.get(vehicleList.size() - 1));
