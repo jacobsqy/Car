@@ -134,4 +134,14 @@ public class World {
             vehicleList.remove(vehicleList.size() - 1);
         }
     }
+
+    public void moveAllCars() {
+        for (int i = 0; i < vehicleList.size(); i++) {
+            moveCar(i);
+            int x = (int) Math.round(vehicleList.get(i).getxPos());
+            int y = (int) Math.round(vehicleList.get(i).getyPos());
+            // repaint() calls the paintComponent method of the panel
+            collision(i);
+        }
+    }
 }

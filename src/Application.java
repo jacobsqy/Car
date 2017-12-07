@@ -75,14 +75,8 @@ public class Application implements Listener {
 
     private class TimerListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
-            for (int i = 0; i < cc.getVehicle().size(); i++) {
-                cc.moveCar(i);
-                int x = (int) Math.round(cc.getVehicle().get(i).getxPos());
-                int y = (int) Math.round(cc.getVehicle().get(i).getyPos());
-                // repaint() calls the paintComponent method of the panel
-                frame.getDrawPanel().repaint();
-                cc.collision(i);
-            }
+            cc.moveAllCars();
+            frame.getDrawPanel().repaint();
         }
     }
     public void addCar() {

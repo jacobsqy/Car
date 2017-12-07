@@ -89,6 +89,10 @@ public class CarController {
         model.moveCar(i);
     }
 
+    public void moveAllCars() {
+        model.moveAllCars();
+    }
+
     public void addCar(Vehicle car) {
         model.addCar(car);
     }

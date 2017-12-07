@@ -185,4 +185,9 @@ public class CarView extends JFrame{
     public void addImage(Vehicle car) {
         drawPanel.addImages(car);
     }
+
+    public void repaint() {
+        super.repaint();
+        drawPanel.repaint();
+    }
 }
