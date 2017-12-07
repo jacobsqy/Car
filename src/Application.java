@@ -86,7 +86,7 @@ public class Application implements Listener {
                 int y = (int) Math.round(vehicleList.get(i).getyPos());
                 // repaint() calls the paintComponent method of the panel
                 frame.getDrawPanel().repaint();
-                cc.collision(vehicleList.get(i));
+                cc.collision(vehicleList.get(i), frame.getHeight(), frame.getWidth());
             }
         }
     }

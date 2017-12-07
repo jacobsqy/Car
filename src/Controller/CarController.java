@@ -63,8 +63,8 @@ public class CarController {
     /**
      * Checks if the whole car is within the gamewindow, turns the car twice right if not.
      */
-    public void collision(Vehicle car) {
-        if (0 > car.getyPos() || car.getyPos() > 800 - 240 - 60 || 0 > car.getxPos() || car.getxPos() > 800 - 120) {
+    public void collision(Vehicle car, int height, int width) {
+        if (0 > car.getyPos() || car.getyPos() > height - 240 - 60 || 0 > car.getxPos() || car.getxPos() > width - 120) {
             car.turnRight();
             car.turnRight();
         }

@@ -168,4 +168,12 @@ public class CarView extends JFrame{
     public int getGasAmount() {
         return gasAmount;
     }
+
+    public int getHeight() {
+        return Y;
+    }
+
+    public int getWidth() {
+        return X;
+    }
 }
