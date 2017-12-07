@@ -87,11 +87,11 @@ public class Application implements Listener {
     }
     public void addCar() {
         cc.addCar();
-        frame.getDrawPanel().addImages(cc.getVehicle().get(cc.getVehicle().size() - 1));
+        frame.addImage(cc.getVehicle().get(cc.getVehicle().size() - 1));
     }
 
     public void removeCar() {
         cc.removeCar();
-        frame.getDrawPanel().removeImage(cc.getVehicle().get(cc.getVehicle().size() - 1));
+        frame.removeImage(cc.getVehicle().get(cc.getVehicle().size() - 1));
     }
 }

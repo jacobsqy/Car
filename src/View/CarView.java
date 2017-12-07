@@ -181,4 +181,8 @@ public class CarView extends JFrame{
     public void removeImage(Vehicle car) {
         drawPanel.removeImage(car);
     }
+
+    public void addImage(Vehicle car) {
+        drawPanel.addImages(car);
+    }
 }
