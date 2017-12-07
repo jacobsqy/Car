@@ -13,7 +13,7 @@ public class CarTransport extends Truck {
     public VehicleCargo vehicleCargo = new VehicleCargo(2.0, 5);
 
     public CarTransport(double xPos, double yPos) {
-        super(2, Color.black, 550, "CarTransport", xPos, yPos, null); //TODO Add image for CarTransport
+        super(2, Color.black, 550, "CarTransport", xPos, yPos);
         vehicleCargo.raiseRamp();
     }
 

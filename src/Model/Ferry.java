@@ -8,7 +8,7 @@ public class Ferry extends Vehicle {
 
 
     public Ferry(double xPos, double yPos){
-        super(2400, Color.black,"BootenAnna", xPos, yPos, null); //TODO Add image for Ferry
+        super(2400, Color.black,"BootenAnna", xPos, yPos);
         vehicleCargo.raiseRamp();
     }
 

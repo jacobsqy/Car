@@ -1,13 +1,12 @@
 import Controller.CarController;
 import Model.Vehicle;
+import Model.VehicleFactory;
 import View.CarView;
 import View.Listener;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.ArrayList;
-import java.util.List;
 
 public class Application implements Listener {
     // The delay (ms) corresponds to 20 updates a sec (hz)
@@ -22,20 +21,16 @@ public class Application implements Listener {
     // Instance of this class
     private CarController cc = new CarController();
 
-    private List<Vehicle> vehicleList =new ArrayList<>();
-
     public static void main(String[] args) { new Application().program(); }
 
     void program() {
-        vehicleList.add(VehicleFactory.createVolvo240(0, 0));
-
-
+        cc.addCar(VehicleFactory.createVolvo240(0, 0));
 
         // Start a new view and send a reference of self
         frame = new CarView("CarSim 1.0");
 
         frame.addListener(this);
-        for (Vehicle car : vehicleList) {
+        for (Vehicle car : cc.getVehicle()) {
             frame.getDrawPanel().addImages(car);
         }
         timer.start();
@@ -44,28 +39,28 @@ public class Application implements Listener {
     public void action(ActionEvent e) {
         switch (e.getActionCommand()) {
             case "Gas":
-                cc.gas(frame.getGasAmount(), vehicleList);
+                cc.gas(frame.getGasAmount(), cc.getVehicle());
                 break;
             case "Break":
-                cc.brake(frame.getGasAmount(), vehicleList);
+                cc.brake(frame.getGasAmount(), cc.getVehicle());
                 break;
             case "Start all cars":
-                cc.startAllCars(vehicleList);
+                cc.startAllCars(cc.getVehicle());
                 break;
             case "Stop all cars":
-                cc.stopAllCars(vehicleList);
+                cc.stopAllCars(cc.getVehicle());
                 break;
             case "Saab Turbo on":
-                cc.setTurboOn(vehicleList);
+                cc.setTurboOn(cc.getVehicle());
                 break;
             case "Saab Turbo off":
-                cc.setTurboOff(vehicleList);
+                cc.setTurboOff(cc.getVehicle());
                 break;
             case "Scania Lift Bed":
-                cc.raiseTipper(vehicleList);
+                cc.raiseTipper(cc.getVehicle());
                 break;
             case "Lower Lift Bed":
-                cc.lowTipper(vehicleList);
+                cc.lowTipper(cc.getVehicle());
                 break;
             case "Add Car":
                 addCar();
@@ -80,28 +75,23 @@ public class Application implements Listener {
 
     private class TimerListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
-            for (int i = 0; i < vehicleList.size(); i++) {
-                vehicleList.get(i).move();
-                int x = (int) Math.round(vehicleList.get(i).getxPos());
-                int y = (int) Math.round(vehicleList.get(i).getyPos());
+            for (int i = 0; i < cc.getVehicle().size(); i++) {
+                cc.getVehicle().get(i).move();
+                int x = (int) Math.round(cc.getVehicle().get(i).getxPos());
+                int y = (int) Math.round(cc.getVehicle().get(i).getyPos());
                 // repaint() calls the paintComponent method of the panel
                 frame.getDrawPanel().repaint();
-                cc.collision(vehicleList.get(i), frame.getHeight(), frame.getWidth());
+                cc.collision(cc.getVehicle().get(i), frame.getHeight(), frame.getWidth());
             }
         }
     }
     public void addCar() {
-        double y = vehicleList.size() * 60;
-        if (vehicleList.size() < 10){
-            vehicleList.add(VehicleFactory.createRandom(0, y));
-            frame.getDrawPanel().addImages(vehicleList.get(vehicleList.size() - 1));
-        }
+        cc.addCar();
+        frame.getDrawPanel().addImages(cc.getVehicle().get(cc.getVehicle().size() - 1));
     }
 
     public void removeCar() {
-        if (!vehicleList.isEmpty()) {
-            frame.getDrawPanel().removeImage(vehicleList.get(vehicleList.size() - 1));
-            vehicleList.remove(vehicleList.size() - 1);
-        }
+        cc.removeCar();
+        frame.getDrawPanel().removeImage(cc.getVehicle().get(cc.getVehicle().size() - 1));
     }
 }

@@ -1,8 +1,6 @@
 package Model;
 
-import javax.imageio.ImageIO;
 import java.awt.*;
-import java.io.File;
 
 public class Saab95 extends Car {
 
@@ -11,7 +9,7 @@ public class Saab95 extends Car {
     private double turboPower;
 
     public Saab95(double xPos, double yPos) {
-        super(2, Color.red, 125, "Saab95", xPos, yPos,"src\\Model\\pics\\Saab95.jpg");
+        super(2, Color.red, 125, "Saab95", xPos, yPos);
         turboOn = false;
         turboPower = 1.3;
     }

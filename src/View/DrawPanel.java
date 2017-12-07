@@ -22,7 +22,7 @@ public class DrawPanel extends JPanel{
 
     public void addImages(Vehicle vehicle){
         try {
-            imageMap.put(vehicle, ImageIO.read(new File(vehicle.getImage())));
+            imageMap.put(vehicle, ImageIO.read(new File("src\\View\\pics\\" + vehicle.getClass().getName() + "jpg")));
         }
         catch (Exception e) {
             System.err.println(e.getMessage());
