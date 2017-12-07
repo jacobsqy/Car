@@ -1,6 +1,7 @@
 package View;
 
 import Controller.CarController;
+import Model.Vehicle;
 
 import javax.swing.*;
 import javax.swing.event.ChangeEvent;
@@ -175,5 +176,9 @@ public class CarView extends JFrame{
 
     public int getWidth() {
         return X;
+    }
+
+    public void removeImage(Vehicle car) {
+        drawPanel.removeImage(car);
     }
 }
