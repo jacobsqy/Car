@@ -91,10 +91,8 @@ public class Application implements Listener {
         }
     }
     public void addCar() {
-        double y = 0;
-        if (vehicleList.size() <= 9 && vehicleList.size() >= -1){
-            if(vehicleList.size() == 0){ y = 0;
-            }else{ y = vehicleList.get(vehicleList.size() - 1).getyPos() + 100; }
+        double y = vehicleList.size() * 100;
+        if (vehicleList.size() < 10){
             vehicleList.add(VehicleFactory.createRandom(0, y));
             frame.getDrawPanel().addImages(vehicleList.get(vehicleList.size() - 1));
         }

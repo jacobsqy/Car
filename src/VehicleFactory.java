@@ -25,17 +25,13 @@ public class VehicleFactory {
 
     public static Vehicle createRandom(double x, double y){
         Random random = new Random();
-        int rand = random.nextInt(10);
-        if(rand <= 2){
-            return new Saab95(x,y);
-        }else if(rand <= 4){
-            return new Scania(x,y);
-        }else if(rand <= 6){
-            return new Volvo240(x,y);
-        }else if(rand <= 8){
-            return new Ferry(x,y);
-        }else if(rand <= 10){
-            return new CarTransport(x,y);
+        int rand = random.nextInt(3);
+        if(rand == 0){
+            return createSaab95(x, y);
+        }else if(rand == 1){
+            return createVolvo240(x, y);
+        }else if(rand == 2){
+            return createScania(x, y);
         }else {return null;}
     }
 }
