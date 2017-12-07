@@ -22,7 +22,7 @@ public class DrawPanel extends JPanel{
 
     public void addImages(Vehicle vehicle){
         try {
-            imageMap.put(vehicle, ImageIO.read(new File("src\\View\\pics\\" + vehicle.getModelName() + ".jpg")));
+            imageMap.put(vehicle, ImageIO.read(new File("src/View/pics/" + vehicle.getModelName() + ".jpg")));
         }
         catch (Exception e) {
             System.err.println(e.getMessage());
@@ -32,9 +32,7 @@ public class DrawPanel extends JPanel{
     public void removeImage(Vehicle vehicle){
         try {
             imageMap.remove(vehicle);
-            if(imageMap.size() == 0){
-                repaint();
-            }
+            super.repaint();
         }
         catch (Exception e) {
             System.err.println(e.getMessage());

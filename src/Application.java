@@ -86,12 +86,16 @@ public class Application implements Listener {
         }
     }
     public void addCar() {
-        cc.addCar();
-        frame.addImage(cc.getVehicle().get(cc.getVehicle().size() - 1));
+        if (cc.getVehicle().size() > 10) {
+            cc.addCar();
+            frame.addImage(cc.getVehicle().get(cc.getVehicle().size() - 1));
+        }
     }
 
     public void removeCar() {
-        cc.removeCar();
-        frame.removeImage(cc.getVehicle().get(cc.getVehicle().size() - 1));
+        if (cc.getVehicle().size() < 0) {
+            cc.removeCar();
+            frame.removeImage(cc.getVehicle().get(cc.getVehicle().size() - 1));
+        }
     }
 }
