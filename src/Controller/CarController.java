@@ -1,14 +1,8 @@
 package Controller;
 
-import Model.Saab95;
-import Model.Scania;
 import Model.Vehicle;
 import Model.World;
-import View.Listener;
 
-import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -55,8 +49,8 @@ public class CarController {
     /**
      * Checks if the whole car is within the gamewindow, turns the car twice right if not.
      */
-    public void collision(Vehicle car, int height, int width) {
-        model.collision(car, height, width);
+    public void collision(int car) {
+        model.collision(car);
     }
 
     /**
@@ -89,6 +83,10 @@ public class CarController {
      */
     public void lowTipper(List<Vehicle> cars) {
         model.lowTipper(cars);
+    }
+
+    public void moveCar(int i) {
+        model.moveCar(i);
     }
 
     public void addCar(Vehicle car) {

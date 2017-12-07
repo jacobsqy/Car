@@ -6,6 +6,8 @@ import java.util.List;
 public class World {
 
     private List<Vehicle> vehicleList =new ArrayList<>();
+    private final int HEIGHT = 560;
+    private final int WIDTH = 800;
 
 
     /**
@@ -52,8 +54,9 @@ public class World {
     /**
      * Checks if the whole car is within the gamewindow, turns the car twice right if not.
      */
-    public void collision(Vehicle car, int height, int width) {
-        if (0 > car.getyPos() || car.getyPos() > height - 240 - 60 || 0 > car.getxPos() || car.getxPos() > width - 120) {
+    public void collision(int i) {
+        Vehicle car = vehicleList.get(i);
+        if (0 > car.getyPos() || car.getyPos() > HEIGHT - 60 || 0 > car.getxPos() || car.getxPos() > WIDTH - 100) {
             car.turnRight();
             car.turnRight();
         }
@@ -105,6 +108,10 @@ public class World {
                 ((Scania) car).lowerTipper();
             }
         }
+    }
+
+    public void moveCar(int i) {
+        vehicleList.get(i).move();
     }
 
     public List<Vehicle> getVehicleList() {
