@@ -5,7 +5,7 @@ public class Volvo240 extends Car {
     private double trimFactor;
 
     public Volvo240(double xPos, double yPos){
-      super(4, Color.black, 100, "Volvo240", xPos, yPos);
+      super(4, Color.black, 100, "Volvo240", xPos, yPos, "src\\Model\\pics\\Volvo240.jpg");
       trimFactor = 1.25;
     }
     /**

@@ -1,6 +1,7 @@
 package Model;
 
 import java.awt.*;
+import java.awt.image.BufferedImage;
 
 public abstract class Vehicle implements Movable {
   private double xPos;
@@ -12,6 +13,7 @@ public abstract class Vehicle implements Movable {
   private Vehicle carrier;
   private boolean loaded;
   private boolean engineOn;
+  private String image;
 
 
   private Dir[] dirs = {Dir.FORWARD, Dir.RIGHT, Dir.BACK, Dir.LEFT};
@@ -23,7 +25,7 @@ public abstract class Vehicle implements Movable {
     LEFT
   }
 
-  public Vehicle(double enginePower, Color color, String modelname, double xPos, double yPos) {
+  public Vehicle(double enginePower, Color color, String modelname, double xPos, double yPos, String image) {
     this.enginePower = enginePower;
     this.color = color;
     this.modelName = modelname;
@@ -31,6 +33,7 @@ public abstract class Vehicle implements Movable {
     currentDirIndex = 0;
     this.xPos = xPos;
     this.yPos = yPos;
+    this.image = image;
   }
 
   /**
@@ -213,4 +216,8 @@ public abstract class Vehicle implements Movable {
     public Vehicle getCarrier() {
       return carrier;
     }
+
+  public String getImage() {
+    return image;
+  }
 }

@@ -6,7 +6,7 @@ public class Scania extends Truck {
     private Tipper tipper = new Tipper();
 
     public Scania (double xPos, double yPos){
-        super(2, Color.black, 650, "Scania", xPos, yPos);
+        super(2, Color.black, 650, "Scania", xPos, yPos, "src\\Model\\pics\\Scania.jpg");
     }
 
     @Override
