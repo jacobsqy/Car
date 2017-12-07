@@ -31,7 +31,7 @@ public class Application implements Listener {
 
         frame.addListener(this);
         for (Vehicle car : cc.getVehicle()) {
-            frame.getDrawPanel().addImages(car);
+            frame.addImage(car);
         }
         timer.start();
     }
